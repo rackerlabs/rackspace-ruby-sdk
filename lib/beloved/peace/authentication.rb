@@ -1,0 +1,2 @@
+class Peace::Authentication
+end
