@@ -32,6 +32,8 @@ class Peace::ServiceCatalog
   def initialize(hash, token)
     @access_token = token
     @services     = hash.map{ |s| Service.new(s) }
+
+    Beloved.auth_token = token
   end
 
   def available_services
