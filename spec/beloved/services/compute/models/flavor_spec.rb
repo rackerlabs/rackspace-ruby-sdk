@@ -5,10 +5,6 @@ describe Beloved::Compute::Flavor do
   let(:flavors){ Beloved::Compute::Flavor.all }
   let(:flavor){ flavors.first }
 
-  before do
-    Peace::ServiceCatalog.for('x', 'y')
-  end
-
   it 'has these attributes' do
     expect(flavor.id).not_to be_nil
     expect(flavor.name).not_to be_nil

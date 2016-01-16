@@ -18,7 +18,7 @@ class Peace::Request
     private
 
     def headers
-      raise "Auth Token is not set." unless Beloved.auth_token
+      Peace::ServiceCatalog.for('x', 'y') unless Beloved.auth_token
       { "X-Auth-Token": Beloved.auth_token, content_type: :json, accept: :json }
     end
   end

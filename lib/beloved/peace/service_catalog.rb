@@ -2,8 +2,6 @@ require 'rest-client'
 require 'openssl'
 require 'yaml'
 
-OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
-
 class Peace::ServiceCatalog
 
   BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
