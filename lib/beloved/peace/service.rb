@@ -1,9 +1,15 @@
 class Peace::Service
 
-  attr_accessor :name
+  mattr_accessor :rackspace_name, :resources
 
   class << self
-    def has_resource(name)
+    def catalog_name(str)
+      @@rackspace_name = str
+    end
+
+    def has_resource(klass_name)
+      @@resources ||= []
+      @@resources << klass_name
     end
   end
 
