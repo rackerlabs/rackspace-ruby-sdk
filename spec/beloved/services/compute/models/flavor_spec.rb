@@ -15,4 +15,10 @@ describe Beloved::Compute::Flavor do
     expect(flavors.count > 0).to be_truthy
   end
 
+  it 'knows how to get its URL' do
+    expect(flavor.url).to match /iad/
+    expect(flavor.url).to match /flavors/
+    expect(flavor.url).to match /\d+$/
+  end
+
 end

@@ -1,10 +1,13 @@
 # Beloved
 
 ## TODO
-- [ ] Add Peace::Model.url (tack id on end if exists)
+
+## Meh
 - [ ] Handle URL generation between service/resource in a cleaner way
+  - [ ] Model needs to know what Service it belongs on
 
 ## Finished
+- [x] Add Peace::Model.url (tack id on end if exists)
 - [x] Enumerate child resources (from Peace::Service)
 - [x] Need Peace::Model#url reflection based on service_catalog URL
 - [x] ENV var based authentication over ~/.fog
