@@ -1,13 +1,19 @@
 require "beloved/version"
 require "beloved/peace/base"
+require 'pry'
 
 module Beloved
   @@auth_token      = nil
   @@service_catalog = nil
+  @@tenant_id       = nil
 
   class << self
     def auth_token
       @@auth_token
+    end
+
+    def tenant_id
+      @@tenant_id
     end
 
     def service_catalog
@@ -16,6 +22,10 @@ module Beloved
 
     def auth_token=(token)
       @@auth_token = token
+    end
+
+    def tenant_id=(id)
+      @@tenant_id = id
     end
 
     def service_catalog=(catalog)

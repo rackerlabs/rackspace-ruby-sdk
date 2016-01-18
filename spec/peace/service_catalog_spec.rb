@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Peace::ServiceCatalog do
   let(:service_catalog){ Beloved.service_catalog }
 
@@ -9,11 +11,15 @@ describe Peace::ServiceCatalog do
     expect(service_catalog.access_token).not_to be_empty
   end
 
-  it 'can get a url based on service name and region' do
-
+  it 'has an tenant id' do
+    expect(Beloved.tenant_id).not_to be_empty
   end
 
-  describe '#for' do
+  it 'can get a url based on service name and region' do
+    expect(service_catalog.url_for('compute')).to eq('https://iad.servers.api.rackspacecloud.com/v2/930035')
+  end
+
+  describe '#load!' do
     it 'returns a ServiceCatalog' do
       expect(service_catalog).to be_kind_of(Peace::ServiceCatalog)
     end

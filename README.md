@@ -1,6 +1,8 @@
 # Beloved
 
 ## TODO:
-- [ ] ENV var based authentication over ~/.fog
+- [x] Need Peace::Model#url reflection based on service_catalog URL
+- [x] ENV var based authentication over ~/.fog
 - [x] Add resource name inflection to Peace::Model#all JSON parsing
-- [ ] Use region to get a resource URL from ServiceCatalog
+- [x] Use region to get a resource URL from ServiceCatalog
+- [x] Find and set the tenant_id
