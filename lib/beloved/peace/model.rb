@@ -1,13 +1,21 @@
 require 'active_support/all'
 
 class Peace::Model
+  @rackspace_api_path = nil
+
   class << self
+
     def all
       @all ||= begin
         response = Peace::Request.get(collection_url)
         body = JSON.parse(response.body)
-        body[collection_name].map{ |f| self.new(f) }
+        objs = body[collection_name]
+        objs ? objs.map{ |f| self.new(f) } : []
       end
+    end
+
+    def rackspace_api_path(str)
+      @rackspace_api_path = str
     end
 
     def first
@@ -23,7 +31,11 @@ class Peace::Model
     end
 
     def collection_url
-      @collection_url ||= "#{service_url}/#{collection_name}"
+      if @rackspace_api_path
+        "#{service_url}/#{@rackspace_api_path}"
+      else
+        "#{service_url}/#{collection_name}"
+      end
     end
 
     def collection_name

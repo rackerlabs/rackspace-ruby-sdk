@@ -1,12 +1,14 @@
 # Beloved
 
 ## TODO
+- [ ] How do we handle associations? (`GET /servers/{server_id}/os-volume_attachments`)
 
 ## Meh
 - [ ] Handle URL generation between service/resource in a cleaner way
   - [ ] Model needs to know what Service it belongs on
 
 ## Finished
+- [x] Model needs a way to specify path fragment (ie, `/os-keypairs`)
 - [x] Add Peace::Model.url (tack id on end if exists)
 - [x] Enumerate child resources (from Peace::Service)
 - [x] Need Peace::Model#url reflection based on service_catalog URL

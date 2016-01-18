@@ -3,8 +3,8 @@ require 'rest-client'
 class Peace::Request
   class << self
     def get(url)
+      puts "===> REQUEST: #{url}"
       request = RestClient.get(url, headers)
-      puts '===> REQUEST'
       request
     end
 
