@@ -6,16 +6,13 @@ class Peace::ServiceCatalog
 
   BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
 
-  attr_accessor :services, :access_token
+  attr_accessor :services, :access_token, :region
 
-  def self.for(api_key, username)
+  def self.load!
     @catalog ||= begin
-      # TODO: Remove this before very long
-      fog      = ::YAML.load_file("/Users/mdarby/.fog")
-      api_key  = fog[:default][:rackspace_api_key]
-      username = fog[:default][:rackspace_username]
-      # TODO: Remove this before very long
-
+      api_key  = ENV['RS_API_KEY']
+      username = ENV['RS_USERNAME']
+      region   = ENV['RS_REGION_NAME']
       headers  = {content_type: :json, accept: :json}
       body     = { "auth": { "RAX-KSKEY:apiKeyCredentials": { "apiKey": api_key, "username": username } } }
       response = ::RestClient.post(BASE_URL, body.to_json, headers)
@@ -23,11 +20,11 @@ class Peace::ServiceCatalog
       hash     = body['access']['serviceCatalog']
       token    = body['access']['token']['id']
 
-      Peace::ServiceCatalog.new(hash, token)
+      Peace::ServiceCatalog.new(hash, token, region)
     end
   end
 
-  def initialize(hash, token)
+  def initialize(hash, token, region)
     @access_token = token
     @services     = hash.map{ |s| Service.new(s) }
 
@@ -38,7 +35,8 @@ class Peace::ServiceCatalog
     services.map(&:name).sort
   end
 
-
+  def url_for(service_name)
+  end
 
   class Service
     attr_accessor :name, :endpoints

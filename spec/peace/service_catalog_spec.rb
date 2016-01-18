@@ -1,5 +1,5 @@
 describe Peace::ServiceCatalog do
-  let(:service_catalog){ Peace::ServiceCatalog.for('x', 'y') }
+  let(:service_catalog){ Beloved.service_catalog }
 
   it 'has many services' do
     expect(service_catalog.services).to be_kind_of(Array)
@@ -7,6 +7,10 @@ describe Peace::ServiceCatalog do
 
   it 'has an access token' do
     expect(service_catalog.access_token).not_to be_empty
+  end
+
+  it 'can get a url based on service name and region' do
+
   end
 
   describe '#for' do
