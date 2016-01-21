@@ -3,7 +3,7 @@ require 'rest-client'
 class Peace::Request
   class << self
     def get(url)
-      puts "===> REQUEST: #{url}"
+      puts "===> REQUEST: #{url}" if ENV['LOG']
       request = RestClient.get(url, headers)
       request
     end

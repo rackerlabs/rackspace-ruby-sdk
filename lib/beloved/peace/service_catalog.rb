@@ -14,6 +14,8 @@ class Peace::ServiceCatalog
 
   def self.load!
     @catalog ||= begin
+      puts '===> Loading ServiceCatalog' if ENV['LOG']
+
       api_key   = ENV['RS_API_KEY']
       username  = ENV['RS_USERNAME']
       region    = ENV['RS_REGION_NAME']
