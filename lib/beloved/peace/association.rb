@@ -1,2 +1,0 @@
-class Peace::Association
-end

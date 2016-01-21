@@ -1,48 +1,8 @@
 require 'active_support/all'
 
 class Peace::Model
-  @rackspace_api_path = nil
-
-  class << self
-
-    def all
-      @all ||= begin
-        response = Peace::Request.get(collection_url)
-        body = JSON.parse(response.body)
-        objs = body[collection_name]
-        objs ? objs.map{ |f| self.new(f) } : []
-      end
-    end
-
-    def rackspace_api_path(str)
-      @rackspace_api_path = str
-    end
-
-    def first
-      all.first
-    end
-
-    def service_url
-      @service_url ||= Beloved.service_catalog.url_for(service_name)
-    end
-
-    def service_name
-      @service_name ||= self.to_s.tableize.split('/')[1]
-    end
-
-    def collection_url
-      if @rackspace_api_path
-        "#{service_url}/#{@rackspace_api_path}"
-      else
-        "#{service_url}/#{collection_name}"
-      end
-    end
-
-    def collection_name
-      @collection_name ||= self.to_s.tableize.split('/').last
-    end
-  end
-
+  extend Peace::ORM
+  extend Peace::Association
 
   def initialize(hash={})
     hash.each{ |k,v| self.send("#{k}=", v) }
@@ -54,4 +14,21 @@ class Peace::Model
     url
   end
 
+  # private
+  #
+  # def api_path
+  #   url = self.class.collection_url
+  #
+  #   if arr = /{{\w+}}/.match(url)
+  #     fragment = arr[0]
+  #     variable = fragment[2...-2]
+  #     value    = self.send(variable)
+  #
+  #     raise "Template error" unless value
+  #
+  #     url.gsub(fragment, value.to_s)
+  #   else
+  #     url
+  #   end
+  # end
 end
