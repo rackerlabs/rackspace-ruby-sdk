@@ -1,6 +1,8 @@
 # Beloved
 
 ## TODO
+- [ ] Flesh out `has_many`, `belongs_to`
+- [ ] Add VCR?
 
 ## Meh
 - [ ] Handle URL generation between service/resource in a cleaner way

@@ -1,12 +1,10 @@
 module Peace::ORM
 
   def all(attrs={})
-    @all ||= begin
-      response = Peace::Request.get(collection_url(attrs))
-      body = JSON.parse(response.body)
-      objs = body[collection_name]
-      objs ? objs.map{ |f| self.new(f) } : []
-    end
+    response = Peace::Request.get(collection_url(attrs))
+    body = JSON.parse(response.body)
+    objs = body[collection_name]
+    objs ? objs.map{ |f| self.new(f) } : []
   end
 
   def first
