@@ -6,7 +6,10 @@ module Peace::Association
   def has_many(sym)
   end
 
-  def requires(*args)
+  def api_requires(*args)
+    args.each do |sym|
+      self.class_attribute sym, sym
+    end
   end
 
 end

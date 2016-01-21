@@ -1,13 +1,14 @@
 # Beloved
 
 ## TODO
-- [ ] How do we handle associations? (`GET /servers/{server_id}/os-volume_attachments`)
+- [ ] Log authentication calls (keep eye on caching Identity)
 
 ## Meh
 - [ ] Handle URL generation between service/resource in a cleaner way
   - [ ] Model needs to know what Service it belongs on
 
 ## Finished
+- [x] How do we handle associations? (`GET /servers/{server_id}/os-volume_attachments`)
 - [x] Model needs a way to specify path fragment (ie, `/os-keypairs`)
 - [x] Add Peace::Model.url (tack id on end if exists)
 - [x] Enumerate child resources (from Peace::Service)

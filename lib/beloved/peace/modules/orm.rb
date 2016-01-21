@@ -1,8 +1,8 @@
 module Peace::ORM
 
-  def all
+  def all(attrs={})
     @all ||= begin
-      response = Peace::Request.get(collection_url)
+      response = Peace::Request.get(collection_url(attrs))
       body = JSON.parse(response.body)
       objs = body[collection_name]
       objs ? objs.map{ |f| self.new(f) } : []
@@ -25,18 +25,44 @@ module Peace::ORM
     @service_name ||= self.to_s.tableize.split('/')[1]
   end
 
-  def collection_url
-    if @rackspace_api_path
-      url = "#{service_url}/#{@rackspace_api_path}"
+  def collection_url(attrs={})
+    if @rackspace_api_path && attrs
+      path = build_api_url!(attrs)
     else
-      url = "#{service_url}/#{collection_name}"
+      path = collection_name
     end
 
-    url.gsub('.com//', '/')
+    "#{service_url}/#{path}"
   end
 
   def collection_name
     @collection_name ||= self.to_s.tableize.split('/').last
+  end
+
+  def url
+    url = self.class.collection_url
+    url << "/#{id}" if self.id
+    url
+  end
+
+  private
+
+  def build_api_url!(attrs)
+    path = @rackspace_api_path.dup
+
+    attrs.each do |(k,v)|
+      if arr = /{{\w+}}/.match(path)
+        fragment = arr[0]
+        variable = fragment[2...-2]
+        value    = self.send("#{k}=", v)
+
+        raise "Template error" unless value
+
+        path.gsub!(fragment, value.to_s)
+      end
+    end
+
+    path[0] == '/' ? path[1..-1] : path
   end
 
 end
