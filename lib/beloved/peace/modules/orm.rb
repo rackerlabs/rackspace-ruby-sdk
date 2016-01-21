@@ -26,12 +26,7 @@ module Peace::ORM
   end
 
   def collection_url(attrs={})
-    if @rackspace_api_path && attrs
-      path = build_api_url!(attrs)
-    else
-      path = collection_name
-    end
-
+    path = (@rackspace_api_path && attrs) ? build_api_url!(attrs) : collection_name
     "#{service_url}/#{path}"
   end
 

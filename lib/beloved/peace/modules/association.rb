@@ -7,9 +7,7 @@ module Peace::Association
   end
 
   def api_requires(*args)
-    args.each do |sym|
-      self.class_attribute sym, sym
-    end
+    args.each{ |sym| self.class_attribute sym }
   end
 
 end
