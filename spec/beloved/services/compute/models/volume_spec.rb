@@ -14,8 +14,8 @@ describe Beloved::Compute::Volume do
   end
 
   it 'PEACE: knows how to get a nested resource' do
-    url = "https://iad.servers.api.rackspacecloud.com/v2/930035/servers/95d4f801-858a-4728-9ac0-dc5900d71f76/os-volume_attachments"
-    expect(volume.class.collection_url(server_id: server.id)).to eq(url)
+    #url = "https://" + ENV['RS_REGION_NAME'].downcase + ".servers.api.rackspacecloud.com/v2/844783/servers/95d4f801-858a-4728-9ac0-dc5900d71f76/os-volume_attachments"
+    expect(volume.class.collection_url(server_id: server.id)).to match_regex(/https:\/\/[a-z]{3}.servers.api.rackspacecloud.com\/v2\/[0-9]{6}\/servers\/.{8}-.{4}-.{4}-.{4}-.{12}\/os-volume_attachments/)
   end
 
 end
