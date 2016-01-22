@@ -15,4 +15,8 @@ describe Beloved::Compute::Server do
     expect(servers.count > 0).to be_truthy
   end
 
+  it 'knows how to get nested resources' do
+    expect(server.volumes).to eq([])
+  end
+
 end

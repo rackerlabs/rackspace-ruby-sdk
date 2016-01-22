@@ -34,4 +34,4 @@ module Beloved
   end
 end
 
-Dir[File.expand_path "lib/beloved/**/*.rb"].each{ |f| require_relative f }
+Dir[File.expand_path "lib/beloved/services/**/*.rb"].each{ |f| require_relative f }
