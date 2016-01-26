@@ -16,7 +16,7 @@ describe Beloved::Compute::Server do
   end
 
   it 'knows how to get nested resources' do
-    expect(server.volumes).to eq([])
+    expect(server.volumes).not_to eq([])
   end
 
 end

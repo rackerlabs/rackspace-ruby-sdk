@@ -1,7 +1,6 @@
 # Beloved
 
 ## TODO
-- [ ] Flesh out `has_many`, `belongs_to`
 - [ ] Add VCR?
 
 ## Meh
@@ -9,6 +8,7 @@
   - [ ] Model needs to know what Service it belongs on
 
 ## Finished
+- [x] Flesh out `has_many`, `belongs_to`
 - [x] Log authentication calls (keep eye on caching Identity)
 - [x] How do we handle associations? (`GET /servers/{server_id}/os-volume_attachments`)
 - [x] Model needs a way to specify path fragment (ie, `/os-keypairs`)
