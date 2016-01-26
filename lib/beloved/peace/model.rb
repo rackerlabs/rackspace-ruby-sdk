@@ -1,8 +1,8 @@
 require 'active_support/all'
 
 class Peace::Model
-  extend Peace::ORM
-  extend Peace::Association
+  include Peace::ORM
+  include Peace::Association
 
   def initialize(hash={})
     hash.each{ |k,v| self.send("#{k}=", v) }

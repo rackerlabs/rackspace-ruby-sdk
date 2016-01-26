@@ -9,6 +9,10 @@ class Peace::Request
     end
 
     def post(*args)
+      puts "===> REQUEST: #{url}" if ENV['LOG']
+      data = {}
+      request = RestClient.post(url, data, headers)
+      request
     end
 
     def put(*args)
