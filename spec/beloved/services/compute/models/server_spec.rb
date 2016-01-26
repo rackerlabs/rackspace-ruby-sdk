@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Server do
+describe Beloved::Compute::Server, :vcr do
 
   let(:servers){ Beloved::Compute::Server.all }
   let(:server){ servers.first }

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Flavor do
+describe Beloved::Compute::Flavor, :vcr do
 
   let(:flavors){ Beloved::Compute::Flavor.all }
   let(:flavor){ flavors.first }

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Volume do
+describe Beloved::Compute::Volume, :vcr do
 
   let(:server){ Beloved::Compute::Server.first }
   let(:volumes){ Beloved::Compute::Volume.all(server_id: server.id) }

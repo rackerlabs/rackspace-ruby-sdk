@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Beloved::Compute::KeyPair do
+describe Beloved::Compute::KeyPair, :vcr do
 
   let(:key_pairs){ Beloved::Compute::KeyPair.all }
   let(:key_pair){ Beloved::Compute::KeyPair.new }

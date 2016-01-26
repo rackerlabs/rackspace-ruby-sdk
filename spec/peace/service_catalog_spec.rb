@@ -16,7 +16,6 @@ describe Peace::ServiceCatalog do
   end
 
   it 'can get a url based on service name and region' do
-    #expect(service_catalog.url_for('compute')).to eq('https://iad.servers.api.rackspacecloud.com/v2/930035')
     expect(service_catalog.url_for('compute')).to match_regex(/https:\/\/[a-z]{3}.servers.api.rackspacecloud.com\/v2\/[0-9]{6}/)
   end
 

@@ -1,0 +1,158 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Jan 2016 19:49:00 GMT
+      - Tue, 26 Jan 2016 19:49:01 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 738d2884-31d2-4cc9-a37e-bfd0ce160055
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-d1551939-59f6-4c27-bd97-b67c03701308
+      Content-Length:
+      - '9954'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"flavors": [{"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/2",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}], "name": "512MB Standard Instance"}, {"id": "3", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/3",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/3",
+        "rel": "bookmark"}], "name": "1GB Standard Instance"}, {"id": "4", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/4",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/4",
+        "rel": "bookmark"}], "name": "2GB Standard Instance"}, {"id": "5", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/5",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/5",
+        "rel": "bookmark"}], "name": "4GB Standard Instance"}, {"id": "6", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/6",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/6",
+        "rel": "bookmark"}], "name": "8GB Standard Instance"}, {"id": "7", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/7",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/7",
+        "rel": "bookmark"}], "name": "15GB Standard Instance"}, {"id": "8", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/8",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/8",
+        "rel": "bookmark"}], "name": "30GB Standard Instance"}, {"id": "compute1-15",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/compute1-15",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/compute1-15",
+        "rel": "bookmark"}], "name": "15 GB Compute v1"}, {"id": "compute1-30", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/compute1-30",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/compute1-30",
+        "rel": "bookmark"}], "name": "30 GB Compute v1"}, {"id": "compute1-4", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/compute1-4",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/compute1-4",
+        "rel": "bookmark"}], "name": "3.75 GB Compute v1"}, {"id": "compute1-60",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/compute1-60",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/compute1-60",
+        "rel": "bookmark"}], "name": "60 GB Compute v1"}, {"id": "compute1-8", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/compute1-8",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/compute1-8",
+        "rel": "bookmark"}], "name": "7.5 GB Compute v1"}, {"id": "general1-1", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/general1-1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/general1-1",
+        "rel": "bookmark"}], "name": "1 GB General Purpose v1"}, {"id": "general1-2",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/general1-2",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/general1-2",
+        "rel": "bookmark"}], "name": "2 GB General Purpose v1"}, {"id": "general1-4",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/general1-4",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/general1-4",
+        "rel": "bookmark"}], "name": "4 GB General Purpose v1"}, {"id": "general1-8",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/general1-8",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/general1-8",
+        "rel": "bookmark"}], "name": "8 GB General Purpose v1"}, {"id": "io1-120",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/io1-120",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/io1-120",
+        "rel": "bookmark"}], "name": "120 GB I/O v1"}, {"id": "io1-15", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/io1-15",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/io1-15",
+        "rel": "bookmark"}], "name": "15 GB I/O v1"}, {"id": "io1-30", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/io1-30",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/io1-30",
+        "rel": "bookmark"}], "name": "30 GB I/O v1"}, {"id": "io1-60", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/io1-60",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/io1-60",
+        "rel": "bookmark"}], "name": "60 GB I/O v1"}, {"id": "io1-90", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/io1-90",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/io1-90",
+        "rel": "bookmark"}], "name": "90 GB I/O v1"}, {"id": "memory1-120", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/memory1-120",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/memory1-120",
+        "rel": "bookmark"}], "name": "120 GB Memory v1"}, {"id": "memory1-15", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/memory1-15",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/memory1-15",
+        "rel": "bookmark"}], "name": "15 GB Memory v1"}, {"id": "memory1-240", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/memory1-240",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/memory1-240",
+        "rel": "bookmark"}], "name": "240 GB Memory v1"}, {"id": "memory1-30", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/memory1-30",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/memory1-30",
+        "rel": "bookmark"}], "name": "30 GB Memory v1"}, {"id": "memory1-60", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/memory1-60",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/memory1-60",
+        "rel": "bookmark"}], "name": "60 GB Memory v1"}, {"id": "onmetal-compute1",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/onmetal-compute1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/onmetal-compute1",
+        "rel": "bookmark"}], "name": "OnMetal Compute v1"}, {"id": "onmetal-io1",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/onmetal-io1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/onmetal-io1",
+        "rel": "bookmark"}], "name": "OnMetal IO v1"}, {"id": "onmetal-memory1", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/onmetal-memory1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/onmetal-memory1",
+        "rel": "bookmark"}], "name": "OnMetal Memory v1"}, {"id": "performance1-1",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance1-1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance1-1",
+        "rel": "bookmark"}], "name": "1 GB Performance"}, {"id": "performance1-2",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance1-2",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance1-2",
+        "rel": "bookmark"}], "name": "2 GB Performance"}, {"id": "performance1-4",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance1-4",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance1-4",
+        "rel": "bookmark"}], "name": "4 GB Performance"}, {"id": "performance1-8",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance1-8",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance1-8",
+        "rel": "bookmark"}], "name": "8 GB Performance"}, {"id": "performance2-120",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance2-120",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance2-120",
+        "rel": "bookmark"}], "name": "120 GB Performance"}, {"id": "performance2-15",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance2-15",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance2-15",
+        "rel": "bookmark"}], "name": "15 GB Performance"}, {"id": "performance2-30",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance2-30",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance2-30",
+        "rel": "bookmark"}], "name": "30 GB Performance"}, {"id": "performance2-60",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance2-60",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance2-60",
+        "rel": "bookmark"}], "name": "60 GB Performance"}, {"id": "performance2-90",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors/performance2-90",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/performance2-90",
+        "rel": "bookmark"}], "name": "90 GB Performance"}]}'
+    http_version: 
+  recorded_at: Tue, 26 Jan 2016 19:49:01 GMT
+recorded_with: VCR 3.0.1

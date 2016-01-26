@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Image do
+describe Beloved::Compute::Image, :vcr do
 
   let(:images){ Beloved::Compute::Image.all }
   let(:image){ images.first }

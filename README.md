@@ -19,6 +19,3 @@
 - [x] Add resource name inflection to Peace::Model#all JSON parsing
 - [x] Use region to get a resource URL from ServiceCatalog
 - [x] Find and set the tenant_id
-
-## HOWTO
-- Load nested resources: `Beloved::Compute::Volume.all(server_id: server.id)`

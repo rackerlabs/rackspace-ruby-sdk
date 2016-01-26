@@ -1,0 +1,318 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Jan 2016 19:49:04 GMT
+      - Tue, 26 Jan 2016 19:49:06 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - d45be8a2-a438-4119-8ec1-08a6fb1f72ee
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-70b49df8-1b34-49ca-80d4-70366c6b59fc
+      Content-Length:
+      - '28230'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"images": [{"id": "9e388334-ea9d-497b-815a-2ab73cccb4c5", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9e388334-ea9d-497b-815a-2ab73cccb4c5",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9e388334-ea9d-497b-815a-2ab73cccb4c5",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9e388334-ea9d-497b-815a-2ab73cccb4c5",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CentOS 6"}, {"id": "6045cb80-52ed-4114-bf9a-7f15a36c65dc", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Beta)"}, {"id": "c61f3a04-a00e-44c1-9d96-0667cfc7e155", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Alpha)"}, {"id": "40ea63a7-63c7-4a43-a069-cc7a8420a08c", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CoreOS (Alpha)"}, {"id": "03193798-e71d-4470-95e2-3ce6b9ad32cb", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CoreOS (Stable)"}, {"id": "40155f16-21d4-4ac1-ad65-c409d94b8c7c", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Stable)"}, {"id": "292f2f2f-f609-43de-bcd7-ec8cb4a970bc", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CoreOS (Beta)"}, {"id": "5fb11218-28af-46fe-b4b0-0410a5cb4291", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5fb11218-28af-46fe-b4b0-0410a5cb4291",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5fb11218-28af-46fe-b4b0-0410a5cb4291",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5fb11218-28af-46fe-b4b0-0410a5cb4291",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian 8 (Jessie)"}, {"id": "c0087f92-d7b0-46b9-910e-698a33be8d4c", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c0087f92-d7b0-46b9-910e-698a33be8d4c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c0087f92-d7b0-46b9-910e-698a33be8d4c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c0087f92-d7b0-46b9-910e-698a33be8d4c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CentOS 7"}, {"id": "39375b69-899a-43c6-9641-f8c787eea5ee", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 + SQL Server 2012 SP1 Standard"}, {"id": "59a3fadd-93e7-4674-886a-64883e17115f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/59a3fadd-93e7-4674-886a-64883e17115f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/59a3fadd-93e7-4674-886a-64883e17115f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/59a3fadd-93e7-4674-886a-64883e17115f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        15.10 (Wily Werewolf) (PVHVM)"}, {"id": "b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CarinaOAuth2Provider"},
+        {"id": "358a29cc-2f79-4b07-b159-402dfb84359d", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CarinaCommunityDB"},
+        {"id": "e8d8ae4f-8c03-4f66-b98d-290f4d4f37f9", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/e8d8ae4f-8c03-4f66-b98d-290f4d4f37f9",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/e8d8ae4f-8c03-4f66-b98d-290f4d4f37f9",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/e8d8ae4f-8c03-4f66-b98d-290f4d4f37f9",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2 + SQL Server 2014 Web"}, {"id": "05692097-4758-4717-b683-db5811f28e64",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/05692097-4758-4717-b683-db5811f28e64",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/05692097-4758-4717-b683-db5811f28e64",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/05692097-4758-4717-b683-db5811f28e64",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2 + SQL Server 2014 Standard"}, {"id": "691987de-582c-428b-b948-430ff41fb67d",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/691987de-582c-428b-b948-430ff41fb67d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/691987de-582c-428b-b948-430ff41fb67d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/691987de-582c-428b-b948-430ff41fb67d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1 + SQL Server 2008 R2 SP2 Web"}, {"id": "535800bf-942b-4734-a6a4-a9793d8c7896",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/535800bf-942b-4734-a6a4-a9793d8c7896",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/535800bf-942b-4734-a6a4-a9793d8c7896",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/535800bf-942b-4734-a6a4-a9793d8c7896",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1"}, {"id": "9adcd193-1932-4de2-a325-e07aecd7d127", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9adcd193-1932-4de2-a325-e07aecd7d127",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9adcd193-1932-4de2-a325-e07aecd7d127",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9adcd193-1932-4de2-a325-e07aecd7d127",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1 + SQL Server 2008 R2 SP2 Standard"}, {"id": "ca6b1d10-b681-4196-842d-6a23350340ab",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ca6b1d10-b681-4196-842d-6a23350340ab",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ca6b1d10-b681-4196-842d-6a23350340ab",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ca6b1d10-b681-4196-842d-6a23350340ab",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2"}, {"id": "1ff276a5-53ba-483e-a253-abae852552f8", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/1ff276a5-53ba-483e-a253-abae852552f8",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/1ff276a5-53ba-483e-a253-abae852552f8",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/1ff276a5-53ba-483e-a253-abae852552f8",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012"}, {"id": "7ce638ca-3377-436c-85b0-fc6a82899340", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/7ce638ca-3377-436c-85b0-fc6a82899340",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/7ce638ca-3377-436c-85b0-fc6a82899340",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/7ce638ca-3377-436c-85b0-fc6a82899340",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian 7 (Wheezy)"}, {"id": "8ffcfdcd-7e44-4e84-92f7-e11e04401642", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/8ffcfdcd-7e44-4e84-92f7-e11e04401642",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/8ffcfdcd-7e44-4e84-92f7-e11e04401642",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/8ffcfdcd-7e44-4e84-92f7-e11e04401642",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Fedora
+        22 (PVHVM)"}, {"id": "c6693b8d-1e99-4112-b2a0-ceefd18a55ca", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Gentoo
+        15.3 (PVHVM)"}, {"id": "cf16c435-7bed-4dc3-b76e-57b09987866d", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        8 (Jessie) (PVHVM)"}, {"id": "79f41a1d-ed68-40bc-84d5-e7a36dabcb44", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/79f41a1d-ed68-40bc-84d5-e7a36dabcb44",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/79f41a1d-ed68-40bc-84d5-e7a36dabcb44",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/79f41a1d-ed68-40bc-84d5-e7a36dabcb44",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Fedora
+        21 (PVHVM)"}, {"id": "5add00f7-1349-4e69-a398-aa98489c95e0", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 + SQL Server 2012 SP1 Web"}, {"id": "6f984613-2b58-4596-b898-4e6e662dbd59",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6f984613-2b58-4596-b898-4e6e662dbd59",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6f984613-2b58-4596-b898-4e6e662dbd59",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6f984613-2b58-4596-b898-4e6e662dbd59",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 5 (PV)"}, {"id": "62b183c0-e745-4c2c-9385-5e10007ae66f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/62b183c0-e745-4c2c-9385-5e10007ae66f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/62b183c0-e745-4c2c-9385-5e10007ae66f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/62b183c0-e745-4c2c-9385-5e10007ae66f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Fedora 22"}, {"id": "30fe4d37-091b-4a67-b6e6-2fafd6cd6170", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/30fe4d37-091b-4a67-b6e6-2fafd6cd6170",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/30fe4d37-091b-4a67-b6e6-2fafd6cd6170",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/30fe4d37-091b-4a67-b6e6-2fafd6cd6170",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Fedora 21"}, {"id": "6118e449-3149-475f-bcbb-99d204cedd56", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6118e449-3149-475f-bcbb-99d204cedd56",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6118e449-3149-475f-bcbb-99d204cedd56",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6118e449-3149-475f-bcbb-99d204cedd56",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Scientific
+        Linux 7 (PVHVM)"}, {"id": "5176fde9-e9d6-4611-9069-1eecd55df440", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5176fde9-e9d6-4611-9069-1eecd55df440",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5176fde9-e9d6-4611-9069-1eecd55df440",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5176fde9-e9d6-4611-9069-1eecd55df440",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 6 (PVHVM)"}, {"id": "92f8a8b8-6019-4c27-949b-cf9910b84ffb",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/92f8a8b8-6019-4c27-949b-cf9910b84ffb",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/92f8a8b8-6019-4c27-949b-cf9910b84ffb",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/92f8a8b8-6019-4c27-949b-cf9910b84ffb",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 7 (PVHVM)"}, {"id": "79436148-753f-41b7-aee9-5acbde16582c",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/79436148-753f-41b7-aee9-5acbde16582c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/79436148-753f-41b7-aee9-5acbde16582c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/79436148-753f-41b7-aee9-5acbde16582c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OpenSUSE
+        13.2 (PVHVM)"}, {"id": "081a8b12-515c-41c9-8ce4-13139e1904f7", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/081a8b12-515c-41c9-8ce4-13139e1904f7",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/081a8b12-515c-41c9-8ce4-13139e1904f7",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/081a8b12-515c-41c9-8ce4-13139e1904f7",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        Testing (Stretch) (PVHVM)"}, {"id": "fdaf64c7-d9f3-446c-bd7c-70349305ae91",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/fdaf64c7-d9f3-446c-bd7c-70349305ae91",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/fdaf64c7-d9f3-446c-bd7c-70349305ae91",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/fdaf64c7-d9f3-446c-bd7c-70349305ae91",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        5 (PV)"}, {"id": "fabe045f-43f8-4991-9e6c-5cabd617538c", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/fabe045f-43f8-4991-9e6c-5cabd617538c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/fabe045f-43f8-4991-9e6c-5cabd617538c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/fabe045f-43f8-4991-9e6c-5cabd617538c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        6 (PVHVM)"}, {"id": "eaaf94d8-55a6-4bfa-b0a8-473febb012dc", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/eaaf94d8-55a6-4bfa-b0a8-473febb012dc",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/eaaf94d8-55a6-4bfa-b0a8-473febb012dc",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/eaaf94d8-55a6-4bfa-b0a8-473febb012dc",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        7 (Wheezy) (PVHVM)"}, {"id": "303d9ab8-af0b-4325-bd50-a59c8bd4412e", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/303d9ab8-af0b-4325-bd50-a59c8bd4412e",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/303d9ab8-af0b-4325-bd50-a59c8bd4412e",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/303d9ab8-af0b-4325-bd50-a59c8bd4412e",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian Unstable (Sid)"}, {"id": "6595f1b7-e825-4bd2-addc-c7b1c803a37f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6595f1b7-e825-4bd2-addc-c7b1c803a37f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6595f1b7-e825-4bd2-addc-c7b1c803a37f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6595f1b7-e825-4bd2-addc-c7b1c803a37f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        7 (PVHVM)"}, {"id": "ae7a941b-f4a9-44dd-9d73-570a6143bd56", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ae7a941b-f4a9-44dd-9d73-570a6143bd56",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ae7a941b-f4a9-44dd-9d73-570a6143bd56",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ae7a941b-f4a9-44dd-9d73-570a6143bd56",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian Testing (Stretch)"}, {"id": "89ec5b23-4b4e-4e09-89f1-b06b1c9c163d",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/89ec5b23-4b4e-4e09-89f1-b06b1c9c163d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/89ec5b23-4b4e-4e09-89f1-b06b1c9c163d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/89ec5b23-4b4e-4e09-89f1-b06b1c9c163d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Ubuntu 12.04 LTS (Precise Pangolin)"}, {"id": "2a0d5f34-d86e-47d4-b40b-1ff4a9a03a39",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/2a0d5f34-d86e-47d4-b40b-1ff4a9a03a39",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/2a0d5f34-d86e-47d4-b40b-1ff4a9a03a39",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/2a0d5f34-d86e-47d4-b40b-1ff4a9a03a39",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Ubuntu 15.04 (Vivid Vervet)"}, {"id": "1503f8cf-2a94-44f5-8d82-fadbb639a744",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/1503f8cf-2a94-44f5-8d82-fadbb639a744",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/1503f8cf-2a94-44f5-8d82-fadbb639a744",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/1503f8cf-2a94-44f5-8d82-fadbb639a744",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Ubuntu 14.04 LTS (Trusty Tahr)"}, {"id": "faad95b7-396d-483e-b4ae-77afec7e7097",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/faad95b7-396d-483e-b4ae-77afec7e7097",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/faad95b7-396d-483e-b4ae-77afec7e7097",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/faad95b7-396d-483e-b4ae-77afec7e7097",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Vyatta
+        Network OS 6.7R9"}, {"id": "973775ab-0653-4ef8-a571-7a2777787735", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/973775ab-0653-4ef8-a571-7a2777787735",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/973775ab-0653-4ef8-a571-7a2777787735",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/973775ab-0653-4ef8-a571-7a2777787735",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        12.04 LTS (Precise Pangolin) (PVHVM)"}, {"id": "656e65f7-6441-46e8-978d-0d39beaaf559",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/656e65f7-6441-46e8-978d-0d39beaaf559",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/656e65f7-6441-46e8-978d-0d39beaaf559",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/656e65f7-6441-46e8-978d-0d39beaaf559",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        12.04 LTS (Precise Pangolin) (PV)"}, {"id": "36076d08-3e8b-4436-9253-7a8868e4f4d7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/36076d08-3e8b-4436-9253-7a8868e4f4d7",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/36076d08-3e8b-4436-9253-7a8868e4f4d7",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/36076d08-3e8b-4436-9253-7a8868e4f4d7",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Scientific
+        Linux 6 (PVHVM)"}, {"id": "7a1cf8de-7721-4d56-900b-1e65def2ada5", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "FreeBSD
+        10 (PVHVM)"}, {"id": "ade87903-9d82-4584-9cc1-204870011de0", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Arch
+        2015.7 (PVHVM)"}, {"id": "783f71f4-d2d8-4d38-b2e1-8c916de79a38", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/783f71f4-d2d8-4d38-b2e1-8c916de79a38",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/783f71f4-d2d8-4d38-b2e1-8c916de79a38",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/783f71f4-d2d8-4d38-b2e1-8c916de79a38",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 6 (PV)"}, {"id": "498c59a0-3c26-4357-92c0-dd938baca3db",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/498c59a0-3c26-4357-92c0-dd938baca3db",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/498c59a0-3c26-4357-92c0-dd938baca3db",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/498c59a0-3c26-4357-92c0-dd938baca3db",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        Unstable (Sid) (PVHVM)"}, {"id": "09de0a66-3156-48b4-90a5-1cf25a905207", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/09de0a66-3156-48b4-90a5-1cf25a905207",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/09de0a66-3156-48b4-90a5-1cf25a905207",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/09de0a66-3156-48b4-90a5-1cf25a905207",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        14.04 LTS (Trusty Tahr) (PVHVM)"}, {"id": "5ed162cc-b4eb-4371-b24a-a0ae73376c73",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5ed162cc-b4eb-4371-b24a-a0ae73376c73",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5ed162cc-b4eb-4371-b24a-a0ae73376c73",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5ed162cc-b4eb-4371-b24a-a0ae73376c73",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        14.04 LTS (Trusty Tahr) (PV)"}, {"id": "21612eaf-a350-4047-b06f-6bb8a8a7bd99",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/21612eaf-a350-4047-b06f-6bb8a8a7bd99",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/21612eaf-a350-4047-b06f-6bb8a8a7bd99",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/21612eaf-a350-4047-b06f-6bb8a8a7bd99",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        6 (PV)"}, {"id": "9aa0d346-c06f-4652-bbb1-4342a7d2d017", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "iPXE
+        Boot (boot.rackspace.com)"}]}'
+    http_version: 
+  recorded_at: Tue, 26 Jan 2016 19:49:06 GMT
+recorded_with: VCR 3.0.1
