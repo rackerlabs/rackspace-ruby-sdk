@@ -3,7 +3,16 @@ module Peace::Association
   @@has_many   = []
   @@belongs_to = []
 
-  def belongs_to(sym)
+  def belongs_to(sym, mapping)
+    @@belongs_to << sym
+
+    define_method sym, lambda {
+      modpath     = self.class.to_s.split('::')
+      modpath[-1] = sym.to_s.classify # Inject :sym classname
+      klass       = modpath.join('::').constantize
+
+      klass.find(self.send(mapping))
+    }
   end
 
   def has_many(sym, mapping)
