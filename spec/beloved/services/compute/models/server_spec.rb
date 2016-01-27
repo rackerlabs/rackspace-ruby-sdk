@@ -23,4 +23,11 @@ describe Beloved::Compute::Server, :vcr do
     server.save
     expect(server.try(:progress)).to eq(100)
   end
+
+  it 'knows how to create a new server' do
+    uuid = Beloved::Compute::Image.first.id
+    data = { name: 'Testing', flavorRef: 2, imageRef: uuid }
+    server = Beloved::Compute::Server.new(data)
+    expect{ server.save }.to change(server, :id)
+  end
 end

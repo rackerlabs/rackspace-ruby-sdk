@@ -9,7 +9,10 @@ class Peace::Request
       request
     end
 
-    def post(*args)
+    def post(obj)
+      puts "===> POST: #{obj.url}: #{obj.to_json}" if ENV['LOG']
+      request = RestClient.post(obj.url, obj.to_json, headers)
+      JSON.parse(request)
     end
 
     def put(obj)

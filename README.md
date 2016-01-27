@@ -1,6 +1,7 @@
 # Beloved
 
 ## TODO
+- [ ] Figure out a better way to find all attributes and set in models ('detail' routes?)
 
 ## Meh
 - [ ] Handle URL generation between service/resource in a cleaner way
