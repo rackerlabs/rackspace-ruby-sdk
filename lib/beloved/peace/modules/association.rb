@@ -36,8 +36,4 @@ module Peace::Association
       args.each{ |sym| self.class_attribute sym }
     end
   end
-
-
-  module InstanceMethods
-  end
 end

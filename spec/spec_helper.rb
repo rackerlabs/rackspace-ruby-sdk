@@ -9,6 +9,7 @@ VCR.configure do |c|
   c.cassette_library_dir = "spec/vcr"
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.default_cassette_options = { :record => :new_episodes }
   c.filter_sensitive_data('<RS_API_KEY>') { ENV['RS_API_KEY'] }
   c.filter_sensitive_data('<RS_USERNAME>') { ENV['RS_USERNAME'] }
   c.filter_sensitive_data('<RS_TENANT_ID>') { ENV['RS_TENANT_ID'] }

@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Beloved::Compute::Server, :vcr do
-
   let(:servers){ Beloved::Compute::Server.all }
   let(:server){ servers.first }
 
@@ -19,4 +18,9 @@ describe Beloved::Compute::Server, :vcr do
     expect(server.volumes).not_to eq([])
   end
 
+  it 'knows how to save its self' do
+    expect(server.try(:progress)).to eq(nil)
+    server.save
+    expect(server.try(:progress)).to eq(100)
+  end
 end

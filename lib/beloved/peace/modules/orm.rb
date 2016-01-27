@@ -4,6 +4,24 @@ module Peace::ORM
     klass.extend ClassMethods
   end
 
+  def save
+    response = Peace::Request.put(self)
+    self.send(:refresh!, response)
+  end
+
+  # Provide the URL based on object state
+  def url
+    url = self.class.collection_url
+    url << "/#{id}" if self.id
+    url
+  end
+
+  def as_json(options=nil)
+    options = { root: true }
+    super(options)
+  end
+
+
   module ClassMethods
     # Find all objects
     def all(attrs={})
@@ -56,13 +74,6 @@ module Peace::ORM
       @collection_name ||= self.to_s.tableize.split('/').last
     end
 
-    # Provide the URL based on object state
-    def url
-      url = self.class.collection_url
-      url << "/#{id}" if self.id
-      url
-    end
-
     private
 
     def build_api_url!(attrs)
@@ -82,10 +93,5 @@ module Peace::ORM
 
       path[0] == '/' ? path[1..-1] : path
     end
-
-    end
-
-
-    module InstanceMethods
-    end
   end
+end
