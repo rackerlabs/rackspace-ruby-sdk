@@ -5,12 +5,8 @@ module Peace::ORM
   end
 
   def save
-    response = if self.id.present?
-      Peace::Request.put(self)
-    else
-      Peace::Request.post(self)
-    end
-
+    method   = self.id.present? ? 'put' : 'post'
+    response = Peace::Request.send(method, self)
     self.send(:refresh!, response)
   end
 

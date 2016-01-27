@@ -1,6 +1,7 @@
 # Beloved
 
 ## TODO
+- [ ] Handle attribute names like `OS-DCF:diskConfig`
 - [ ] Figure out a better way to find all attributes and set in models ('detail' routes?)
 
 ## Meh
