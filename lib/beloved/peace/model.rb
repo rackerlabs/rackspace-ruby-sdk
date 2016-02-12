@@ -22,7 +22,7 @@ class Peace::Model
     keys = hash.keys
 
     if keys.count == 1
-      if keys.first == key_name 
+      if keys.first == key_name
         matching_key(hash)
       else
         flat(hash)
@@ -39,6 +39,8 @@ class Peace::Model
   def matching_key(hash={})
     hash.first[1].each do |(k,v)|
       begin
+        k = k.downcase.gsub('-','_').gsub(':','_')
+
         self.class.send(:define_method, "#{k}=") do |value|
           instance_variable_set("@" + k.to_s, value)
         end
@@ -48,7 +50,7 @@ class Peace::Model
         end
 
         self.send("#{k}=", v)
-      rescue
+      rescue Exception => e
         puts "Can't do: #{k}"
       end
     end
