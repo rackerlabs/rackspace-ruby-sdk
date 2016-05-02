@@ -15,18 +15,14 @@ class Peace::Model
   private
 
   def key_name
-    self.class.to_s.split('::').last.downcase
+    @key_name ||= self.class.to_s.split('::').last.downcase
   end
 
   def refresh!(hash)
     keys = hash.keys
 
-    if keys.count == 1
-      if keys.first == key_name
-        matching_key(hash)
-      else
-        flat(hash)
-      end
+    if keys.count == 1 && keys.first == key_name
+      matching_key(hash)
     else
       flat(hash)
     end
