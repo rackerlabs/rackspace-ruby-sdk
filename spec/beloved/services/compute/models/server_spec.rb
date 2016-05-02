@@ -33,6 +33,6 @@ describe Beloved::Compute::Server, :vcr do
 
   it 'handles attribute names like "OS-DCF:diskConfig"' do
     attr = "OS-DCF:diskConfig"
-    binding.pry
+    # binding.pry
   end
 end

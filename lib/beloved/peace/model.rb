@@ -1,8 +1,10 @@
 require 'active_support/all'
+require 'active_model'
 
 class Peace::Model
   include Peace::ORM
   include Peace::Association
+  include ActiveModel::Validations
 
   def initialize(hash={})
     send(:refresh!, hash)
