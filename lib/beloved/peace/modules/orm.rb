@@ -75,6 +75,10 @@ module Peace::ORM
       @collection_name ||= self.to_s.tableize.split('/').last
     end
 
+    def attr_alias(existing, other)
+      # attr_alias :max_entities, :maxEntities
+    end
+
     private
 
     def build_api_url!(attrs)
