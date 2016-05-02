@@ -107,4 +107,238 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Wed, 27 Jan 2016 19:42:14 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 17:48:39 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - ceea3b07-348c-4e74-9d93-0582c427e913
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 17:48:40 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 17:56:17 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - 6f840187-1d32-4113-b989-ae0dec64d759
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 17:56:17 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 17:56:30 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - c8d95bef-634d-4fad-aaa1-ec6fb07fd0c9
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 17:56:31 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 17:56:39 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - 01cc18c0-2fd5-4b18-86cf-0a751c1b3aa0
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 17:56:40 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 17:56:43 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - c4a3e844-ee42-48fc-ad9d-345b13fbd38c
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 17:56:44 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/flavors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Mon, 02 May 2016 18:37:19 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - e1b5dabd-1d1a-4f5b-accd-465bd4c07748
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 02 May 2016 18:37:19 GMT
 recorded_with: VCR 3.0.1
