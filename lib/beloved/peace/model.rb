@@ -26,12 +26,14 @@ class Peace::Model
     nested_hash ? matching_key(hash) : flat(hash)
   end
 
-  def flat(hash={})
-    hash.each{ |k,v| self.send("#{k}=", v) }
+  # JSON data is nested under resource name key
+  def matching_key(hash={})
+    flat(hash.first[1])
   end
 
-  def matching_key(hash={})
-    hash.first[1].each do |(k,v)|
+  # JSON data is a flat blob
+  def flat(hash={})
+    hash.each do |(k,v)|
       begin
         self.send("#{k}=", v)
       rescue Exception => e
