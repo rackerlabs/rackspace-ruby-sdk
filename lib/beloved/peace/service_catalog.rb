@@ -7,8 +7,26 @@ class Peace::ServiceCatalog
   BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
 
   SERVICE_NAME_MAP = {
-    'compute' => 'cloudServersOpenStack'
+    'auto_scale'     => "autoscale",
+    'backup'         => "cloudBackup",
+    'big_data'       => "cloudBigData",
+    'block_storage'  => "cloudBlockStorage",
+    'cdn'            => "cloudFilesCDN",
+    'compute'        => 'cloudServersOpenStack',
+    'databases'      => "cloudDatabases",
+    'dns'            => "cloudDNS",
+    'feeds'          => "cloudFeeds",
+    'files'          => "cloudFiles",
+    'images'         => "cloudImages",
+    'load_balancers' => "cloudLoadBalancers",
+    'metrics'        => "cloudMetrics",
+    'monitoring'     => "cloudMonitoring",
+    'networks'       => "cloudNetworks",
+    'orchestration'  => "cloudOrchestration",
+    'queues'         => "cloudQueues",
+    'sites'          => "cloudSites"
   }
+
 
   attr_accessor :id, :services, :access_token, :region, :tenant_id
 
@@ -40,7 +58,11 @@ class Peace::ServiceCatalog
   end
 
   def available_services
-    services.map(&:name).sort
+    services.map(&:name).inject([]) do |memo, rax_name|
+      service = SERVICE_NAME_MAP.find{|k,v| v == rax_name }
+      memo << service[0] if service
+      memo
+    end.sort
   end
 
   def url_for(our_service_name)
