@@ -1,3 +1,3 @@
 class Beloved::Storage::Files < Peace::Model
-  attr_accessor :directory, :limit, :marker, :path, :prefix
+  attr_accessor :id, :directory, :limit, :marker, :path, :prefix
 end

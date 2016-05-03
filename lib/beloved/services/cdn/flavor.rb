@@ -1,3 +1,3 @@
 class Beloved::CDN::Flavor < Peace::Model
-  attr_accessor :providers, :links
+  attr_accessor :id, :providers, :links
 end

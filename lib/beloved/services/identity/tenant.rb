@@ -1,3 +1,3 @@
 class Beloved::Identity::Tenant < Peace::Model
-  attr_accessor :name, :description, :enabled
+  attr_accessor :id, :name, :description, :enabled
 end

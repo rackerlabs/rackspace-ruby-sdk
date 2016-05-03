@@ -10,7 +10,7 @@ class Peace::ServiceCatalog
     'compute' => 'cloudServersOpenStack'
   }
 
-  attr_accessor :services, :access_token, :region, :tenant_id
+  attr_accessor :id, :services, :access_token, :region, :tenant_id
 
   def self.load!
     @catalog ||= begin
@@ -54,7 +54,7 @@ class Peace::ServiceCatalog
   end
 
   class Service
-    attr_accessor :name, :endpoints
+    attr_accessor :id, :name, :endpoints
 
     def initialize(hash)
       @name      = hash['name']
@@ -64,7 +64,7 @@ class Peace::ServiceCatalog
 
 
     class Endpoint
-      attr_accessor :region, :tenant_id, :public_url, :internal_url
+      attr_accessor :id, :region, :tenant_id, :public_url, :internal_url
 
       def initialize(hash)
         @region       = hash['region']

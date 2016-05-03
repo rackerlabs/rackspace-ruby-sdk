@@ -1,3 +1,3 @@
 class Beloved::Identity::Role < Peace::Model
-  attr_accessor :name, :description
+  attr_accessor :id, :name, :description
 end

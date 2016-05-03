@@ -75,8 +75,11 @@ module Peace::ORM
       @collection_name ||= self.to_s.tableize.split('/').last
     end
 
-    def attr_alias(existing, other)
-      # attr_alias :max_entities, :maxEntities
+    def attr_alias(original, other)
+      new_writer      = "#{other}="
+      original_writer = "#{original}="
+      alias_method(other, original) if method_defined? original
+      alias_method(new_writer, original_writer) if method_defined? original_writer
     end
 
     private

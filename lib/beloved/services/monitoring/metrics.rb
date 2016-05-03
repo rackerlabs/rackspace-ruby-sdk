@@ -1,3 +1,3 @@
 class Beloved::Monitoring::Metrics < Peace::Model
-  attr_accessor :check
+  attr_accessor :id, :check
 end

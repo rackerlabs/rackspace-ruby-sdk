@@ -1,3 +1,3 @@
 class Beloved::LoadBalancers::Node < Peace::Model
-  attr_accessor :address, :status, :weight, :port, :type, :condition
+  attr_accessor :id, :address, :status, :weight, :port, :type, :condition
 end

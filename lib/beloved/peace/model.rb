@@ -11,19 +11,20 @@ class Peace::Model
   end
 
   def to_json
-    { "#{key_name}": self }.to_json
+    { "#{obj_name}": self }.to_json
   end
 
   private
 
-  def key_name
-    @key_name ||= self.class.to_s.split('::').last.downcase
+  def obj_name
+    @obj_name ||= self.class.to_s.split('::').last.downcase
   end
 
+  # Do I want to do this hydration or simply rely on attr_accessors?
   def refresh!(hash)
     keys = hash.keys
 
-    if keys.count == 1 && keys.first == key_name
+    if keys.count == 1 && keys.first == obj_name
       matching_key(hash)
     else
       flat(hash)

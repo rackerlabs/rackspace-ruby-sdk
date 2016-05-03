@@ -1,23 +1,36 @@
 class Peace::Service
 
-  mattr_accessor :resources
+  mattr_accessor :id, :resources
 
   class << self
     def has_resource(klass_name)
-      @@resources ||= []
-      load_service!(klass_name)
-      @@resources << klass_name
+      klass = load_resource!(klass_name)
+      name  = service_name.to_sym
+
+      @@resources       ||= {}
+      @@resources[name] ||= []
+      @@resources[name] << klass_name
     end
 
     private
 
-    def load_service!(klass_name)
-      folder = self.to_s.demodulize.tableize.singularize
-      folder = "dns" if folder == "dn"
-      folder = "load_balancers" if folder == "load_balancer"
-      folder = "queues" if folder == "queue"
-      path   = "#{Dir.pwd}/lib/beloved/services/#{folder}/#{klass_name}.rb"
-      require path
+    def load_resource!(klass_name)
+      base = "#{Dir.pwd}/lib/beloved/services"
+      require "#{base}/#{service_name}/#{klass_name}.rb"
+    end
+
+    def service_name
+      service_name = self.to_s.demodulize.tableize.singularize
+      service_name = "dns" if service_name == "dn"
+      service_name = "load_balancers" if service_name == "load_balancer"
+      service_name = "queues" if service_name == "queue"
+      service_name
     end
   end
+
+  def resources
+    service_name = self.class.to_s.demodulize.downcase.to_sym
+    @@resources[service_name]
+  end
+
 end

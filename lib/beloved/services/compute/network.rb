@@ -1,3 +1,3 @@
 class Beloved::Compute::Network < Peace::Model
-  attr_accessor :label, :cidr
+  attr_accessor :id, :label, :cidr
 end

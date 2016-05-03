@@ -1,5 +1,5 @@
 class Beloved::AutoScale::Policy < Peace::Model
-  attr_accessor :group, :links, :name, :change, :change_percent,
+  attr_accessor :id, :group, :links, :name, :change, :change_percent,
     :cooldown, :type, :args, :desired_capacity
 
   attr_alias :change_percent, :changePercent

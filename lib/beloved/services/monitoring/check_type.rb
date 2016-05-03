@@ -1,3 +1,3 @@
 class Beloved::Monitoring::CheckType < Peace::Model
-  attr_accessor :type, :fields, :channel
+  attr_accessor :id, :type, :fields, :channel
 end

@@ -1,5 +1,5 @@
 class Beloved::LoadBalancers::LoadBalancer < Peace::Model
-  attr_accessor :cluster, :connection_logging, :port, :protocol, :algorithm,
+  attr_accessor :id, :cluster, :connection_logging, :port, :protocol, :algorithm,
     :virtual_ips, :created, :updated, :name, :state, :timeout, :nodes,
     :https_redirect
   attr_alias :connection_logging, :connectionLogging

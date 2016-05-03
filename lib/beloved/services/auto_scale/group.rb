@@ -1,3 +1,3 @@
 class Beloved::AutoScale::Group < Peace::Model
-  attr_accessor :links
+  attr_accessor :id, :links
 end
