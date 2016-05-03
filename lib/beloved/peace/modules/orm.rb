@@ -7,7 +7,7 @@ module Peace::ORM
   def save
     method   = self.id.present? ? 'put' : 'post'
     response = Peace::Request.send(method, self)
-    self.send(:refresh!, response)
+    self.send(:hydrate!, response)
   end
 
   # Provide the URL based on object state

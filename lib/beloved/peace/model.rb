@@ -7,7 +7,7 @@ class Peace::Model
   include ActiveModel::Validations
 
   def initialize(hash={})
-    send(:refresh!, hash)
+    send(:hydrate!, hash)
   end
 
   def to_json
@@ -21,14 +21,10 @@ class Peace::Model
   end
 
   # Do I want to do this hydration or simply rely on attr_accessors?
-  def refresh!(hash)
-    keys = hash.keys
-
-    if keys.count == 1 && keys.first == obj_name
-      matching_key(hash)
-    else
-      flat(hash)
-    end
+  def hydrate!(hash)
+    keys        = hash.keys
+    nested_hash = (keys.count == 1 && keys.first == obj_name)
+    nested_hash ? matching_key(hash) : flat(hash)
   end
 
   def flat(hash={})
