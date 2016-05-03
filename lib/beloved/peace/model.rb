@@ -27,6 +27,6 @@ class Peace::Model
     hash.each { |(k,v)| self.send("#{k}=", v) }
     self
   rescue Exception => e
-    puts "Can't do: #{k}"
+    puts "Peace::Model#refresh failed: #{e}"
   end
 end
