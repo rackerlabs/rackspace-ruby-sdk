@@ -20,7 +20,6 @@ class Peace::Model
     @obj_name ||= self.class.to_s.split('::').last.downcase
   end
 
-  # Do I want to do this hydration or simply rely on attr_accessors?
   def hydrate!(hash)
     keys        = hash.keys
     nested_hash = (keys.count == 1 && keys.first == obj_name)
@@ -34,16 +33,6 @@ class Peace::Model
   def matching_key(hash={})
     hash.first[1].each do |(k,v)|
       begin
-        k = k.downcase.gsub('-','_').gsub(':','_')
-
-        self.class.send(:define_method, "#{k}=") do |value|
-          instance_variable_set("@" + k.to_s, value)
-        end
-
-        self.class.send(:define_method, k) do
-          instance_variable_get("@" + k.to_s)
-        end
-
         self.send("#{k}=", v)
       rescue Exception => e
         puts "Can't do: #{k}"
