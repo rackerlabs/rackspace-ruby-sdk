@@ -7,24 +7,45 @@ class Peace::ServiceCatalog
   BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
 
   SERVICE_NAME_MAP = {
-    'auto_scale'     => "autoscale",
-    'backup'         => "cloudBackup",
-    'big_data'       => "cloudBigData",
-    'block_storage'  => "cloudBlockStorage",
-    'cdn'            => "cloudFilesCDN",
+    'auto_scale'     => 'autoscale',
+    'backup'         => 'cloudBackup',
+    'big_data'       => 'cloudBigData',
+    'block_storage'  => 'cloudBlockStorage',
+    'cdn'            => 'cloudFilesCDN',
     'compute'        => 'cloudServersOpenStack',
-    'databases'      => "cloudDatabases",
-    'dns'            => "cloudDNS",
-    'feeds'          => "cloudFeeds",
-    'files'          => "cloudFiles",
-    'images'         => "cloudImages",
-    'load_balancers' => "cloudLoadBalancers",
-    'metrics'        => "cloudMetrics",
-    'monitoring'     => "cloudMonitoring",
-    'networks'       => "cloudNetworks",
-    'orchestration'  => "cloudOrchestration",
-    'queues'         => "cloudQueues",
-    'sites'          => "cloudSites"
+    'databases'      => 'cloudDatabases',
+    'dns'            => 'cloudDNS',
+    'feeds'          => 'cloudFeeds',
+    'files'          => 'cloudFiles',
+    'images'         => 'cloudImages',
+    'load_balancers' => 'cloudLoadBalancers',
+    'metrics'        => 'cloudMetrics',
+    'monitoring'     => 'cloudMonitoring',
+    'networks'       => 'cloudNetworks',
+    'orchestration'  => 'cloudOrchestration',
+    'queues'         => 'cloudQueues',
+    'sites'          => 'cloudSites'
+  }
+
+  SERVICE_KLASSES = {
+    'auto_scale'     => 'Beloved::AutoScale',
+    'backup'         => nil,
+    'big_data'       => nil,
+    'block_storage'  => 'Beloved::BlockStorage',
+    'cdn'            => 'Beloved::CDN',
+    'compute'        => 'Beloved::Compute',
+    'databases'      => 'Beloved::Database',
+    'dns'            => 'Beloved::DNS',
+    'feeds'          => nil,
+    'files'          => 'Beloved::Storage',
+    'images'         => nil,
+    'load_balancers' => 'Beloved::LoadBalancers',
+    'metrics'        => nil,
+    'monitoring'     => 'Beloved::Monitoring',
+    'networks'       => 'Beloved::Networking',
+    'orchestration'  => nil,
+    'queues'         => 'Beloved::Queues',
+    'sites'          => nil
   }
 
 
@@ -58,11 +79,14 @@ class Peace::ServiceCatalog
   end
 
   def available_services
-    services.map(&:name).inject([]) do |memo, rax_name|
+    names = services.map(&:name).inject([]) do |memo, rax_name|
       service = SERVICE_NAME_MAP.find{|k,v| v == rax_name }
       memo << service[0] if service
       memo
     end.sort
+
+    services = names.map{ |name| SERVICE_KLASSES[name] }.compact
+    services.map{ |s| s.constantize }
   end
 
   def url_for(our_service_name)

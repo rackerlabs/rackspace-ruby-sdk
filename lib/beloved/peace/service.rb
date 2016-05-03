@@ -12,6 +12,10 @@ class Peace::Service
       @@resources[name] << klass_name
     end
 
+    def available_services
+      @available_services ||= Peace::ServiceCatalog.load!.available_services
+    end
+
     private
 
     def load_resource!(klass_name)
