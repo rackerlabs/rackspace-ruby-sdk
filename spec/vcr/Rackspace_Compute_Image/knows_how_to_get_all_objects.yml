@@ -315,4 +315,43 @@ http_interactions:
         Boot (boot.rackspace.com)"}]}'
     http_version: 
   recorded_at: Tue, 26 Jan 2016 19:49:06 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9e388334-ea9d-497b-815a-2ab73cccb4c5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Wed, 04 May 2016 19:45:12 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - 89050e2a-ab02-4711-a33d-2f6a4488c634
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 04 May 2016 19:45:12 GMT
 recorded_with: VCR 3.0.1

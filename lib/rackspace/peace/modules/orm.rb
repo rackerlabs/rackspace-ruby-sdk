@@ -11,11 +11,12 @@ module Peace::ORM
   end
 
   def destroy
-    # TODO: Implement Peace::ORM#destroy
+    Peace::Request.delete(self)
   end
 
   def reload
-    # TODO: Implement Peace::ORM#reload
+    response = Peace::Request.get(self.url)
+    self.send(:refresh!, response)
   end
 
   # Provide the URL based on object state
@@ -30,13 +31,18 @@ module Peace::ORM
     super(options)
   end
 
+
   module ClassMethods
-    # Find all objects
+
     def all(attrs={})
       response = Peace::Request.get(collection_url(attrs))
-      body = JSON.parse(response.body)
-      objs = body[@json_key_name || collection_name]
-      objs ? objs.map{ |f| self.new(f) } : []
+      objs     = response[@json_key_name || collection_name]
+
+      [*objs].map do |f|
+        o = self.new(f)
+        o.reload if ENV['PREFETCH'] == "true"
+        o
+      end
     end
 
     # Find a particular object
@@ -47,6 +53,10 @@ module Peace::ORM
     # Get the first object
     def first
       all.first
+    end
+
+    def create(options={})
+      self.new(options).save
     end
 
     # A Mustache-inspired templated string that overrides
@@ -84,6 +94,7 @@ module Peace::ORM
 
     def attr_alias(original, *others)
       [*others].each do |o|
+        attr_accessor original
         new_writer      = "#{o}="
         original_writer = "#{original}="
         alias_method(o, original) if method_defined? original

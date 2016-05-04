@@ -30,9 +30,4 @@ describe Rackspace::Compute::Server, :vcr do
     server = Rackspace::Compute::Server.new(data)
     expect{ server.save }.to change(server, :id)
   end
-
-  it 'handles attribute names like "OS-DCF:diskConfig"' do
-    attr = "OS-DCF:diskConfig"
-    # binding.pry
-  end
 end

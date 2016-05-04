@@ -6,7 +6,7 @@ class Peace::Request
     def get(url)
       puts "===> GET: #{url}" if ENV['LOG']
       request = RestClient.get(url, headers)
-      request
+      JSON.parse(request)
     end
 
     def post(obj)
@@ -21,7 +21,9 @@ class Peace::Request
       JSON.parse(request)
     end
 
-    def delete(*args)
+    def delete(obj)
+      puts "===> DELETE: #{obj.url}" if ENV['LOG']
+      RestClient.delete(obj.url, headers) == ""
     end
 
     private

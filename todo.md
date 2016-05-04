@@ -1,9 +1,11 @@
 ## TODO
+- [ ] Move `PREFETCH` out of ENV VAR and into Peace::Model mixin.
+- [ ] Get resources (`Rackspace::Compute.new.servers`) callable.
 - [ ] Consolidate the `Array-esque` models (`files` vs `file`)
-- [ ] Stub out existing Fog request classes? How do I want to handle this?
 - [ ] Figure out what attributes are required?
 
 ## Finished
+- [x] Stub out existing Fog request classes? How do I want to handle this?
 - [x] Service discovery? `Peace::Service.available_services`
 - [x] Handle attribute names like `OS-DCF:diskConfig`
 - [x] Need a way to require attributes

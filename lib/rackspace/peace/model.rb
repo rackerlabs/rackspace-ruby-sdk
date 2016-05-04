@@ -25,9 +25,15 @@ class Peace::Model
     keys      = hash.keys
     is_nested = (keys.count == 1 && keys.first == obj_name)
     hash      = is_nested ? hash.first[1] : hash
-    hash.each { |(k,v)| self.send("#{k}=", v) }
+
+    hash.each do |(k,v)|
+      begin
+        self.send("#{k}=", v)
+      rescue Exception => e
+        puts "===> Peace::Model#refresh failed: #{e}" if ENV['LOG']
+      end
+    end
+
     self
-  rescue Exception => e
-    puts "Peace::Model#refresh failed: #{e}"
   end
 end
