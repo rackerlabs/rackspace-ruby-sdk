@@ -6,7 +6,5 @@ class Beloved::AutoScale::GroupConfig < Peace::Model
 
   request :get_group_config
   request :update_group_config
-  request :get_launch_config
-  request :update_launch_config
-  
+
 end

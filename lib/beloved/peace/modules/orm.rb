@@ -22,6 +22,13 @@ module Peace::ORM
     super(options)
   end
 
+  def destroy
+    # TODO: Implement Peace::ORM#destroy
+  end
+
+  def reload
+    # TODO: Implement Peace::ORM#reload
+  end
 
   module ClassMethods
     # Find all objects
