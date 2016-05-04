@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Image, :vcr do
+describe Rackspace::Compute::Image, :vcr do
 
-  let(:images){ Beloved::Compute::Image.all }
+  let(:images){ Rackspace::Compute::Image.all }
   let(:image){ images.first }
 
   it 'has these attributes' do

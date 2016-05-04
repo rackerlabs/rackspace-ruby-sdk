@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Server, :vcr do
-  let(:servers){ Beloved::Compute::Server.all }
+describe Rackspace::Compute::Server, :vcr do
+  let(:servers){ Rackspace::Compute::Server.all }
   let(:server){ servers.first }
 
   it 'has these attributes' do
@@ -25,9 +25,9 @@ describe Beloved::Compute::Server, :vcr do
   end
 
   it 'knows how to create a new server' do
-    uuid = Beloved::Compute::Image.first.id
+    uuid = Rackspace::Compute::Image.first.id
     data = { name: 'Testing', flavorRef: 2, imageRef: uuid }
-    server = Beloved::Compute::Server.new(data)
+    server = Rackspace::Compute::Server.new(data)
     expect{ server.save }.to change(server, :id)
   end
 

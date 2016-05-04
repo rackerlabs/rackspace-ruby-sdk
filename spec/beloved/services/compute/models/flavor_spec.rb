@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Flavor, :vcr do
+describe Rackspace::Compute::Flavor, :vcr do
 
-  let(:flavors){ Beloved::Compute::Flavor.all }
+  let(:flavors){ Rackspace::Compute::Flavor.all }
   let(:flavor){ flavors.first }
 
   it 'has these attributes' do

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Beloved do
+describe Rackspace do
   it 'has a version number' do
-    expect(Beloved::VERSION).not_to be nil
+    expect(Rackspace::VERSION).not_to be nil
   end
 end

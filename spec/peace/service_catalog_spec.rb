@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Peace::ServiceCatalog do
-  let(:service_catalog){ Beloved.service_catalog }
+  let(:service_catalog){ Rackspace.service_catalog }
 
   it 'has many services' do
     expect(service_catalog.services).to be_kind_of(Array)
@@ -12,7 +12,7 @@ describe Peace::ServiceCatalog do
   end
 
   it 'has an tenant id' do
-    expect(Beloved.tenant_id).not_to be_empty
+    expect(Rackspace.tenant_id).not_to be_empty
   end
 
   it 'can get a url based on service name and region' do

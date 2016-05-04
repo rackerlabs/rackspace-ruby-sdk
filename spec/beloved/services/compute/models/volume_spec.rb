@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Beloved::Compute::Volume, :vcr do
+describe Rackspace::Compute::Volume, :vcr do
 
-  let(:server){ Beloved::Compute::Server.first }
-  let(:volumes){ Beloved::Compute::Volume.all(server_id: server.id) }
+  let(:server){ Rackspace::Compute::Server.first }
+  let(:volumes){ Rackspace::Compute::Volume.all(server_id: server.id) }
   let(:volume){ volumes.first }
 
   it 'has these attributes' do
@@ -14,7 +14,7 @@ describe Beloved::Compute::Volume, :vcr do
   end
 
   it 'understands has_many resources' do
-    expect(volume.is_a?(Beloved::Compute::Volume)).to be_truthy
+    expect(volume.is_a?(Rackspace::Compute::Volume)).to be_truthy
   end
 
   it 'understands belongs_to resource' do

@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Beloved::Compute::KeyPair, :vcr do
+describe Rackspace::Compute::KeyPair, :vcr do
 
-  let(:key_pairs){ Beloved::Compute::KeyPair.all }
-  let(:key_pair){ Beloved::Compute::KeyPair.new }
+  let(:key_pairs){ Rackspace::Compute::KeyPair.all }
+  let(:key_pair){ Rackspace::Compute::KeyPair.new }
 
   it 'has these attributes' do
     expect(key_pair.fingerprint).to be_nil

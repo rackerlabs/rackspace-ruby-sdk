@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'beloved'
+require 'rackspace'
 require 'vcr'
 
 vcr_filters = %w{RS_API_KEY RS_USERNAME RS_TENANT_ID}

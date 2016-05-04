@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Beloved::Compute do
+describe Rackspace::Compute do
 
-  let(:service){ Beloved::Compute.new }
+  let(:service){ Rackspace::Compute.new }
 
   it 'knows how to get all resources' do
     expect(service.resources).to eq([

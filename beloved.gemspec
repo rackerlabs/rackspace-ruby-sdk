@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'beloved/version'
+require 'rackspace/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "beloved"
-  spec.version       = Beloved::VERSION
+  spec.name          = "rackspace"
+  spec.version       = Rackspace::VERSION
   spec.authors       = ["Matt Darby"]
   spec.email         = ["matt.darby@rackspace.com"]
 

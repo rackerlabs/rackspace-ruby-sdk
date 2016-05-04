@@ -6,5 +6,5 @@ RSpec::Core::RakeTask.new(:spec)
 task :default => :spec
 
 task :console do
-  exec "irb -r beloved -I ./lib"
+  exec "irb -r rackspace -I ./lib"
 end
