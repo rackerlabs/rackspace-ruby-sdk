@@ -2,10 +2,10 @@ class Rackspace::LoadBalancers::LoadBalancer < Peace::Model
   attr_accessor :id, :cluster, :connection_logging, :port, :protocol, :algorithm,
     :virtual_ips, :created, :updated, :name, :state, :timeout, :nodes,
     :https_redirect
-  attr_alias :connection_logging, :connectionLogging
-  attr_alias :virtual_ips, :virtualIps
-  attr_alias :state, :connectionLogging
-  attr_alias :https_redirect, :httpsRedirect
+  attr_with_alias :connection_logging, :connectionLogging
+  attr_with_alias :virtual_ips, :virtualIps
+  attr_with_alias :state, :connectionLogging
+  attr_with_alias :https_redirect, :httpsRedirect
 
   action :get_ssl_termination
   action :set_ssl_termination

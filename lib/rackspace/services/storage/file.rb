@@ -3,17 +3,17 @@ class Rackspace::Storage::File < Peace::Model
     :last_modified, :access_control_allow_origin, :origin, :content_encoding,
     :delete_at, :delete_after
 
-  attr_alias :content_length, 'Content-Length'
-  attr_alias :content_type, 'Content-Type'
-  attr_alias :bytes, 'Content-Length'
-  attr_alias :bytes, 'Content-Length'
-  attr_alias :content_disposition, 'Content-Disposition'
-  attr_alias :etag, 'Etag'
-  attr_alias :last_modified, 'Last-Modified'
-  attr_alias :access_control_allow_origin, 'Access-Control-Allow-Origin'
-  attr_alias :content_encoding, 'Content-Encoding'
-  attr_alias :delete_at, 'X-Delete-At'
-  attr_alias :delete_after, 'X-Delete-After'
+  attr_with_alias :content_length, 'Content-Length'
+  attr_with_alias :content_type, 'Content-Type'
+  attr_with_alias :bytes, 'Content-Length'
+  attr_with_alias :bytes, 'Content-Length'
+  attr_with_alias :content_disposition, 'Content-Disposition'
+  attr_with_alias :etag, 'Etag'
+  attr_with_alias :last_modified, 'Last-Modified'
+  attr_with_alias :access_control_allow_origin, 'Access-Control-Allow-Origin'
+  attr_with_alias :content_encoding, 'Content-Encoding'
+  attr_with_alias :delete_at, 'X-Delete-At'
+  attr_with_alias :delete_after, 'X-Delete-After'
 
   action :copy_object
   action :delete_static_large_object

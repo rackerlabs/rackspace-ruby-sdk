@@ -1,5 +1,4 @@
 ## TODO
-- [ ] Move `PREFETCH` out of ENV VAR and into Peace::Model mixin.
 - [ ] Get resources (`Rackspace::Compute.new.servers`) callable.
 - [ ] Consolidate the `Array-esque` models (`files` vs `file`)
 - [ ] Figure out what attributes are required?

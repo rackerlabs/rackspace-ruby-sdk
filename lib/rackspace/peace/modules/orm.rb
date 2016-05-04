@@ -92,7 +92,7 @@ module Peace::ORM
       @collection_name ||= self.to_s.tableize.split('/').last
     end
 
-    def attr_alias(original, *others)
+    def attr_with_alias(original, *others)
       [*others].each do |o|
         attr_accessor original
         new_writer      = "#{o}="

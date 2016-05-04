@@ -1,6 +1,6 @@
 class Rackspace::LoadBalancers::VirtualIp < Peace::Model
   attr_accessor :id, :address, :type, :ip_version
-  attr_alias :ip_version, :ipVersion
+  attr_with_alias :ip_version, :ipVersion
 
   action :list_protocols
   action :list_algorithms
