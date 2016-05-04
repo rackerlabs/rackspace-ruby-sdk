@@ -15,18 +15,16 @@ class Rackspace::Storage::File < Peace::Model
   attr_alias :delete_at, 'X-Delete-At'
   attr_alias :delete_after, 'X-Delete-After'
 
-  request :copy_object
-  request :delete_object
-  request :delete_static_large_object
-  request :delete_multiple_objects
-  request :get_object
-  request :get_object_https_url
-  request :get_object_http_url
-  request :head_object
-  request :put_object
-  request :put_object_manifest
-  request :put_dynamic_obj_manifest
-  request :put_static_obj_manifest
-  request :post_set_meta_temp_url_key
-  request :extract_archive
+  action :copy_object
+  action :delete_static_large_object
+  action :delete_multiple_objects
+  action :get_object_https_url
+  action :get_object_http_url
+  action :head_object
+  action :put_object
+  action :put_object_manifest
+  action :put_dynamic_obj_manifest
+  action :put_static_obj_manifest
+  action :post_set_meta_temp_url_key
+  action :extract_archive
 end

@@ -4,9 +4,4 @@ class Rackspace::Compute::KeyPair < Peace::Model
 
   rackspace_api_path "os-keypairs"
 
-  request :list_keypairs
-  request :create_keypair
-  request :delete_keypair
-  request :get_keypair
-
 end

@@ -4,34 +4,11 @@ module Peace::Actions
   end
 
   module ClassMethods
-    @@requests = []
+    @@actions = []
 
-    def request(name)
-      @@requests << name
+    def action(name)
+      @@actions << name
+      # TODO: Flesh out custom (non-CRUD) actions
     end
   end
 end
-
-
-
-# INDEX: 52
-# SHOW: 58
-# DESTROY: 37
-# UPDATE: 16
-# CREATE: 31
-
-# 77% of all calls are CRUD-based.
-
-
-# s = Rackspace::Compute::Server.new
-# s.name = "meh"
-# s.save
-# s.destroy
-#
-# Rackspace::Compute::Server.all
-# Rackspace::Compute::Server.find
-# Rackspace::Compute::Server.first
-#
-# c = Rackspace::Compute.new
-# c.servers #=> []
-# c.servers.first.networks

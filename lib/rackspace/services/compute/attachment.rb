@@ -3,9 +3,5 @@ class Rackspace::Compute::Attachment < Peace::Model
   attr_alias :server_id, :serverId
   attr_alias :volume_id, :volumeId
 
-  request :attach_volume
-  request :get_attachment
-  request :list_attachments
-  request :delete_attachment
-
+  action :attach_volume
 end
