@@ -43,7 +43,7 @@ class Peace::ServiceCatalog
     'metrics'        => nil,
     'monitoring'     => 'Beloved::Monitoring',
     'networks'       => 'Beloved::Networking',
-    'orchestration'  => nil,
+    'orchestration'  => 'Beloved::Orchestration',
     'queues'         => 'Beloved::Queues',
     'sites'          => nil
   }

@@ -3,4 +3,10 @@ class Beloved::BlockStorage::Snapshot < Peace::Model
     :size, :volume_id, :availability_zone, :force
   attr_alias :created_at, :createdAt
   attr_alias :state, :status
+
+  request :create_snapshot
+  request :delete_snapshot
+  request :get_snapshot
+  request :list_snapshots
+
 end

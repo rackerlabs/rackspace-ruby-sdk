@@ -4,6 +4,7 @@ require 'active_model'
 class Peace::Model
   include Peace::ORM
   include Peace::Association
+  include Peace::Actions
   include ActiveModel::Validations
 
   def initialize(hash={})

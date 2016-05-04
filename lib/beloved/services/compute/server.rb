@@ -19,4 +19,19 @@ class Beloved::Compute::Server < Peace::Model
 
   has_many :volumes, {server_id: :id}
 
+  request :list_servers
+  request :get_server
+  request :create_server
+  request :update_server
+  request :delete_server
+  request :change_server_password
+  request :reboot_server
+  request :rebuild_server
+  request :resize_server
+  request :confirm_resize_server
+  request :revert_resize_server
+  request :rescue_server
+  request :unrescue_server
+  request :get_vnc_console
+
 end
