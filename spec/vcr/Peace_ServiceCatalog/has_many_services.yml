@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 05 May 2016 15:09:56 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1535'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1EAWQJVH09VGhUHAlcPUgUCWFQEUwRVBQFUET8=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        Oz4tAAA=
+    http_version: 
+  recorded_at: Thu, 05 May 2016 15:09:57 GMT
+recorded_with: VCR 3.0.1

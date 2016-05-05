@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Peace::ServiceCatalog do
+describe Peace::ServiceCatalog, :vcr do
   let(:service_catalog){ Rackspace.service_catalog }
 
   it 'has many services' do
