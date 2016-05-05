@@ -1,9 +1,12 @@
 ## TODO
-- [ ] Get resources (`Rackspace::Compute.new.servers`) callable.
+- [ ] Support nested resources in `Peace::Service`
+- [ ] Scope and move nested resources
 - [ ] Consolidate the `Array-esque` models (`files` vs `file`)
 - [ ] Figure out what attributes are required?
 
 ## Finished
+- [x] Fix associations (`Rackspace::Compute.new.servers.first.volumes.first.reload`)
+- [x] Get resources (`Rackspace::Compute.new.servers`) callable.
 - [x] Stub out existing Fog request classes? How do I want to handle this?
 - [x] Service discovery? `Peace::Service.available_services`
 - [x] Handle attribute names like `OS-DCF:diskConfig`

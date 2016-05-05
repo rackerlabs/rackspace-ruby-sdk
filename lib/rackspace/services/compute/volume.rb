@@ -5,6 +5,6 @@ class Rackspace::Compute::Volume < Peace::Model
   belongs_to :server, :serverId
   json_key_name :volumeAttachments
 
-  attr_accessor :id, :id, :device, :serverId, :volumeId
+  attr_accessor :id, :device, :serverId, :volumeId
 
 end

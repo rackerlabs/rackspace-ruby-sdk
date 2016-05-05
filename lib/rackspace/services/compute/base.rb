@@ -8,7 +8,6 @@ class Rackspace::Compute < Peace::Service
   has_resource :metadatum
   has_resource :network
   has_resource :server
-  has_resource :server
   has_resource :virtual_interface
   has_resource :volume
 
