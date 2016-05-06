@@ -1,3 +1,3 @@
 class Rackspace::Queues::Queue < Peace::Model
-  action :get_queue_stats
+  def get_queue_stats; end
 end

@@ -1,11 +1,11 @@
 class Rackspace::Orchestration::Resource < Peace::Model
 
-  action :list_resource_events
-  action :list_resource_types
-  action :list_resources
-  action :show_event_details
-  action :show_resource_data
-  action :show_resource_metadata
-  action :show_resource_schema
-  action :show_resource_template
+  def list_resource_events; end
+  def list_resource_types; end
+  def list_resources; end
+  def show_event_details; end
+  def show_resource_data; end
+  def show_resource_metadata; end
+  def show_resource_schema; end
+  def show_resource_template; end
 end

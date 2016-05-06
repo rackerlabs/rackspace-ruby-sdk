@@ -3,5 +3,5 @@ class Rackspace::Compute::Attachment < Peace::Model
   attr_with_alias :server_id, :serverId
   attr_with_alias :volume_id, :volumeId
 
-  action :attach_volume
+  def attach_volume; end
 end

@@ -1,11 +1,11 @@
 class Rackspace::Orchestration::Stack < Peace::Model
   include Peace::Details
 
-  action :abandon_stack
-  action :build_info
-  action :get_stack_template
-  action :list_stack_data
-  action :list_stack_events
-  action :preview_stack
-  action :validate_template
+  def abandon_stack; end
+  def build_info; end
+  def get_stack_template; end
+  def list_stack_data; end
+  def list_stack_events; end
+  def preview_stack; end
+  def validate_template; end
 end

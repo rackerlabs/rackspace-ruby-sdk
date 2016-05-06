@@ -7,22 +7,22 @@ class Rackspace::LoadBalancers::LoadBalancer < Peace::Model
   attr_with_alias :state, :connectionLogging
   attr_with_alias :https_redirect, :httpsRedirect
 
-  action :get_ssl_termination
-  action :set_ssl_termination
-  action :remove_ssl_termination
-  action :get_session_persistence
-  action :set_session_persistence
-  action :remove_session_persistence
-  action :get_connection_throttling
-  action :remove_connection_throttling
-  action :set_connection_throttling
-  action :get_monitor
-  action :set_monitor
-  action :remove_monitor
-  action :get_usage
-  action :get_load_balancer_usage
-  action :get_error_page
-  action :set_error_page
-  action :remove_error_page
-  action :get_stats
+  def get_ssl_termination; end
+  def set_ssl_termination; end
+  def remove_ssl_termination; end
+  def get_session_persistence; end
+  def set_session_persistence; end
+  def remove_session_persistence; end
+  def get_connection_throttling; end
+  def remove_connection_throttling; end
+  def set_connection_throttling; end
+  def get_monitor; end
+  def set_monitor; end
+  def remove_monitor; end
+  def get_usage; end
+  def get_load_balancer_usage; end
+  def get_error_page; end
+  def set_error_page; end
+  def remove_error_page; end
+  def get_stats; end
 end

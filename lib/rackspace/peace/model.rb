@@ -5,7 +5,6 @@ class Peace::Model
   include ActiveModel::Validations
   include Peace::ORM
   include Peace::Association
-  include Peace::Actions
 
   def initialize(hash={})
     send(:refresh!, hash)

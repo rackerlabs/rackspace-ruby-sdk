@@ -5,6 +5,6 @@ class Rackspace::AutoScale::Policy < Peace::Model
   attr_with_alias :change_percent, :changePercent
   attr_with_alias :desired_capacity, :desiredCapacity
 
-  action :execute_policy
+  def execute_policy; end
 
 end

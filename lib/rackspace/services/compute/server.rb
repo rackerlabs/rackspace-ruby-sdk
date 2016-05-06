@@ -20,14 +20,14 @@ class Rackspace::Compute::Server < Peace::Model
 
   has_many :volumes, {server_id: :id}
 
-  action :change_server_password
-  action :confirm_resize_server
-  action :get_vnc_console
-  action :reboot_server
-  action :rebuild_server
-  action :rescue_server
-  action :resize_server
-  action :revert_resize_server
-  action :unrescue_server
+  def change_server_password; end
+  def confirm_resize_server; end
+  def get_vnc_console; end
+  def reboot_server; end
+  def rebuild_server; end
+  def rescue_server; end
+  def resize_server; end
+  def revert_resize_server; end
+  def unrescue_server; end
 
 end

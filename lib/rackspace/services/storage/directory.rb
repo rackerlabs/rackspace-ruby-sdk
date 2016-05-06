@@ -3,7 +3,7 @@ class Rackspace::Storage::Directory < Peace::Model
   attr_with_alias :bytes, 'X-Container-Bytes-Used'
   attr_with_alias :count, 'X-Account-Object-Count'
 
-  action :head_container
-  action :head_containers
-  action :put_container
+  def head_container; end
+  def head_containers; end
+  def put_container; end
 end
