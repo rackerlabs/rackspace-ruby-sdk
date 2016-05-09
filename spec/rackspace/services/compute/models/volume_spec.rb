@@ -3,14 +3,13 @@ require 'spec_helper'
 describe Rackspace::Compute::Volume, :vcr do
 
   let(:server){ Rackspace::Compute::Server.first }
-  let(:volumes){ Rackspace::Compute::Volume.all(server_id: server.id) }
+  let(:volumes){ server.volumes }
   let(:volume){ volumes.first }
 
   it 'has these attributes' do
     expect(volume.id).not_to be_nil
     expect(volume.device).not_to be_nil
-    expect(volume.serverId).not_to be_nil
-    expect(volume.volumeId).not_to be_nil
+    expect(volume.server_id).not_to be_nil
   end
 
   it 'understands has_many resources' do

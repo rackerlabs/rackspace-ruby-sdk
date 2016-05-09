@@ -18,16 +18,16 @@ class Rackspace::Compute::Server < Peace::Model
   attr_with_alias :vm_state, 'OS-EXT-STS:vm_state'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
 
-  has_many :volumes, {server_id: :id}
+  has_many :volumes
 
-  def change_server_password; end
-  def confirm_resize_server; end
+  def change_password; end
+  def confirm_resize; end
   def get_vnc_console; end
-  def reboot_server; end
-  def rebuild_server; end
-  def rescue_server; end
-  def resize_server; end
-  def revert_resize_server; end
-  def unrescue_server; end
+  def reboot; end
+  def rebuild; end
+  def rescue; end
+  def resize; end
+  def revert_resize; end
+  def unrescue; end
 
 end

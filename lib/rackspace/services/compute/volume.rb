@@ -1,10 +1,9 @@
 class Rackspace::Compute::Volume < Peace::Model
 
-  api_requires :server_id
-  rackspace_api_path "/servers/{{server_id}}/os-volume_attachments"
-  belongs_to :server, :serverId
-  json_key_name :volumeAttachments
+  attr_accessor :id, :device, :server_id, :volume_id
 
-  attr_accessor :id, :device, :serverId, :volumeId
+  belongs_to :server
+  json_key_name :volumeAttachments
+  rackspace_api_path "/servers/{{server_id}}/os-volume_attachments"
 
 end
