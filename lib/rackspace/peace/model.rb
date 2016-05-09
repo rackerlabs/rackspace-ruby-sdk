@@ -6,23 +6,28 @@ class Peace::Model
   include Peace::ORM
   include Peace::Association
 
+  def self.resource_name
+    @resource_name ||= self.to_s.split('::').last.downcase
+  end
+
   def initialize(hash={})
     send(:refresh!, hash)
   end
 
   def to_json
-    { "#{obj_name}": self }.to_json
+    { "#{resource_name}": self }.to_json
   end
+
+  def resource_name
+    @resource_name ||= self.class.to_s.split('::').last.downcase
+  end
+
 
   private
 
-  def obj_name
-    @obj_name ||= self.class.to_s.split('::').last.downcase
-  end
-
   def refresh!(hash)
     keys      = hash.keys
-    is_nested = (keys.count == 1 && keys.first == obj_name)
+    is_nested = (keys.count == 1 && keys.first == resource_name)
     hash      = is_nested ? hash.first[1] : hash
 
     hash.each do |(k,v)|
