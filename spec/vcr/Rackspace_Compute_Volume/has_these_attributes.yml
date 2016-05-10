@@ -181,4 +181,123 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Mon, 09 May 2016 17:39:52 GMT
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 10 May 2016 14:39:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1533'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1EBVwdSH09VGhUCX1RaAwZXWAAFVFQAVAkBET8=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        LQAA
+    http_version: 
+  recorded_at: Tue, 10 May 2016 14:39:59 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AABnJkd7QAvm_tIgeLm9irXqiWxRukR14xwemN7zGIPEzU9R1HS808Z84jpb3gEBapUlYYJmkrKTWNwyIzHnrwqoJcIyAQWHh03wwxwx9iRD7dT3RmqceqZgg8Md1mo9m8VxIU-XVGW3ZA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 10 May 2016 18:04:54 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      Www-Authenticate:
+      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
+      X-Trans-Id:
+      - b9652c4f-5a08-4141-86fe-94c3efcf169e
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 10 May 2016 18:04:54 GMT
 recorded_with: VCR 3.0.1

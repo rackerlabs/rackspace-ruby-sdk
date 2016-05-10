@@ -6,20 +6,31 @@ class Peace::Model
   include Peace::ORM
   include Peace::Association
 
-  def self.resource_name
-    @resource_name ||= self.to_s.split('::').last.downcase
+  class << self
+    def resource_name
+      @resource_name ||= self.to_s.split('::').last.downcase
+    end
+
+    def collection_name
+      @collection_name ||= resource_name.pluralize
+    end
   end
+
 
   def initialize(hash={})
     send(:refresh!, hash)
   end
 
-  def to_json
-    { "#{resource_name}": self }.to_json
-  end
-
   def resource_name
     @resource_name ||= self.class.to_s.split('::').last.downcase
+  end
+
+  def collection_name
+    @collection_name ||= resource_name.pluralize
+  end
+
+  def to_json
+    { "#{resource_name}": self }.to_json
   end
 
 

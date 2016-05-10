@@ -1,20 +1,7 @@
-## Notes
-Compute::Volume must be accessed through Compute::Server.
-Does this preclude it from the `Compute#resources`?
-Also it seems that `reload` doesn't honor the url param interpolation.
-`Rackspace::Compute.new.volumes` expects a `server_id` as a collection of Volumes is scoped to the parent Server.
-
-`Rackspace::Compute.new.servers.first.volumes` will then have to be the only way to call volumes in Compute?
-
-### This leads us to:
-* Should I remove Volume from `Compute#resources`?
-* Does this mean that `Compute::Server#resources` needs to exist?
-  * We might be able to get this functionality for free if we extract out the `stub_resources` area.
-* Should I just show nested resources in `Compute#resources`?
-
-
 ## TODO
 - [ ] Fix associations (`Rackspace::Compute.new.servers.first.volumes.first.reload`)
+  - [ ] Need to interpolate `collection_url` twice (C/O); need knowledge from both if available.
+    - [ ] **Create an object/url translator.**
 - [ ] Consolidate the `Array-esque` models (`files` vs `file`)
 - [ ] Figure out what attributes are required?
 

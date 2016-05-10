@@ -1,0 +1,180 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 10 May 2016 17:35:58 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1532'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1EPVB1MAk5GBANSVlBcUAUBUQAHUwNeRmw=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        AAA=
+    http_version: 
+  recorded_at: Tue, 10 May 2016 17:35:58 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AACjvUxDv2iOtKcWyG7D0vp_Mnxiv34MeRHcGfj-n6gDvDY7OFlz7fqKTlfdw1e0GTHMfUpAer2zi2VsX06FDSSgG0-HRF0rRKr0rlWT-tazNvLIMDh4hiJOhtXPN124DFPfevQ4_wy0dQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 10 May 2016 17:36:37 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 8d4c4abe-26df-440f-a368-616a56eea18e
+      Content-Length:
+      - '0'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 10 May 2016 17:36:37 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AACjvUxDv2iOtKcWyG7D0vp_Mnxiv34MeRHcGfj-n6gDvDY7OFlz7fqKTlfdw1e0GTHMfUpAer2zi2VsX06FDSSgG0-HRF0rRKr0rlWT-tazNvLIMDh4hiJOhtXPN124DFPfevQ4_wy0dQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 May 2016 17:36:39 GMT
+      - Tue, 10 May 2016 17:36:40 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - b0d09c8e-d54a-4161-8022-f8d5a0bede81
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-d201c121-b55c-4c8b-a240-b3df2ebc35dc
+      Content-Length:
+      - '2043'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"servers": [{"id": "95d4f801-858a-4728-9ac0-dc5900d71f76", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76",
+        "rel": "bookmark"}], "name": "crb_discourse"}, {"id": "b32068b7-4e57-4125-9d1a-33918e292e88",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/b32068b7-4e57-4125-9d1a-33918e292e88",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/b32068b7-4e57-4125-9d1a-33918e292e88",
+        "rel": "bookmark"}], "name": "personal"}, {"id": "9037d915-ee27-4573-808b-167ddf05f856",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/9037d915-ee27-4573-808b-167ddf05f856",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/9037d915-ee27-4573-808b-167ddf05f856",
+        "rel": "bookmark"}], "name": "CarinaCommunityDB2"}, {"id": "f1f0af61-fecd-4ed7-874d-3b6f5c591bdd",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/f1f0af61-fecd-4ed7-874d-3b6f5c591bdd",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/f1f0af61-fecd-4ed7-874d-3b6f5c591bdd",
+        "rel": "bookmark"}], "name": "CarinaRedis"}, {"id": "a0eaa1df-592b-4637-a808-b5fe3cbe4250",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/a0eaa1df-592b-4637-a808-b5fe3cbe4250",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/a0eaa1df-592b-4637-a808-b5fe3cbe4250",
+        "rel": "bookmark"}], "name": "CarinaCommunityDB1"}, {"id": "917185a6-ea7c-4bae-8954-f58b39b8b7f2",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/917185a6-ea7c-4bae-8954-f58b39b8b7f2",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/917185a6-ea7c-4bae-8954-f58b39b8b7f2",
+        "rel": "bookmark"}], "name": "github_teams_guard"}]}'
+    http_version: 
+  recorded_at: Tue, 10 May 2016 17:36:41 GMT
+recorded_with: VCR 3.0.1

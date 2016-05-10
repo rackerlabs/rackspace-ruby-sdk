@@ -20,4 +20,8 @@ describe Rackspace::Compute::Volume, :vcr do
     expect(volume.server.id).to eq(server.id)
   end
 
+  it 'knows how to reload its self' do
+    expect(volume.reload).to be_present
+  end
+
 end

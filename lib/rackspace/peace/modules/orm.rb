@@ -21,9 +21,7 @@ module Peace::ORM
 
   # Provide the URL based on object state
   def url
-    url = self.class.collection_url
-    url << "/#{id}" if self.id
-    url
+    Peace::URL.new(self).url
   end
 
   def as_json(options=nil)
@@ -35,7 +33,7 @@ module Peace::ORM
   module ClassMethods
 
     def all(attrs={})
-      response = Peace::Request.get(collection_url(attrs))
+      response = Peace::Request.get(collection_url)
       objs     = response[@json_key_name || collection_name]
 
       [*objs].map do |f|
@@ -71,25 +69,11 @@ module Peace::ORM
       @json_key_name = sym.to_s
     end
 
-    # Find the endpoint for a Service by name and region
-    def service_url
-      @service_url ||= Rackspace.service_catalog.url_for(service_name)
-    end
-
-    # Provide the service name based on the child (calling) class
-    def service_name
-      @service_name ||= self.to_s.tableize.split('/')[1]
-    end
-
     # Provide full enpoint URL for a collection of objects
-    def collection_url(attrs={})
-      path = (@rackspace_api_path && attrs) ? build_api_url!(attrs) : collection_name
-      "#{service_url}/#{path}"
-    end
-
-    # Provide the collection name based on the child (calling) class
-    def collection_name
-      @collection_name ||= self.to_s.tableize.split('/').last
+    def collection_url
+      Peace::URL.new(self).collection_url
+      # path = (@rackspace_api_path && attrs) ? build_api_url!(attrs) : collection_name
+      # "#{service_url}/#{path}"
     end
 
     def attr_with_alias(original, *others)
@@ -101,25 +85,6 @@ module Peace::ORM
         alias_method(new_writer, original_writer) if method_defined? original_writer
       end
     end
-
-    private
-
-    def build_api_url!(attrs)
-      path = @rackspace_api_path.dup
-
-      attrs.each do |(k,v)|
-        if arr = /{{\w+}}/.match(path)
-          fragment = arr[0]
-          variable = fragment[2...-2]
-          value    = self.send("#{k}=", v)
-
-          raise "Template error" unless value
-
-          path.gsub!(fragment, value.to_s)
-        end
-      end
-
-      path[0] == '/' ? path[1..-1] : path
-    end
   end
+
 end
