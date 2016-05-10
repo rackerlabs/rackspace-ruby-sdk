@@ -10,8 +10,6 @@ describe Peace::URL, :vcr do
   end
 
   describe 'object-level objects' do
-    it 'generates class-level URLs'
-
     it 'generates object-level URLs' do
       expect(server.url).to eq "https://iad.servers.api.rackspacecloud.com/v2/930035/servers/95d4f801-858a-4728-9ac0-dc5900d71f76"
     end

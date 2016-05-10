@@ -19,20 +19,10 @@ module Peace::ORM
     self.send(:refresh!, response)
   end
 
-  # Provide the URL based on object state
-  def url
-    Peace::URL.new(self).url
-  end
-
-  def as_json(options=nil)
-    options = { root: true }
-    super(options)
-  end
-
 
   module ClassMethods
 
-    def all(attrs={})
+    def all
       response = Peace::Request.get(collection_url)
       objs     = response[@json_key_name || collection_name]
 
@@ -57,12 +47,6 @@ module Peace::ORM
       self.new(options).save
     end
 
-    # A Mustache-inspired templated string that overrides
-    # default naming conventions and injects nested URL variables.
-    def rackspace_api_path(str)
-      @rackspace_api_path = str
-    end
-
     # A symbol that describes the JSON key name where the object
     # data is stored in the Rackspace API payload.
     def json_key_name(sym)
@@ -72,8 +56,6 @@ module Peace::ORM
     # Provide full enpoint URL for a collection of objects
     def collection_url
       Peace::URL.new(self).collection_url
-      # path = (@rackspace_api_path && attrs) ? build_api_url!(attrs) : collection_name
-      # "#{service_url}/#{path}"
     end
 
     def attr_with_alias(original, *others)

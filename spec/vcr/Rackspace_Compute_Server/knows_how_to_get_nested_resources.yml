@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      - AACjvUxD2_AcQCvLgRxw2d4d-eCr7rD3rlG5tTnhPsO9QvrZYGUGEp9YSp4OMl5JxyZ4cS5VuIHCvZYLOw7mOmMgO3w0TXqKX7t9EUs6d_Ff0YsGjlmPfh_YJcKn5QzaytqWul7szhBZ4A
       Content-Type:
       - application/json
       User-Agent:
@@ -23,16 +23,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Jan 2016 19:49:08 GMT
-      - Tue, 26 Jan 2016 19:49:08 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
       Via:
       - 1.1 Repose (Repose/7.1.3.0)
       X-Trans-Id:
-      - 6761f80d-7d5e-4669-b399-772e1010f5e0
+      - 2fb1a7ca-f7a9-4d2b-987f-6d5aa4b003b3
       Content-Type:
       - application/json
       X-Compute-Request-Id:
-      - req-83521790-3029-4991-888e-599989337303
+      - req-44a9d954-932a-4fac-ba10-066fc680c21f
       Content-Length:
       - '2043'
       Server:
@@ -59,89 +59,7 @@ http_interactions:
         "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/917185a6-ea7c-4bae-8954-f58b39b8b7f2",
         "rel": "bookmark"}], "name": "github_teams_guard"}]}'
     http_version: 
-  recorded_at: Tue, 26 Jan 2016 19:49:08 GMT
-- request:
-    method: get
-    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76/os-volume_attachments
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 26 Jan 2016 19:49:09 GMT
-      - Tue, 26 Jan 2016 19:49:09 GMT
-      Via:
-      - 1.1 Repose (Repose/7.1.3.0)
-      X-Trans-Id:
-      - b929b467-d74e-477c-821a-d773b1c84cb2
-      Content-Type:
-      - application/json
-      X-Compute-Request-Id:
-      - req-e7b46fc1-e6bf-474b-a785-1118ced072d0
-      Content-Length:
-      - '198'
-      Server:
-      - Jetty(9.2.z-SNAPSHOT)
-    body:
-      encoding: UTF-8
-      string: '{"volumeAttachments": [{"device": "/dev/xvdb", "serverId": "95d4f801-858a-4728-9ac0-dc5900d71f76",
-        "id": "b90106aa-a1f8-4a5f-b253-e34af6badb31", "volumeId": "b90106aa-a1f8-4a5f-b253-e34af6badb31"}]}'
-    http_version: 
-  recorded_at: Tue, 26 Jan 2016 19:49:09 GMT
-- request:
-    method: get
-    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Date:
-      - Wed, 04 May 2016 19:45:13 GMT
-      Via:
-      - 1.1 Repose (Repose/7.1.3.0)
-      Www-Authenticate:
-      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
-      X-Trans-Id:
-      - a8812aef-9c93-419b-8857-d50144643bf2
-      Content-Length:
-      - '0'
-      Server:
-      - Jetty(9.2.z-SNAPSHOT)
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Wed, 04 May 2016 19:45:13 GMT
+  recorded_at: Tue, 10 May 2016 18:33:55 GMT
 - request:
     method: get
     uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/volumes
@@ -154,31 +72,34 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - AABnJkd7QAvm_tIgeLm9irXqiWxRukR14xwemN7zGIPEzU9R1HS808Z84jpb3gEBapUlYYJmkrKTWNwyIzHnrwqoJcIyAQWHh03wwxwx9iRD7dT3RmqceqZgg8Md1mo9m8VxIU-XVGW3ZA
+      - AACjvUxD2_AcQCvLgRxw2d4d-eCr7rD3rlG5tTnhPsO9QvrZYGUGEp9YSp4OMl5JxyZ4cS5VuIHCvZYLOw7mOmMgO3w0TXqKX7t9EUs6d_Ff0YsGjlmPfh_YJcKn5QzaytqWul7szhBZ4A
       Content-Type:
       - application/json
       User-Agent:
       - Ruby
   response:
     status:
-      code: 401
-      message: Unauthorized
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Tue, 10 May 2016 18:04:54 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
       Via:
       - 1.1 Repose (Repose/7.1.3.0)
-      Www-Authenticate:
-      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
       X-Trans-Id:
-      - e9a4bf08-ffd1-4322-a93e-6f9125ade5d6
+      - de5ff6cf-7f4b-485c-adb0-1c9ccc6c90d2
+      Content-Type:
+      - text/plain; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-e62759fa-f5c4-478e-9ee0-99e169418c1c
       Content-Length:
-      - '0'
+      - '52'
       Server:
       - Jetty(9.2.z-SNAPSHOT)
     body:
       encoding: UTF-8
-      string: ''
+      string: "404 Not Found\n\nThe resource could not be found.\n\n   "
     http_version: 
-  recorded_at: Tue, 10 May 2016 18:04:54 GMT
+  recorded_at: Tue, 10 May 2016 18:33:56 GMT
 recorded_with: VCR 3.0.1

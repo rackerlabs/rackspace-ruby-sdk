@@ -40,7 +40,7 @@ module Peace::Association
           map.merge({"#{k}": self.send(v)})
         end
 
-        klass.all(hash)
+        klass.all
       }
     end
 

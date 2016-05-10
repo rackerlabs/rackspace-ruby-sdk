@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      - AACjvUxD2_AcQCvLgRxw2d4d-eCr7rD3rlG5tTnhPsO9QvrZYGUGEp9YSp4OMl5JxyZ4cS5VuIHCvZYLOw7mOmMgO3w0TXqKX7t9EUs6d_Ff0YsGjlmPfh_YJcKn5QzaytqWul7szhBZ4A
       Content-Type:
       - application/json
       User-Agent:
@@ -23,16 +23,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 27 Jan 2016 17:01:21 GMT
-      - Wed, 27 Jan 2016 17:01:21 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
+      - Tue, 10 May 2016 18:33:56 GMT
       Via:
       - 1.1 Repose (Repose/7.1.3.0)
       X-Trans-Id:
-      - fe1e6169-6e2e-4564-a417-3ed1243afea5
+      - 71ac8e09-5bff-4f11-8b05-36cc4b71a97e
       Content-Type:
       - application/json
       X-Compute-Request-Id:
-      - req-fa4c7932-43cc-409b-93c4-216f94a1baff
+      - req-3704a86d-920c-4705-802f-4ce04a4710f9
       Content-Length:
       - '2043'
       Server:
@@ -59,24 +59,24 @@ http_interactions:
         "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/917185a6-ea7c-4bae-8954-f58b39b8b7f2",
         "rel": "bookmark"}], "name": "github_teams_guard"}]}'
     http_version: 
-  recorded_at: Wed, 27 Jan 2016 17:01:21 GMT
+  recorded_at: Tue, 10 May 2016 18:33:56 GMT
 - request:
     method: put
     uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76
     body:
       encoding: UTF-8
-      string: '{"server":{"id":"95d4f801-858a-4728-9ac0-dc5900d71f76","links":[{"href":"https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"self"},{"href":"https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"bookmark"}],"name":"crb_discourse"}}'
+      string: '{"server":{"id":"95d4f801-858a-4728-9ac0-dc5900d71f76","links":[{"href":"https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"self"},{"href":"https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"bookmark"}],"name":"crb_discourse","resource_name":"server","collection_name":"servers"}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      - AACjvUxD2_AcQCvLgRxw2d4d-eCr7rD3rlG5tTnhPsO9QvrZYGUGEp9YSp4OMl5JxyZ4cS5VuIHCvZYLOw7mOmMgO3w0TXqKX7t9EUs6d_Ff0YsGjlmPfh_YJcKn5QzaytqWul7szhBZ4A
       Content-Type:
       - application/json
       Content-Length:
-      - '334'
+      - '387'
       User-Agent:
       - Ruby
   response:
@@ -85,23 +85,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 27 Jan 2016 17:01:21 GMT
-      - Wed, 27 Jan 2016 17:01:22 GMT
+      - Tue, 10 May 2016 18:33:56 GMT
+      - Tue, 10 May 2016 18:33:57 GMT
       Via:
       - 1.1 Repose (Repose/7.1.3.0)
       X-Trans-Id:
-      - 5d583178-a500-4bff-a126-c1dc597f3d58
+      - ffe85c21-572e-49e1-845d-e25a5b177ffa
       Content-Type:
       - application/json
       X-Compute-Request-Id:
-      - req-01462e33-3ea4-4cc1-88e3-2988c8455ae5
+      - req-d6c9e9b0-ab94-499c-b523-50db9c349ae0
       Content-Length:
       - '1375'
       Server:
       - Jetty(9.2.z-SNAPSHOT)
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "ACTIVE", "updated": "2016-01-27T15:35:18Z",
+      string: '{"server": {"status": "ACTIVE", "updated": "2016-01-27T17:10:13Z",
         "hostId": "8dc6e5fb8b3c505962f54b01cdc19555f1252f32ee8ddd012eb763e8", "addresses":
         {"public": [{"version": 6, "addr": "2001:4802:7802:102:be76:4eff:fe21:2a8d"},
         {"version": 4, "addr": "162.242.245.203"}], "private": [{"version": 4, "addr":
@@ -117,102 +117,5 @@ http_interactions:
         "progress": 100, "metadata": {"build_config": "monitoring_defaults,monitoring_agent_only,auto_updates",
         "rax_service_level_automation": "Complete"}}}'
     http_version: 
-  recorded_at: Wed, 27 Jan 2016 17:01:22 GMT
-- request:
-    method: put
-    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76
-    body:
-      encoding: UTF-8
-      string: '{"server":{"id":"95d4f801-858a-4728-9ac0-dc5900d71f76","links":[{"href":"https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"self"},{"href":"https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76","rel":"bookmark"}],"name":"crb_discourse"}}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '334'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Wed, 27 Jan 2016 17:10:13 GMT
-      - Wed, 27 Jan 2016 17:10:13 GMT
-      Via:
-      - 1.1 Repose (Repose/7.1.3.0)
-      X-Trans-Id:
-      - 8ccfdb75-2709-4fc2-b6a4-06451461304c
-      Content-Type:
-      - application/json
-      X-Compute-Request-Id:
-      - req-dfa07c87-c612-46fc-8580-cf2255a64a97
-      Content-Length:
-      - '1375'
-      Server:
-      - Jetty(9.2.z-SNAPSHOT)
-    body:
-      encoding: UTF-8
-      string: '{"server": {"status": "ACTIVE", "updated": "2016-01-27T17:01:22Z",
-        "hostId": "8dc6e5fb8b3c505962f54b01cdc19555f1252f32ee8ddd012eb763e8", "addresses":
-        {"public": [{"version": 6, "addr": "2001:4802:7802:102:be76:4eff:fe21:2a8d"},
-        {"version": 4, "addr": "162.242.245.203"}], "private": [{"version": 4, "addr":
-        "10.208.163.141"}]}, "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76",
-        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76",
-        "rel": "bookmark"}], "image": {"id": "59a3fadd-93e7-4674-886a-64883e17115f",
-        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/59a3fadd-93e7-4674-886a-64883e17115f",
-        "rel": "bookmark"}]}, "flavor": {"id": "general1-4", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/general1-4",
-        "rel": "bookmark"}]}, "id": "95d4f801-858a-4728-9ac0-dc5900d71f76", "user_id":
-        "1658c175e6f34629915d3305cd4e541c", "name": "crb_discourse", "created": "2015-12-23T00:26:49Z",
-        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
-        "162.242.245.203", "accessIPv6": "2001:4802:7802:102:be76:4eff:fe21:2a8d",
-        "progress": 100, "metadata": {"build_config": "monitoring_defaults,monitoring_agent_only,auto_updates",
-        "rax_service_level_automation": "Complete"}}}'
-    http_version: 
-  recorded_at: Wed, 27 Jan 2016 17:10:13 GMT
-- request:
-    method: get
-    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Date:
-      - Wed, 04 May 2016 19:45:13 GMT
-      Via:
-      - 1.1 Repose (Repose/7.1.3.0)
-      Www-Authenticate:
-      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
-      X-Trans-Id:
-      - a3b2c28a-32f3-42c8-b322-c5a17b563943
-      Content-Length:
-      - '0'
-      Server:
-      - Jetty(9.2.z-SNAPSHOT)
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Wed, 04 May 2016 19:45:14 GMT
+  recorded_at: Tue, 10 May 2016 18:33:57 GMT
 recorded_with: VCR 3.0.1

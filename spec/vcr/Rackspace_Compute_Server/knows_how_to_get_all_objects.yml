@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
+      - AACjvUxD2_AcQCvLgRxw2d4d-eCr7rD3rlG5tTnhPsO9QvrZYGUGEp9YSp4OMl5JxyZ4cS5VuIHCvZYLOw7mOmMgO3w0TXqKX7t9EUs6d_Ff0YsGjlmPfh_YJcKn5QzaytqWul7szhBZ4A
       Content-Type:
       - application/json
       User-Agent:
@@ -23,16 +23,16 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Jan 2016 19:49:07 GMT
-      - Tue, 26 Jan 2016 19:49:08 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
+      - Tue, 10 May 2016 18:33:55 GMT
       Via:
       - 1.1 Repose (Repose/7.1.3.0)
       X-Trans-Id:
-      - 2ae2940b-d88b-4b5f-bbbf-7de3f8428768
+      - 140a6757-5de0-4461-a806-9f31cf54d207
       Content-Type:
       - application/json
       X-Compute-Request-Id:
-      - req-28e7cc24-eb38-4340-987e-5036de277221
+      - req-47b8acb9-97e3-4138-bbde-f00524759b6e
       Content-Length:
       - '2043'
       Server:
@@ -59,44 +59,5 @@ http_interactions:
         "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/917185a6-ea7c-4bae-8954-f58b39b8b7f2",
         "rel": "bookmark"}], "name": "github_teams_guard"}]}'
     http_version: 
-  recorded_at: Tue, 26 Jan 2016 19:49:08 GMT
-- request:
-    method: get
-    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/95d4f801-858a-4728-9ac0-dc5900d71f76
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - AAD276xqrvGhMUmPG6eUoH7vF_x_juuKjGjDKRQQzabDXsCvxP9bhhbcPU0BShAbtYMSH4Lu-dFNROuq08bbR4KVJuz1yqNw3Z_m34F0F8yZgTcvVWhPkKYD-bHWIUD-sFq7hlUBagNMrw
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Date:
-      - Wed, 04 May 2016 19:45:13 GMT
-      Via:
-      - 1.1 Repose (Repose/7.1.3.0)
-      Www-Authenticate:
-      - Keystone uri=https://identity.api.rackspacecloud.com/v2.0
-      X-Trans-Id:
-      - f0763ecd-46c1-4af3-881a-6b241791ad33
-      Content-Length:
-      - '0'
-      Server:
-      - Jetty(9.2.z-SNAPSHOT)
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Wed, 04 May 2016 19:45:13 GMT
+  recorded_at: Tue, 10 May 2016 18:33:55 GMT
 recorded_with: VCR 3.0.1
