@@ -59,6 +59,12 @@ class Peace::URL
       fragment = m[0]
       variable = fragment[2...-2]
       value    = obj.send(variable)
+
+      # THIS is assuming we have an object.
+      # What about when we have a class? A nested class?
+      # Volume needs to know its associated server here
+      # Great idea, but dead here.
+
       binding.pry
 
       raise "Template error" unless value

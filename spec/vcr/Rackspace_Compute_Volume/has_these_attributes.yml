@@ -102,4 +102,84 @@ http_interactions:
       string: "404 Not Found\n\nThe resource could not be found.\n\n   "
     http_version: 
   recorded_at: Tue, 10 May 2016 18:34:01 GMT
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 12 May 2016 18:10:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1534'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1APUARSH09VGhUDVlcNBlIBAlsCUwFTVldQET8=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAL1aW1fiOhj9K119FqRFEHmr6CjKeAE8npmja1baBoy0TW1S
+        GNYs//tJ2gKFjqVNoz6pJHvvL98lF74/KrAsSIja/aNSPIMe/wXZalc1jJ5+
+        3eoPFleT+7s3/3Kh373dnnVqv8IZMR5J7Wd/7Lu/wLgxvx+Pz2+WYwzb9s23
+        3rTlv5rDq6t2b/42sDr48dIeXY5NendpXPTdwCA6MF5frYGvGad67/p41KcP
+        Hfh6Pb7QR0fOMhx22v90zPFwen466zya2snYbB4v1AMV/vZRAJlSVW9o7Vqj
+        VdOaY63T1drdRqfeabd+skEUesCjayNOmo1Gs8X+7wEXbv5+P1CHxr8142F8
+        2QUhfYEeRRag0D5dqt3/VOOuf33+Q31mwwgM5siCPUCBg6fswz8rKMvBof0N
+        OZD0zm64PM/2MfIoiQYFcIowW0y1b5ytZfW5pO+YENyLJo9+rfX5oekg62E4
+        YCNeKPVJ9+nw6dCyvVY9IrIDNId1C7tPh3Pt6fBvIO8HKdrRj2q0R2K0Z98e
+        K9FqYrSX1xeVaNvFaZ8Zz9LnARCA311svkKL1hhEJCgTGp8UF4TiAEyh1tDq
+        CNjNwuoPVCYEBh5wMogepDVRWHmRl1JAlrb+CYaVgpUX2ykF9mRRPMyLG1YK
+        Vl72pBS8zKafYVgp2FR+JrnJkWAmO08dbM1GMcnHSZpx+Z7FYD6omxw5kV8H
+        PqoHgP3tAwtGxBv5hZJn3+ov7WqEmTK0h5DVhWqEmWDbQ8i8X55wEwRz7IRu
+        1v19l0GVqc4FlgVFmB/r06svREkKkfAtSSESsAUoNg6MBqf9x6dY2PNYbsv1
+        Xwr4Y23NvwUZPwmkZe1G230Iw7xoEwmFtwizSDbsqbTlwCo7X5rucmCV80Ka
+        7nJglYu1NN3lwHayI56Y3YXR9IzdrOTmsYmmNgPNUVlvpIyew4Awsr43wQkU
+        Koe1wRggQkvLSUngBmrVQ7XyApSDyrG/CES+/Z8SAHoB64sByfW9hO1biu3F
+        gOT6Xd8tGcn8TM24DawXSGgAKF8lqXsqTkN/ya5SjVEkOaoxiuz45RlTd7gt
+        Z++GwggGPIRufeiNKMOUu4+QGL16GdkPtKeM7AOQX0ak2F4MaE8ZqWa7SLxK
+        sb0YUI7tRQDybRepgFJsLwaUY3sRgLztgw3wQ7p1awQhxcQCjuTHnjVsscNW
+        Zf9U4ROpgVX4RHKvLN/2kWHj5N2dgt8yTEDyLuEi7rdXsF/kjip8IuFWhU/E
+        /WX5tt2/mp29ZjKg0Jd8y4wwv8gPwmRC78miZEL3lTJkOxeE2Ku7zr6BdIGD
+        meTHXS9BzdnQ2E14azluh+VocCBEI+JiARoR5wrQiGRHQZpN9CQTMqHzHdIA
+        WRIjZ+pgEzh1N8bN1fdRlEfDEoCM4AEGrLg5wLPYUUhuwDsM2lxBf1GZq8op
+        EqNVOUXST4RzOyo4Qm0FkW09gNCW/HXDhEN+KHXvCzKg2K37Abbjb3NDUrdS
+        SDyD5a2uNKlRq0BhqSJJJk1q1K5RWKpInkiTGvUpFJYqsolKk8rA9kjdzsqI
+        OPtKhajMewfhcEJFI5qZ3fSwhygOkDfNaCwuyl2DCClLpmevbTejCqJsT/Ae
+        4W2tUtRholST4gdwjiC7MOZJ0v8maEcMn5jbb1g2nJIjimXnPc1ufV/0Ud6U
+        Rdo96PAeOvavkLAdbdW/qbVbHUs7bsH2pHnU1k9OtJbdbDZaln0EW0eaxeQE
+        mPfZ8TWIZzTYT7PdZJ/YkFgB8mm8MIbtIk/ho5UJDpT1o7Eyg0vFBR6YQhd6
+        VEk6PtV1z+gMQr8L+OzIEWkWPcMSB8vqDqLUlBG0wgDRpXIR4NAnysDYIG/d
+        V7qrkbV4ZI2N5Hx7+7IiQa2svcqQ20pfAFWA4+AFUYDCF1eJO34VirnphGIP
+        KqPYaIUdNF9wdHZIJKabqLo2nIDQobuytpW0P0lJ8qi3JSIizLr6gWPH/ubM
+        9Q0IsnmrL112OX0tcerz+mMXUGqDwFyyQsm7S9ZNwgnpML3Zv7+//w9mowQT
+        Pi0AAA==
+    http_version: 
+  recorded_at: Thu, 12 May 2016 18:10:46 GMT
 recorded_with: VCR 3.0.1
