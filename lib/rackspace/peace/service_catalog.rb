@@ -99,14 +99,25 @@ class Peace::ServiceCatalog
     raise "No #{our_service_name} endpoint for #{region}"
   end
 
+
   class Service
     attr_accessor :id, :name, :endpoints
 
     def initialize(hash)
       @name      = hash['name']
       @endpoints = hash['endpoints'].map{ |ep| Endpoint.new(ep) }
-    end
 
+      if ENV['RACKSPACE_MOCK'] == 'true'
+        @endpoints.each do |ep|
+          begin
+            friendly_name = SERVICE_NAME_MAP.find{ |(k,v)| v == name }[0]
+            ep.public_url = "http://localhost:7000/#{friendly_name}"
+          rescue
+            puts "Could not mock #{friendly_name}"
+          end
+        end
+      end
+    end
 
 
     class Endpoint
