@@ -107,7 +107,7 @@ class Peace::ServiceCatalog
       @name      = hash['name']
       @endpoints = hash['endpoints'].map{ |ep| Endpoint.new(ep) }
 
-      if ENV['RACKSPACE_MOCK'] == 'true'
+      if Rackspace.mocking?
         @endpoints.each do |ep|
           begin
             friendly_name = SERVICE_NAME_MAP.find{ |(k,v)| v == name }[0]

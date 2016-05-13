@@ -2,7 +2,7 @@ require "rackspace/version"
 require "rackspace/peace/base"
 require 'pry'
 
-require "backspace"
+require 'backspace'
 
 module Rackspace
   @@auth_token      = nil
@@ -10,6 +10,10 @@ module Rackspace
   @@tenant_id       = nil
 
   class << self
+    def mocking?
+      ENV['RACKSPACE_MOCK'] == 'true'
+    end
+
     def auth_token
       @@auth_token
     end
