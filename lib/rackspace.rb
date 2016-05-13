@@ -2,6 +2,8 @@ require "rackspace/version"
 require "rackspace/peace/base"
 require 'pry'
 
+require "backspace"
+
 module Rackspace
   @@auth_token      = nil
   @@service_catalog = nil

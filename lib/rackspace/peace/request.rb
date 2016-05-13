@@ -9,21 +9,22 @@ class Peace::Request
       JSON.parse(request)
     end
 
-    def post(obj)
-      puts "===> POST: #{obj.url}: #{obj.to_json}" if ENV['LOG']
-      request = RestClient.post(obj.url, obj.to_json, headers)
+    def post(url, data)
+      puts "===> POST: #{url}: #{data}" if ENV['LOG']
+      binding.pry
+      request = RestClient.post(url, data.to_json, headers)
       JSON.parse(request)
     end
 
-    def put(obj)
-      puts "===> PUT: #{obj.url}" if ENV['LOG']
-      request = RestClient.put(obj.url, obj.to_json, headers)
+    def put(url, data)
+      puts "===> PUT: #{url}: #{data}" if ENV['LOG']
+      request = RestClient.put(url, data.to_json, headers)
       JSON.parse(request)
     end
 
-    def delete(obj)
-      puts "===> DELETE: #{obj.url}" if ENV['LOG']
-      RestClient.delete(obj.url, headers) == ""
+    def delete(url)
+      puts "===> DELETE: #{url}" if ENV['LOG']
+      RestClient.delete(url, headers) == ""
     end
 
     private

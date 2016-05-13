@@ -6,12 +6,12 @@ module Peace::ORM
 
   def save
     method   = self.id.present? ? 'put' : 'post'
-    response = Peace::Request.send(method, self)
+    response = Peace::Request.send(method, self.url, self)
     self.send(:refresh!, response)
   end
 
   def destroy
-    Peace::Request.delete(self)
+    Peace::Request.delete(self.url)
   end
 
   def reload
