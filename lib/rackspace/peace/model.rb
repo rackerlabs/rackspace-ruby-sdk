@@ -34,7 +34,7 @@ class Peace::Model
       begin
         self.send("#{k}=", v)
       rescue Exception => e
-        puts "===> Peace::Model#refresh failed: #{e}" if ENV['LOG']
+        Rackspace.logger.error "Peace::Model#refresh failed: #{e}"
       end
     end
 

@@ -8,6 +8,7 @@ module Rackspace
   @@auth_token      = nil
   @@service_catalog = nil
   @@tenant_id       = nil
+  @@logger          = nil
 
   class << self
     def mocking?
@@ -36,6 +37,10 @@ module Rackspace
 
     def service_catalog=(catalog)
       @@service_catalog = catalog
+    end
+
+    def logger
+      @@logger ||= Peace::Logger.logger
     end
   end
 end

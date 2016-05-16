@@ -1,4 +1,4 @@
-class DnController < Sinatra::Base
+class DnsController < Sinatra::Base
   post '/dns/record/create' do
     respond_with :'dns/record', :create
   end

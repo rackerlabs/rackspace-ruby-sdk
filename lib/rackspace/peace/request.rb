@@ -4,26 +4,25 @@ require 'rest-client'
 class Peace::Request
   class << self
     def get(url)
-      puts "===> GET: #{url}" if ENV['LOG']
+      Rackspace.logger.debug "GET: #{url}"
       request = RestClient.get(url, headers)
       JSON.parse(request)
     end
 
     def post(url, data)
-      puts "===> POST: #{url}: #{data}" if ENV['LOG']
-      binding.pry
+      Rackspace.logger.debug "POST: #{url}: #{data}"
       request = RestClient.post(url, data.to_json, headers)
       JSON.parse(request)
     end
 
     def put(url, data)
-      puts "===> PUT: #{url}: #{data}" if ENV['LOG']
+      Rackspace.logger.debug "PUT: #{url}: #{data}"
       request = RestClient.put(url, data.to_json, headers)
       JSON.parse(request)
     end
 
     def delete(url)
-      puts "===> DELETE: #{url}" if ENV['LOG']
+      Rackspace.logger.debug "DELETE: #{url}"
       RestClient.delete(url, headers) == ""
     end
 

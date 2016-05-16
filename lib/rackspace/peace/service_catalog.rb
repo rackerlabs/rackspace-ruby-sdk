@@ -53,7 +53,7 @@ class Peace::ServiceCatalog
 
   def self.load!
     @catalog ||= begin
-      puts '===> Loading ServiceCatalog' if ENV['LOG']
+      Rackspace.logger.debug 'Loading ServiceCatalog'
 
       api_key   = ENV['RS_API_KEY']
       username  = ENV['RS_USERNAME']
@@ -112,8 +112,8 @@ class Peace::ServiceCatalog
           begin
             friendly_name = SERVICE_NAME_MAP.find{ |(k,v)| v == name }[0]
             ep.public_url = "http://localhost:7000/#{friendly_name}"
-          rescue
-            puts "Could not mock #{friendly_name}"
+          rescue Exception => e
+            Rackspace.logger.error "Could not mock '#{friendly_name}' (#{e})"
           end
         end
       end
