@@ -1,4 +1,4 @@
-class Rackspace::LoadBalancers::LoadBalancer < Peace::Model
+class Rackspace::LoadBalancer::LoadBalancer < Peace::Model
   attr_accessor :id, :cluster, :connection_logging, :port, :protocol, :algorithm,
     :virtual_ips, :created, :updated, :name, :state, :timeout, :nodes,
     :https_redirect
@@ -25,4 +25,10 @@ class Rackspace::LoadBalancers::LoadBalancer < Peace::Model
   def set_error_page; end
   def remove_error_page; end
   def get_stats; end
+  def load_balancers; end
+  def create_load_balancer; end
+  def bulk_delete_load_balancers; end
+  def show_load_balancer_details; end
+  def update_load_balancer_properties; end
+  def delete_load_balancer; end
 end

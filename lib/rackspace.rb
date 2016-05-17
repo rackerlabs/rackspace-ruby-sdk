@@ -11,39 +11,37 @@ module Rackspace
     'block_storage'  => 'cloudBlockStorage',
     'cdn'            => 'cloudFilesCDN',
     'compute'        => 'cloudServersOpenStack',
-    'databases'      => 'cloudDatabases',
+    'database'       => 'cloudDatabases',
     'dns'            => 'cloudDNS',
     'feeds'          => 'cloudFeeds',
     'files'          => 'cloudFiles',
     'images'         => 'cloudImages',
-    'load_balancers' => 'cloudLoadBalancers',
+    'load_balancer'  => 'cloudLoadBalancers',
     'metrics'        => 'cloudMetrics',
     'monitoring'     => 'cloudMonitoring',
     'networks'       => 'cloudNetworks',
     'orchestration'  => 'cloudOrchestration',
-    'queues'         => 'cloudQueues',
-    'sites'          => 'cloudSites'
+    'queue'          => 'cloudQueues'
   }
 
   SERVICE_KLASSES = {
     'auto_scale'     => 'Rackspace::AutoScale',
-    'backup'         => nil,
-    'big_data'       => nil,
+    'backup'         => 'Rackspace::Backup',
+    'big_data'       => 'Rackspace::BigDatum',
     'block_storage'  => 'Rackspace::BlockStorage',
     'cdn'            => 'Rackspace::CDN',
     'compute'        => 'Rackspace::Compute',
-    'databases'      => 'Rackspace::Database',
+    'database'       => 'Rackspace::Database',
     'dns'            => 'Rackspace::DNS',
-    'feeds'          => nil,
+    'feeds'          => 'Rackspace::Feed',
     'files'          => 'Rackspace::Storage',
-    'images'         => nil,
-    'load_balancers' => 'Rackspace::LoadBalancers',
-    'metrics'        => nil,
+    'images'         => 'Rackspace::Image',
+    'load_balancer'  => 'Rackspace::LoadBalancer',
+    'metrics'        => 'Rackspace::Metrics',
     'monitoring'     => 'Rackspace::Monitoring',
     'networks'       => 'Rackspace::Networking',
     'orchestration'  => 'Rackspace::Orchestration',
-    'queues'         => 'Rackspace::Queues',
-    'sites'          => nil
+    'queue'          => 'Rackspace::Queue'
   }
 
 

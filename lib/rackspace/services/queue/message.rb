@@ -1,4 +1,4 @@
-class Rackspace::Queues::Message < Peace::Model
+class Rackspace::Queue::Message < Peace::Model
   attr_accessor :id, :age, :ttl, :body, :href, :claim_id
   
   def post_message; end

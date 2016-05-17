@@ -1,4 +1,4 @@
-class Rackspace::Queues::Queue < Peace::Model
+class Rackspace::Queue::Queue < Peace::Model
   def get_queue_stats; end
   def queues; end
 	def create_queue; end

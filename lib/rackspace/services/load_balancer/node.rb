@@ -1,3 +1,3 @@
-class Rackspace::LoadBalancers::Node < Peace::Model
+class Rackspace::LoadBalancer::Node < Peace::Model
   attr_accessor :id, :address, :status, :weight, :port, :type, :condition
 end

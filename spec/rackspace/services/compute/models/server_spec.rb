@@ -31,5 +31,7 @@ describe Rackspace::Compute::Server, :vcr do
     expect{ server.save }.to change(server, :id)
   end
 
-  it 'knows how to change the admin password'
+  it 'knows how to change the admin password' do
+    binding.pry
+  end
 end
