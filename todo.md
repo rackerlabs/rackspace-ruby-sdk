@@ -1,9 +1,16 @@
+## Notes
+How far do I want to take this url nesting, etc? If I disregard that aspect then I'm mocking/stubbing even more. I don't want to write a chunk of code just to get it to work with the mock server? Seems fruitless?
+
+Am I taking this ActiveRecord clone too far? Why do we need associations? Maybe make the ugly parts then backfill/cover with a clean DSL? So much of the complexity is around the nesting/object reflection.
+
+I have to find the right level of automagic vs configuration. Finding that configuration is winning.
+
 ## TODO
-- [ ] Create a mocked ServiceCatalog to go with the server
 - [ ] Consolidate the `Array-esque` models (`files` vs `file`)
 - [ ] Figure out what attributes are required?
 
 ## Finished
+- [x] Create a mocked ServiceCatalog to go with the server
 - [x] Create mock server
 - [x] Leaky reflection with class vars in `Peace::Association`
 - [x] Get resources (`Rackspace::Compute.new.servers`) callable.

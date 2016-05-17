@@ -7,4 +7,10 @@ class Rackspace::Compute::Flavor < Peace::Model
 
   validates :name, :links, presence: true
 
+  def flavors; end
+	def flavors_with_details; end
+	def flavor_details; end
+	def show_flavor_with_extra_specs; end
+	def extra_specs_flavors; end
+	def get_details_flavor_extra_spec; end
 end

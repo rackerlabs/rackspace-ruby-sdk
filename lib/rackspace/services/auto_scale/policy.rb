@@ -7,4 +7,11 @@ class Rackspace::AutoScale::Policy < Peace::Model
 
   def execute_policy; end
 
+  def policies; end
+  def create_scaling_policy; end
+  def show_policy_details; end
+  def update_scaling_policy; end
+  def delete_scaling_policy; end
+  def execute_policy; end
+
 end
