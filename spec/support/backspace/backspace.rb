@@ -46,7 +46,9 @@ Rackspace::SERVICE_KLASSES.each do |(k,v)|
   klass         = klass_name.constantize.new
   resources     = klass.available_resources
 
-  add_actions(klass_name, friendly_name, resources)
+  if resources
+    add_actions(klass_name, friendly_name, resources)
+  end
 end
 
 get '/' do

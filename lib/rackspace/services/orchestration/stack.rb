@@ -1,6 +1,4 @@
 class Rackspace::Orchestration::Stack < Peace::Model
-  include Peace::Details
-
   def abandon_stack; end
   def build_info; end
   def get_stack_template; end

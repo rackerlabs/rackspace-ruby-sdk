@@ -41,7 +41,10 @@ module Peace::HasResources
     end
 
     def stub_resources!
-      @@resources[service_name.to_sym].each do |name|
+      resources = @@resources[service_name.to_sym]
+      return unless resources.present?
+      
+      resources.each do |name|
         define_method(name.to_s.pluralize, lambda {
           modpath = self.class.to_s.split('::')
           modpath << name.to_s.classify # Inject :name classname
