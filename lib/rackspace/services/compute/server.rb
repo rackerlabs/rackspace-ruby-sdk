@@ -20,43 +20,25 @@ class Rackspace::Compute::Server < Peace::Model
   attr_with_alias :vm_state, 'OS-EXT-STS:vm_state'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
 
-  has_many :volumes
+  class << self
+  	def create_with_disk_config; end
+  	def servers_with_details; end
+  end
 
-	def attach_volume_to_server; end
-	def change_password_server; end
-	def confirm_server_resize_server; end
-	def create_a_server_key_pair; end
-	def create_bootable_volume_and_server; end
-	def create_image_server; end
-	def create_server_with_disk_config; end
-	def delete_key_pair; end
-	def delete_server_metadata_item; end
-	def delete_server; end
-	def delete_volume_attachment_from_server; end
-	def import_a_server_key_pair; end
+	def actions; end
+	def attach_volume; end
+	def confirm_resize; end
+	def create_bootable_volume; end
+	def create_image; end
+	def delete_volume_attachment; end
+	def details; end
 	def key_pairs; end
-	def log_details_a_server_action; end
-	def network_addresses_server_and_network; end
-	def reboot_server; end
-	def rebuild_server; end
-	def rescue_server; end
-	def resize_server; end
-	def retrieves_server_addresses; end
-	def revert_server_resize_server; end
-	def server_actions; end
-	def server_metadata; end
-	def server_volumes; end
-	def servers_with_details; end
-	def servers; end
-	def set_server_metadata_item; end
-	def set_server_metadata; end
-	def show_server_details; end
-	def show_server_metadata_item_details; end
-	def show_volume_attachment_details; end
-	def unrescue_server; end
-	def update_server_metadata; end
-	def update_server; end
-  def create_server; end
+	def log_details_action; end
+	def metadata; end
+	def network_addresses_and_network; end
+	def retrieves_addresses; end
+	def volume_attachment_details; end
+	def volumes; end
 
   # http://api.rackspace.com/#changePassword
   def change_password(pass)
@@ -81,10 +63,6 @@ class Rackspace::Compute::Server < Peace::Model
   # http://api.rackspace.com/#confirmResizeServer
   def confirm_resize
     perform_action!(confirmResize: nil)
-  end
-
-  def get_vnc_console
-    # TODO: Where is this documented?
   end
 
   # http://api.rackspace.com/#rebootServer
