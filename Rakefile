@@ -5,8 +5,14 @@ RSpec::Core::RakeTask.new(:spec)
 
 task :default => :spec
 
+desc "Start a terminal with this gem preloaded."
 task :console do
   exec "irb -r rackspace -I ./lib"
+end
+
+desc "Generate a new checklist.md"
+task :checklist do
+  exec "ruby #{Dir.pwd}/lib/rackspace/tools/checklist.rb"
 end
 
 namespace :mock do
