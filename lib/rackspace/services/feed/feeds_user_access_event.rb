@@ -1,3 +1,4 @@
 class Rackspace::Feed::FeedsUserAccessEvent < Peace::Model
-	def get_feed_cloud_feeds_events; end
+	def events; end
+	def find; end
 end

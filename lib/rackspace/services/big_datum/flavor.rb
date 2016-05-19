@@ -1,5 +1,7 @@
 class Rackspace::BigDatum::Flavor < Peace::Model
-	def available_flavors; end
+	class << self
+		def available_flavors; end
+	end
+
 	def resource_limits; end
-	def show_resource_limits; end
 end

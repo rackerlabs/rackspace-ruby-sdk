@@ -1,4 +1,7 @@
 class Rackspace::BigDatum::Distro < Peace::Model
-	def available_distros; end
-	def show_distro_details; end
+	class << self
+		def available_distros; end
+	end
+	
+	def details; end
 end

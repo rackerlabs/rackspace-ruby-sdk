@@ -4,12 +4,11 @@ class Rackspace::BlockStorage::Snapshot < Peace::Model
   attr_with_alias :created_at, :createdAt
   attr_with_alias :state, :status
 
-  def create_snapshot; end
-  def snapshots; end
-  def snapshots_detailed; end
-  def show_snapshot_details; end
-  def update_snapshot; end
-  def delete_snapshot; end
-  def show_snapshot_metadata; end
+  class << self
+    def snapshots_detailed; end
+  end
+
+  def details; end
+  def metadata; end
 
 end

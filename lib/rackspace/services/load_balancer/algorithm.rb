@@ -1,3 +1,5 @@
 class Rackspace::LoadBalancer::Algorithm < Peace::Model
-	def load_balancing_algorithms; end
+	class << self
+		def load_balancing_algorithms; end
+	end
 end

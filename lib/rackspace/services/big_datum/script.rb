@@ -1,6 +1,5 @@
 class Rackspace::BigDatum::Script < Peace::Model
-	def delete_a_script; end
-	def all_scripts; end
-	def create_a_script; end
-	def update_a_script; end
+	class << self
+		def all_scripts; end
+	end
 end

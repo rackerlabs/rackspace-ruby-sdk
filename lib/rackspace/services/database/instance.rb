@@ -4,7 +4,7 @@ class Rackspace::Database::Instance < Peace::Model
 
   def check_root_user; end
   def enable_root_user; end
-  def restart_instance; end
-  def resize_instance; end
-  def resize_instance_volume; end
+  def restart; end
+  def resize; end
+  def resize_volume; end
 end

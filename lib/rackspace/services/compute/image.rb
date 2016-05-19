@@ -9,11 +9,14 @@ class Rackspace::Compute::Image < Peace::Model
   end
 
 	def details; end
-	def image_metadata_image; end
-	def set_image_metadata_image; end
-	def image_metadata_item_image; end
-	def set_image_metadata_item_image; end
-	def delete_image_metadata_item_image; end
+
+	def metadata; end
+	def set_metadata; end
+
+	def get_metadata_item; end
+	def set_metadata_item; end
+	def delete_metadata_item; end
+
 	def enable_scheduled_images; end
 	def disable_scheduled_images; end
 	def scheduled_images; end

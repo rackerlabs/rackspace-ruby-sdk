@@ -7,10 +7,9 @@ class Rackspace::Compute::Flavor < Peace::Model
 
   class << self
   	def flavors_with_details; end
+  	def flavors_with_extra_specs; end
   end
 
 	def details; end
-	def show_flavor_with_extra_specs; end
-	def extra_specs_flavors; end
-	def get_details_flavor_extra_spec; end
+	def extra_specs; end
 end

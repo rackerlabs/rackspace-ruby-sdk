@@ -4,9 +4,9 @@ class Rackspace::Storage::Account < Peace::Model
   attr_with_alias :container_count, 'X-Account-Container-Count'
   attr_with_alias :bytes_used, 'X-Account-Bytes-Used'
   attr_with_alias :object_count, 'X-Account-Object-Count'
-  
-  def show_account_details_and_containers; end
-  def create_or_update_account_metadata; end
-  def get_account_metadata; end
-  def delete_account_metadata; end
+
+  def details_and_containers; end
+  def set_metadata; end
+  def get_metadata; end
+  def delete_metadata; end
 end

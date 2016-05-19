@@ -1,4 +1,4 @@
-class Rackspace::LoadBalancer::Metadatum < Peace::Model
+class Rackspace::LoadBalancer::MetadatumItem < Peace::Model
 	def add_load_balancer_metadata; end
 	def show_load_balancer_metadata; end
 	def bulk_delete_load_balancer_metadata_items; end
