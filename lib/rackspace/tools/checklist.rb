@@ -13,7 +13,7 @@ class Checklist
       bits      = line.split
       method    = bits[2][0...-1]
       path_bits = bits[0].split('/')
-      service   = path_bits[4]
+      service   = path_bits[4].downcase
       file      = path_bits[5]
       file      = file[0...file.index('.rb')].classify
       klass     = "#{service}::#{file}".classify
