@@ -2,6 +2,7 @@ class Rackspace::CDN < Peace::Service
 
   has_resource :flavor
   has_resource :service
+  has_resource :ssl_certificate
 
   def initialize
   end

@@ -1,5 +1,5 @@
 class Rackspace::Metrics < Peace::Service
-
+  
   def initialize
   end
 

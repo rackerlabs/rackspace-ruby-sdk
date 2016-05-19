@@ -2,6 +2,7 @@ class Rackspace::Queue < Peace::Service
 
   has_resource :claim
   has_resource :message
+  has_resource :queue
 
   def initialize
   end

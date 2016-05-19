@@ -1,4 +1,9 @@
 class Rackspace::Keep < Peace::Service
+  
+  has_resource :consumer
+  has_resource :container
+  has_resource :quota
+  has_resource :secret
 
   def initialize
   end
