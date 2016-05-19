@@ -1,12 +1,12 @@
 class Rackspace::BigDatum < Peace::Service
 
-  has_resource :clusters
-  has_resource :credentials
-  has_resource :distros
-  has_resource :flavors
-  has_resource :nodes
-  has_resource :scripts
-  has_resource :stacks
+  has_resource :cluster
+  has_resource :credential
+  has_resource :distro
+  has_resource :flavor
+  has_resource :node
+  has_resource :script
+  has_resource :stack
 
   def initialize
   end

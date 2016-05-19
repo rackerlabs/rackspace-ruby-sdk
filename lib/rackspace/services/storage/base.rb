@@ -1,9 +1,9 @@
 class Rackspace::Storage < Peace::Service
 
   has_resource :account
-  has_resource :directory
+  has_resource :container
+  has_resource :object
   has_resource :file
-  has_resource :files
 
 	class << self
 		def purge_cdn_enabled_containers; end

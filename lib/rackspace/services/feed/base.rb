@@ -12,9 +12,9 @@ class Rackspace::Feed < Peace::Service
   has_resource :cloud_queues
   has_resource :cloud_servers_open_stack
   has_resource :cloud_servers
-  has_resource :feeds_user_access_events
-  has_resource :identity_user_access_events
-  has_resource :nova_user_access_events
+  has_resource :feeds_user_access_event
+  has_resource :identity_user_access_event
+  has_resource :nova_user_access_event
   has_resource :rackspace_monitoring
 
   def initialize
