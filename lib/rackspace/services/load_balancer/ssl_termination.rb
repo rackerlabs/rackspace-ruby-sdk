@@ -1,3 +1,3 @@
 class Rackspace::LoadBalancer::SslTermination < Peace::Model
-	def show_configuration; end
+	def configuration; end
 end

@@ -3,6 +3,5 @@ class Rackspace::Networking::SecurityGroup < Peace::Model
 
 	def rules; end
 	def create_rule; end
-	def show_rule; end
 	def delete_rule; end
 end

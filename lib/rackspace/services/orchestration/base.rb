@@ -6,6 +6,6 @@ class Rackspace::Orchestration < Peace::Service
   def initialize
   end
 
-  def show_build_information; end
+  def build_information; end
 
 end

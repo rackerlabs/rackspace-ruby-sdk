@@ -1,3 +1,3 @@
 class Rackspace::LoadBalancer::ThrottleConnection < Peace::Model
-	def show_configuration; end
+	def configuration; end
 end

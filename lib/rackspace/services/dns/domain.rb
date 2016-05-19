@@ -6,7 +6,7 @@ class Rackspace::DNS::Domain < Peace::Model
 	def destroy; end
 	def search; end
 	def details; end
-	def show_changes; end
+	def changes; end
 	def export; end
 	def clone; end
 	def import; end
