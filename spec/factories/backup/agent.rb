@@ -1,0 +1,25 @@
+FactoryGirl.define do
+  factory :agent, class: Rackspace::Backup::Agent do
+    AgentVersion ''
+		Architecture ''
+		BackupContainer ''
+		BackupDatacenter ''
+		BackupVaultSize ''
+		CleanupAllowed ''
+		Datacenter ''
+		Flavor ''
+		HostServerId ''
+		IPAddress ''
+		IsDisabled ''
+		IsEncrypted ''
+		MachineAgentId ''
+		MachineName ''
+		OperatingSystem ''
+		OperatingSystemVersion ''
+		PublicKey ''
+		Status ''
+		TimeOfLastSuccessfulBackup ''
+		UseFailoverUri ''
+		UseServiceNet ''
+  end
+end
