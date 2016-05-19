@@ -6,7 +6,7 @@ class Rackspace::Database::Database < Peace::Model
   def resize_volume; end
   def status_and_details; end
   def change_name; end
-  def get_default_configuration; end
+  def default_configuration; end
   def enable_root_user; end
   def root_enabled_status; end
 end

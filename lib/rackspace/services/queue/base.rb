@@ -6,6 +6,6 @@ class Rackspace::Queue < Peace::Service
   def initialize
   end
 
-  def get_home_document; end
+  def home_document; end
 
 end

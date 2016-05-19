@@ -10,27 +10,27 @@ class Rackspace::LoadBalancer::LoadBalancer < Peace::Model
     def bulk_delete; end
   end
 
-  def get_ssl_termination; end
+  def ssl_termination; end
   def set_ssl_termination; end
-  def remove_ssl_termination; end
+  def destroy_ssl_termination; end
 
-  def get_session_persistence; end
+  def session_persistence; end
   def set_session_persistence; end
-  def remove_session_persistence; end
+  def destroy_session_persistence; end
 
-  def get_connection_throttling; end
-  def remove_connection_throttling; end
+  def connection_throttling; end
+  def destroy_connection_throttling; end
   def set_connection_throttling; end
 
-  def get_monitor; end
+  def monitor; end
   def set_monitor; end
-  def remove_monitor; end
+  def destroy_monitor; end
 
-  def get_usage; end
-  def get_error_page; end
+  def usage; end
+  def error_page; end
   def set_error_page; end
-  def remove_error_page; end
+  def destroy_error_page; end
 
-  def get_stats; end
+  def stats; end
   def details; end
 end
