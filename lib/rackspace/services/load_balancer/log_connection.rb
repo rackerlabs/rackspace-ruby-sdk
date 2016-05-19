@@ -1,4 +1,4 @@
 class Rackspace::LoadBalancer::LogConnection < Peace::Model
-	def configuration; end
+	attr_accessor :enabled
 	def enable_or_disable; end
 end

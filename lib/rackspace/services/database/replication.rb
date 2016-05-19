@@ -1,4 +1,6 @@
 class Rackspace::Database::Replication < Peace::Model
+	attr_accessor :created, :datastore, :flavor, :id, :ip, :links, :name, :replica_of, :status, :updated, :volume
+	
 	class << self
 		def all_replicas_and_replica_source_database_instances; end
 	end

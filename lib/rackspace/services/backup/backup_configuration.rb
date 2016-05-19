@@ -1,4 +1,6 @@
 class Rackspace::Backup::BackupConfiguration < Peace::Model
+	attr_accessor :backup_configuration_id, :machine_agent_id, :machine_name, :flavor, :is_encrypted, :backup_configuration_name, :is_active, :is_deleted, :version_retention, :backup_configuration_schedule_id, :missed_backup_action_id, :frequency, :start_time_hour, :start_time_minute, :start_time_am_pm, :day_of_week_id, :hour_interval, :time_zone_id, :next_scheduled_run_time, :last_run_time, :last_run_backup_report_id, :notify_recipients, :notify_success, :notify_failure, :inclusions, :exclusions
+	
 	class << self
 		def all_backup_configurations_for_user; end
 		def all_backup_configurations_for_agent; end
