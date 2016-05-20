@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require 'pry'
+require 'active_support/all'
+require 'thor'
+require 'table_print'
+require './lib/rackspace'
+
+class RackspaceCLI < Thor
+  Dir.glob("#{Dir.pwd}/lib/rackspace/services/**/*.rb").each do |file|
+    next if file =~ /base/
+
+    bits    = file.split('/')
+    service = bits[-2].to_sym
+    object  = bits[-1][0...-3]
+    klass   = "Rackspace::#{service.to_s.classify}::#{object.classify}"
+    cmd     = "#{service}_#{object.pluralize}"
+    desc    = "All #{object.pluralize}"
+
+    self.send(:desc, cmd, desc)
+
+    define_method cmd do
+      tp klass.constantize.all.as_json
+    end
+  end
+end
+
+RackspaceCLI.start(ARGV)

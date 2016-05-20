@@ -1,5 +1,5 @@
-require "rackspace/version"
-require "rackspace/peace/base"
+require "./lib/rackspace/version"
+require "./lib/rackspace/peace/base"
 require 'pry'
 
 module Rackspace

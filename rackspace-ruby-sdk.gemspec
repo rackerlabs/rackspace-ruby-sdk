@@ -3,43 +3,37 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rackspace/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "rackspace"
-  spec.version       = Rackspace::VERSION
-  spec.authors       = ["Matt Darby"]
-  spec.email         = ["matt.darby@rackspace.com"]
+Gem::Specification.new do |s|
+  s.name          = "rackspace"
+  s.version       = Rackspace::VERSION
+  s.authors       = ["Matt Darby"]
+  s.email         = ["matt.darby@rackspace.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  s.summary       = "Rackspace Ruby SDK"
+  s.description   = "Rackspace Ruby SDK"
+  s.homepage      = "http://github.com/rackerlabs/rackspace-ruby-sdk"
+  s.license       = "MIT"
 
-  # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
-  # delete this section to allow pushing this gem to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
+  s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|s|features)/}) }
+  s.bindir        = "bin"
+  s.executables   = ["rackspace"]
+  s.require_paths = ["lib"]
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  s.add_dependency "rest-client"
+  s.add_dependency "activesupport"
+  s.add_dependency "thor"
+  s.add_dependency "activemodel"
+  s.add_dependency "table_print"
 
-  spec.add_dependency "rest-client"
-  spec.add_dependency "activesupport"
-
-  spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "awesome_print"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "activemodel"
-  spec.add_development_dependency "webmock"
-  spec.add_development_dependency "vcr"
-  spec.add_development_dependency "pry"
-  spec.add_development_dependency "thin"
-  spec.add_development_dependency "sinatra"
-  spec.add_development_dependency "sinatra-contrib"
-  spec.add_development_dependency "factory_girl"
+  s.add_development_dependency "bundler", "~> 1.10"
+  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "awesome_print"
+  s.add_development_dependency "rs"
+  s.add_development_dependency "webmock"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "thin"
+  s.add_development_dependency "sinatra"
+  s.add_development_dependency "sinatra-contrib"
+  s.add_development_dependency "factory_girl"
 end
