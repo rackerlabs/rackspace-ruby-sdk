@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :image, class: Rackspace::Image::Image do
+  factory :image_image, class: Rackspace::Image::Image do
     auto_disk_config ''
 		cache_in_nova ''
 		checksum ''
@@ -18,7 +18,6 @@ FactoryGirl.define do
 		owner ''
 		protected ''
 		schema ''
-		self ''
 		size ''
 		status ''
 		tags ''

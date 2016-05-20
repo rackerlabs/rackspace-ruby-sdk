@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :container, class: Rackspace::Keep::Container do
+  factory :keep_container, class: Rackspace::Keep::Container do
     consumers ''
 		container_ref ''
 		created ''

@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :volume, class: Rackspace::BlockStorage::Volume do
+  factory :block_storage_volume, class: Rackspace::BlockStorage::Volume do
     id ''
 		created_at ''
 		state ''

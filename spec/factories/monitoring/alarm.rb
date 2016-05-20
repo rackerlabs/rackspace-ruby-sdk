@@ -6,6 +6,6 @@ FactoryGirl.define do
 		disabled ''
 		label ''
 		criteria ''
-		check_type, ''
+		check_type ''
   end
 end

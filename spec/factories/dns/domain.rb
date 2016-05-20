@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :domain, class: Rackspace::Dn::Domain do
+  factory :domain, class: Rackspace::DNS::Domain do
     account_id ''
 		comment ''
 		created ''

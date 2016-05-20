@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :account, class: Rackspace::Monitoring::Account do
+  factory :monitoring_account, class: Rackspace::Monitoring::Account do
     id ''
 		metadata ''
 		webhook_token ''

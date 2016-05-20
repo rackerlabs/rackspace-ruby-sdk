@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :agent, class: Rackspace::Backup::Agent do
+  factory :backup_agent, class: Rackspace::Backup::Agent do
     AgentVersion ''
 		Architecture ''
 		BackupContainer ''

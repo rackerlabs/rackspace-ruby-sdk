@@ -6,6 +6,6 @@ FactoryGirl.define do
 		updated ''
 		progress ''
 		user_id ''
-		tenant_id, ''
+		tenant_id ''
   end
 end

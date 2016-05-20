@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :service, class: Rackspace::Cdn::Service do
+  factory :service, class: Rackspace::CDN::Service do
     id ''
 		name ''
 		domains ''

@@ -6,7 +6,6 @@ FactoryGirl.define do
 		message ''
 		owner ''
 		schema ''
-		self ''
 		status ''
 		type ''
 		updated_at ''

@@ -1,11 +1,11 @@
 FactoryGirl.define do
-  factory :zone, class: Rackspace::Dn::Zone do
+  factory :zone, class: Rackspace::DNS::Zone do
     id ''
 		email ''
 		domain ''
 		created ''
 		updated ''
 		account_id ''
-		ttl, ''
+		ttl ''
   end
 end

@@ -5,6 +5,6 @@ FactoryGirl.define do
 		links ''
 		name ''
 		change ''
-		change_percent, ''
+		change_percent ''
   end
 end

@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :ssl_certificate, class: Rackspace::Cdn::SslCertificate do
+  factory :ssl_certificate, class: Rackspace::CDN::SslCertificate do
     cert_type ''
 		domain_name ''
 		flavor_id ''

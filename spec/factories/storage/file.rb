@@ -4,6 +4,6 @@ FactoryGirl.define do
 		content_length ''
 		content_type ''
 		content_disposition ''
-		etag, ''
+		etag ''
   end
 end

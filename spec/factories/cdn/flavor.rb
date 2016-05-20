@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :flavor, class: Rackspace::Cdn::Flavor do
+  factory :cdn_flavor, class: Rackspace::CDN::Flavor do
     id ''
 		providers ''
 		links ''

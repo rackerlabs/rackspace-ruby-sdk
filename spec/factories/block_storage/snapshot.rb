@@ -4,6 +4,6 @@ FactoryGirl.define do
 		created_at ''
 		state ''
 		display_name ''
-		display_description, ''
+		display_description ''
   end
 end

@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :network, class: Rackspace::Compute::Network do
+  factory :compute_network, class: Rackspace::Compute::Network do
     id ''
 		label ''
 		cidr ''

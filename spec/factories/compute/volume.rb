@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :volume, class: Rackspace::Compute::Volume do
+  factory :compute_volume, class: Rackspace::Compute::Volume do
     id ''
 		device ''
 		server_id ''

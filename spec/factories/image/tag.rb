@@ -4,7 +4,6 @@ FactoryGirl.define do
 		id ''
 		owner ''
 		schema ''
-		self ''
 		status ''
 		type ''
 		updated_at ''

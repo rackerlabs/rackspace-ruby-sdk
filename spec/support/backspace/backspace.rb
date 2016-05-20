@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sinatra/contrib/all'
 require 'pry'
+require 'factory_girl'
+require 'json'
 require 'active_support/all'
 require "#{Dir.pwd}/lib/rackspace"
 
@@ -19,22 +21,51 @@ CRUD = [
   {name: 'show', method: 'get'}
 ]
 
+FactoryGirl.find_definitions
+
 @@routes = {}
 
 def add_actions(klass_name, friendly_name, resources)
   @@routes[friendly_name] ||= {}
 
   resources.each do |ar|
-    CRUD.each do |c|
-      path = "/#{friendly_name}/#{ar.to_s.pluralize}"
+    coll_path = "/#{friendly_name}/#{ar.to_s.pluralize}"
+    obj_pat = "#{coll_path}/:id"
 
-      @@routes[friendly_name][ar.to_s] ||= []
-      @@routes[friendly_name][ar.to_s] << { method: c[:method], path: path }
-
-      self.send c[:method], path do
-        send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
-      end
+    # Index
+    self.send 'get', coll_path do
+      [FactoryGirl.create(ar)].to_json
     end
+    # Create
+    self.send 'post', coll_path do
+      FactoryGirl.create(ar).to_json
+    end
+    # Update
+    self.send 'put', obj_pat do
+      FactoryGirl.create(ar).to_json
+    end
+    # Destroy
+    self.send 'delete', obj_pat do
+      {}.to_json
+    end
+    # Show
+    self.send 'get', obj_pat do
+      FactoryGirl.create(ar).to_json
+    end
+
+
+
+    # CRUD.each do |c|
+    #   # TODO: Should this return a Factory instance?
+    #   path = "/#{friendly_name}/#{ar.to_s.pluralize}"
+    #
+    #   @@routes[friendly_name][ar.to_s] ||= []
+    #   @@routes[friendly_name][ar.to_s] << { method: c[:method], path: path }
+    #
+    #   self.send c[:method], path do
+    #     send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
+    #   end
+    # end
   end
 end
 

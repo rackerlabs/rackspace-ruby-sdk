@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :user, class: Rackspace::Backup::User do
+  factory :backup_user, class: Rackspace::Backup::User do
     agent_version ''
 		architecture ''
 		backup_container ''

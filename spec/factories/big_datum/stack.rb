@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :stack, class: Rackspace::BigDatum::Stack do
+  factory :big_datum_stack, class: Rackspace::BigDatum::Stack do
     created ''
 		description ''
 		distro ''

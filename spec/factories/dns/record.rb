@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :record, class: Rackspace::Dn::Record do
+  factory :record, class: Rackspace::DNS::Record do
     id ''
 		name ''
 		value ''
