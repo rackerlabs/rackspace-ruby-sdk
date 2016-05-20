@@ -1,6 +1,7 @@
 class Rackspace::Monitoring::Agent < Peace::Model
 	attr_accessor :values, :metadata
-	
+	has_many :entities
+
 	class << self
 		def agent_ids; end
 	end

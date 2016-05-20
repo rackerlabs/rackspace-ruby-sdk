@@ -1,6 +1,8 @@
 class Rackspace::DNS::Domain < Peace::Model
 	attr_accessor :account_id, :comment, :created, :email_address, :id, :name, :nameservers, :records_list, :ttl, :updated
 	
+	belongs_to :account
+
 	class << self
 		def domains_by_name; end
 	end

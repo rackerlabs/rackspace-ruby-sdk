@@ -1,6 +1,8 @@
 class Rackspace::Backup::Backup < Peace::Model
 	attr_accessor :BackupId, :BackupConfigurationId, :CurrentState, :BackupConfigurationName, :MachineAgentId, :MachineName, :StateChangeTime, :IsEncrypted, :EncryptionKey
-	
+	has_many :restores
+	has_many :restore_configurations
+
 	class << self
 		def completed_backups; end
 		def backup_report; end

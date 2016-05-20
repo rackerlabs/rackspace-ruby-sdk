@@ -2,9 +2,7 @@ class Rackspace::Compute::Server < Peace::Model
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
-  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id,
-    :links, :personality, :config_drive, :user_data, :addresses,
-    :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata
+  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata
 
   attr_with_alias :bandwidth, 'rax-bandwidth:bandwidth'
   attr_with_alias :disk_config, 'OS-DCF:diskConfig'
@@ -19,6 +17,13 @@ class Rackspace::Compute::Server < Peace::Model
   attr_with_alias :state, :status
   attr_with_alias :vm_state, 'OS-EXT-STS:vm_state'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
+  
+  belongs_to :user
+  belongs_to :tenant
+  belongs_to :boot_volume
+  belongs_to :boot_image
+  has_many :attachments
+  has_many :volumes
 
   class << self
   	def create_with_disk_config; end
