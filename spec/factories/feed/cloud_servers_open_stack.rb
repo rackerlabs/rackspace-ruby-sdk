@@ -3,7 +3,7 @@ FactoryGirl.define do
     type ''
 		category ''
 		content ''
-		id ''
+		id { SecureRandom.hex(25) }
 		link ''
 		published ''
 		title ''

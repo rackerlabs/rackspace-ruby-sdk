@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :compute_flavor, class: Rackspace::Compute::Flavor do
-    id ''
+    id { SecureRandom.hex(25) }
 		name ''
 		links ''
 		ram ''

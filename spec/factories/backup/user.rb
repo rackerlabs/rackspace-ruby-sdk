@@ -10,7 +10,7 @@ FactoryGirl.define do
 		ip_address ''
 		is_disabled ''
 		is_encrypted ''
-		machine_agent_id ''
+		machine_agent_id { SecureRandom.hex(25) }
 		machine_name ''
 		operating_system ''
 		operating_system_version ''

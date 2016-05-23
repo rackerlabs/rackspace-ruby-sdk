@@ -3,7 +3,7 @@ FactoryGirl.define do
     created ''
 		description ''
 		distro ''
-		id ''
+		id { SecureRandom.hex(25) }
 		links ''
 		name ''
 		node_groups ''

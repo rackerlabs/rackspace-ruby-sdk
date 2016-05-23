@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :certificate_mapping, class: Rackspace::LoadBalancer::CertificateMapping do
-    id ''
+    id { SecureRandom.hex(25) }
 		host_name ''
 		certificate ''
 		intermediate_certificate ''

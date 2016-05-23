@@ -9,7 +9,7 @@
   </thead>
 
   <tbody>
-    <% @routes.each do |(service_name, resources)| %>
+    <% @all_routes.each do |(service_name, resources)| %>
       <% resources.each do |(resource_name, routes)| %>
         <% routes.each do |r| %>
           <tr>

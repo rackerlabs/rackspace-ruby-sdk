@@ -8,7 +8,7 @@ FactoryGirl.define do
 		disk_format ''
 		file ''
 		flavor_classes ''
-		id ''
+		id { SecureRandom.hex(25) }
 		image_type ''
 		min_disk ''
 		min_ram ''

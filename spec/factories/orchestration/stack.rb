@@ -4,7 +4,7 @@ FactoryGirl.define do
 		creation_time ''
 		description ''
 		disable_rollback ''
-		id ''
+		id { SecureRandom.hex(25) }
 		links ''
 		notification_topics ''
 		outputs ''

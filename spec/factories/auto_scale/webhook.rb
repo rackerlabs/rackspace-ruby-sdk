@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :webhook, class: Rackspace::AutoScale::Webhook do
-    id ''
+    id { SecureRandom.hex(25) }
 		group ''
 		policy ''
 		name ''

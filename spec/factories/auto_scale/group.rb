@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :group, class: Rackspace::AutoScale::Group do
-    id ''
+    id { SecureRandom.hex(25) }
 		links ''
 		state ''
   end

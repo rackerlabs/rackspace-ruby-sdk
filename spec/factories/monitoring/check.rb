@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :check, class: Rackspace::Monitoring::Check do
-    id ''
+    id { SecureRandom.hex(25) }
 		entity ''
 		label ''
 		metadata ''
@@ -8,7 +8,6 @@ FactoryGirl.define do
 		target_resolver ''
 		target_hostname ''
 		period ''
-		timeout ''
 		type ''
 		details ''
 		disabled ''

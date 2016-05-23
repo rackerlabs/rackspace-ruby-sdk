@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :user, class: Rackspace::Identity::User do
-    id ''
+    id { SecureRandom.hex(25) }
 		username ''
 		password ''
 		email ''

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :record, class: Rackspace::DNS::Record do
-    id ''
+    id { SecureRandom.hex(25) }
 		name ''
 		value ''
 		ttl ''

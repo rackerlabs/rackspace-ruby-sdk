@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :claim, class: Rackspace::Queue::Claim do
-    id ''
+    id { SecureRandom.hex(25) }
 		grace ''
 		ttl ''
 		limit ''

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :agent_token, class: Rackspace::Monitoring::AgentToken do
-    id ''
+    id { SecureRandom.hex(25) }
 		label ''
 		token ''
 		marker ''

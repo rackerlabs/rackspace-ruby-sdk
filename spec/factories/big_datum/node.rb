@@ -3,8 +3,8 @@ FactoryGirl.define do
     addresses ''
 		components ''
 		created ''
-		flavor_id ''
-		id ''
+		flavor_id { SecureRandom.hex(25) }
+		id { SecureRandom.hex(25) }
 		links ''
 		name ''
 		node_group ''

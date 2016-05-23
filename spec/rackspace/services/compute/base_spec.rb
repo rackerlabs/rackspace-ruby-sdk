@@ -5,10 +5,7 @@ describe Rackspace::Compute, :vcr do
   let(:service){ Rackspace::Compute.new }
 
   it 'knows how to get all resources' do
-    expect(service.available_resources).to eq([
-      :attachment, :flavor, :image, :images, :key_pair, :metadatum, :network,
-      :server, :virtual_interface, :volume
-    ])
+    expect(service.available_resources).to eq([:attachment, :flavor, :image, :key_pair, :metadatum, :metadatum_item, :misc, :network, :server, :virtual_interface, :volume])
   end
 
   it 'knows how to access resources' do

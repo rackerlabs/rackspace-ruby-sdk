@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :load_balancer, class: Rackspace::LoadBalancer::LoadBalancer do
-    id ''
+    id { SecureRandom.hex(25) }
 		cluster ''
 		connection_logging ''
 		port ''
@@ -11,7 +11,6 @@ FactoryGirl.define do
 		updated ''
 		name ''
 		state ''
-		timeout ''
 		nodes ''
 		https_redirect ''
   end

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :alarm, class: Rackspace::Monitoring::Alarm do
-    id ''
+    id { SecureRandom.hex(25) }
 		entity ''
 		check ''
 		disabled ''

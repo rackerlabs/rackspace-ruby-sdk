@@ -6,84 +6,81 @@ require 'json'
 require 'active_support/all'
 require "#{Dir.pwd}/lib/rackspace"
 
-set :server, :thin
-set :port, 7000
-
-before do
-  content_type 'application/json'
-end
-
-CRUD = [
-  {name: 'create', method: 'post'},
-  {name: 'update', method: 'put'},
-  {name: 'destroy', method: 'delete'},
-  {name: 'index', method: 'get'},
-  {name: 'show', method: 'get'}
-]
-
 FactoryGirl.find_definitions
 
-@@routes = {}
+class MyApp < Sinatra::Application
 
-def add_actions(klass_name, friendly_name, resources)
-  @@routes[friendly_name] ||= {}
+  attr_accessor :routes
 
-  resources.each do |ar|
-    coll_path = "/#{friendly_name}/#{ar.to_s.pluralize}"
-    obj_pat = "#{coll_path}/:id"
+  set :server, :thin
+  set :port, 7000
 
-    # Index
-    self.send 'get', coll_path do
-      [FactoryGirl.create(ar)].to_json
-    end
-    # Create
-    self.send 'post', coll_path do
-      FactoryGirl.create(ar).to_json
-    end
-    # Update
-    self.send 'put', obj_pat do
-      FactoryGirl.create(ar).to_json
-    end
-    # Destroy
-    self.send 'delete', obj_pat do
-      {}.to_json
-    end
-    # Show
-    self.send 'get', obj_pat do
-      FactoryGirl.create(ar).to_json
-    end
-
-
-
-    # CRUD.each do |c|
-    #   # TODO: Should this return a Factory instance?
-    #   path = "/#{friendly_name}/#{ar.to_s.pluralize}"
-    #
-    #   @@routes[friendly_name][ar.to_s] ||= []
-    #   @@routes[friendly_name][ar.to_s] << { method: c[:method], path: path }
-    #
-    #   self.send c[:method], path do
-    #     send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
-    #   end
-    # end
+  before do
+    content_type 'application/json'
   end
-end
 
-Rackspace::SERVICE_KLASSES.each do |(k,v)|
-  next unless v # We don't have some services
+  def initialize
+    super
+    @routes = {}
 
-  friendly_name = k
-  klass_name    = v
-  klass         = klass_name.constantize.new
-  resources     = klass.available_resources
+    Rackspace::SERVICE_KLASSES.each do |(k,v)|
+      next unless v # We don't have some services
 
-  if resources
-    add_actions(klass_name, friendly_name, resources)
+      friendly_name = k
+      klass_name    = v
+      klass         = klass_name.constantize.new
+      resources     = klass.available_resources
+
+      if resources
+        routes[friendly_name] ||= {}
+
+        resources.each do |ar|
+          coll_path = "/#{friendly_name}/#{ar.to_s.pluralize}"
+          obj_path  = "#{coll_path}/:id"
+
+          routes[friendly_name][ar.to_s] ||= []
+          routes[friendly_name][ar.to_s] << { method: 'get', path: coll_path }
+          routes[friendly_name][ar.to_s] << { method: 'post', path: coll_path }
+          routes[friendly_name][ar.to_s] << { method: 'get', path: obj_path }
+          routes[friendly_name][ar.to_s] << { method: 'put', path: obj_path }
+          routes[friendly_name][ar.to_s] << { method: 'delete', path: obj_path }
+
+          # Index
+          self.class.send 'get', coll_path do
+            [FactoryGirl.build(ar)].to_json
+          end
+
+          # Create
+          self.class.send 'post', coll_path do
+            FactoryGirl.build(ar).to_json
+          end
+
+          # Show
+          self.class.send 'get', obj_path do
+            FactoryGirl.build(ar).to_json
+          end
+
+          # Update
+          self.class.send 'put', obj_path do
+            FactoryGirl.build(ar).to_json
+          end
+
+          # Destroy
+          self.class.send 'delete', obj_path do
+            {}.to_json
+          end
+
+          # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
+        end
+      end
+    end
   end
-end
 
-get '/' do
-  content_type 'text/html'
-  @routes = @@routes
-  erb :index
+  get '/' do
+    content_type 'text/html'
+    @all_routes = routes
+    erb :index
+  end
+
+  run! if app_file == $0
 end

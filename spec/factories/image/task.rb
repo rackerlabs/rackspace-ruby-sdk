@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :task, class: Rackspace::Image::Task do
     created_at ''
-		id ''
+		id { SecureRandom.hex(25) }
 		input ''
 		message ''
 		owner ''

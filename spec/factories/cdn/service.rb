@@ -1,12 +1,12 @@
 FactoryGirl.define do
   factory :service, class: Rackspace::CDN::Service do
-    id ''
+    id { SecureRandom.hex(25) }
 		name ''
 		domains ''
 		origins ''
 		caching ''
 		restrictions ''
-		flavor_id ''
+		flavor_id { SecureRandom.hex(25) }
 		status ''
 		links ''
   end

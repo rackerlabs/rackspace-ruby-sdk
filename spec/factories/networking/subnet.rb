@@ -1,10 +1,10 @@
 FactoryGirl.define do
   factory :subnet, class: Rackspace::Networking::Subnet do
-    id ''
+    id { SecureRandom.hex(25) }
 		name ''
 		enable_dhcp ''
-		network_id ''
-		tenant_id ''
+		network_id { SecureRandom.hex(25) }
+		tenant_id { SecureRandom.hex(25) }
 		dns_nameservers ''
 		allocation_pools ''
 		host_routes ''

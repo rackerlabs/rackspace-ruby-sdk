@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :distro, class: Rackspace::BigDatum::Distro do
-    id ''
+    id { SecureRandom.hex(25) }
 		links ''
 		name ''
 		services ''

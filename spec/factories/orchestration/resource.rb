@@ -2,8 +2,8 @@ FactoryGirl.define do
   factory :resource, class: Rackspace::Orchestration::Resource do
     creation_time ''
 		links ''
-		logical_resource_id ''
-		physical_resource_id ''
+		logical_resource_id { SecureRandom.hex(25) }
+		physical_resource_id { SecureRandom.hex(25) }
 		required_by ''
 		resource_name ''
 		resource_status ''
