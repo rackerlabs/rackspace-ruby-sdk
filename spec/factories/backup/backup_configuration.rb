@@ -3,7 +3,7 @@ FactoryGirl.define do
     backup_configuration_id { SecureRandom.hex(25) }
 		machine_agent_id { SecureRandom.hex(25) }
 		machine_name ''
-		flavor ''
+		# flavor_id { SecureRandom.hex(25) }
 		is_encrypted ''
 		backup_configuration_name ''
 		is_active ''

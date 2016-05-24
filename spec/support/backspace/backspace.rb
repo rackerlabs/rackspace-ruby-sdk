@@ -35,40 +35,34 @@ class MyApp < Sinatra::Application
         routes[friendly_name] ||= {}
 
         resources.each do |ar|
+          hash      = {}
+          r         = ar.to_s
+          full_name = "#{friendly_name}_#{ar}"
           coll_path = "/#{friendly_name}/#{ar.to_s.pluralize}"
           obj_path  = "#{coll_path}/:id"
 
-          routes[friendly_name][ar.to_s] ||= []
-          routes[friendly_name][ar.to_s] << { method: 'get', path: coll_path }
-          routes[friendly_name][ar.to_s] << { method: 'post', path: coll_path }
-          routes[friendly_name][ar.to_s] << { method: 'get', path: obj_path }
-          routes[friendly_name][ar.to_s] << { method: 'put', path: obj_path }
-          routes[friendly_name][ar.to_s] << { method: 'delete', path: obj_path }
+          routes[friendly_name][r] ||= []
+          routes[friendly_name][r] << { method: 'get', path: coll_path }
+          routes[friendly_name][r] << { method: 'post', path: coll_path }
+          routes[friendly_name][r] << { method: 'get', path: obj_path }
+          routes[friendly_name][r] << { method: 'put', path: obj_path }
+          routes[friendly_name][r] << { method: 'delete', path: obj_path }
 
-          # Index
-          self.class.send 'get', coll_path do
-            [FactoryGirl.build(ar)].to_json
+          if FactoryGirl.factories.registered?(ar)
+            hash[r] = FactoryGirl.build(ar)
+          elsif FactoryGirl.factories.registered?(full_name)
+            hash[r] = FactoryGirl.build(full_name)
+          else
+            Rackspace.logger.error "No Factory: #{full_name}"
           end
 
-          # Create
-          self.class.send 'post', coll_path do
-            FactoryGirl.build(ar).to_json
-          end
+          json = hash.to_json
 
-          # Show
-          self.class.send 'get', obj_path do
-            FactoryGirl.build(ar).to_json
-          end
-
-          # Update
-          self.class.send 'put', obj_path do
-            FactoryGirl.build(ar).to_json
-          end
-
-          # Destroy
-          self.class.send 'delete', obj_path do
-            {}.to_json
-          end
+          self.class.send 'get', coll_path do [json] end
+          self.class.send 'post', coll_path do json end
+          self.class.send 'get', obj_path do json end
+          self.class.send 'put', obj_path do json end
+          self.class.send 'delete', obj_path do {}.to_json end
 
           # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
         end

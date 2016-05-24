@@ -3,7 +3,7 @@ FactoryGirl.define do
     backup_configuration_id { SecureRandom.hex(25) }
 		backup_configuration_name ''
 		backup_data_center ''
-		backup_flavor ''
+		# backup_flavor_id { SecureRandom.hex(25) }
 		backup_id { SecureRandom.hex(25) }
 		backup_machine_id { SecureRandom.hex(25) }
 		backup_machine_name ''

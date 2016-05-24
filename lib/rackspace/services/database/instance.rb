@@ -1,6 +1,8 @@
 class Rackspace::Database::Instance < Peace::Model
-  attr_accessor :id, :name, :created, :updated, :state, :hostname, :links,
-    :flavor_id, :volume_size
+  attr_accessor :id, :name, :created, :updated, :state, :hostname, :links, :flavor_id, :volume_size, :datastore
+
+  attr_with_alias :state, :status
+  attr_with_alias :flavor_id, :flavor
 
   def check_root_user; end
   def enable_root_user; end
