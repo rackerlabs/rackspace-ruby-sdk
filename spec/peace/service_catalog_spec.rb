@@ -16,7 +16,7 @@ describe Peace::ServiceCatalog, :vcr do
   end
 
   it 'can get a url based on service name and region' do
-    if ENV['DEBUG_RAX'] == 'true'
+    if ENV['RACKSPACE_MOCK'] == 'true'
       expect(service_catalog.url_for('compute')).to eq "http://localhost:7000/compute"
     else
       expect(service_catalog.url_for('compute')).to match_regex(/https:\/\/[a-z]{3}.servers.api.rackspacecloud.com\/v2\/[0-9]{6}/)
