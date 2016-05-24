@@ -49,22 +49,29 @@ class MyApp < Sinatra::Application
           routes[friendly_name][r] << { method: 'delete', path: obj_path }
 
           if FactoryGirl.factories.registered?(ar)
-            hash[r] = FactoryGirl.build(ar)
+            obj = FactoryGirl.build(ar)
           elsif FactoryGirl.factories.registered?(full_name)
-            hash[r] = FactoryGirl.build(full_name)
+            obj = FactoryGirl.build(full_name)
           else
             Rackspace.logger.error "No Factory: #{full_name}"
           end
 
-          json = hash.to_json
+          if obj
+            json = obj.to_json
 
-          self.class.send 'get', coll_path do [json] end
-          self.class.send 'post', coll_path do json end
-          self.class.send 'get', obj_path do json end
-          self.class.send 'put', obj_path do json end
-          self.class.send 'delete', obj_path do {}.to_json end
+            self.class.send 'get', coll_path do
+              hash = {}
+              hash[obj.resource_name.pluralize] = [obj]
+              hash.to_json
+            end
 
-          # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
+            self.class.send 'post', coll_path do json end
+            self.class.send 'get', obj_path do json end
+            self.class.send 'put', obj_path do json end
+            self.class.send 'delete', obj_path do {}.to_json end
+
+            # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
+          end
         end
       end
     end
