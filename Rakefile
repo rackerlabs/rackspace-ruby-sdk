@@ -3,7 +3,11 @@ require "rspec/core/rake_task"
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
+task :default => :rspec
+
+task :rspec do
+  exec "RACKSPACE_MOCK=true rspec"
+end
 
 desc "Start a terminal with this gem preloaded."
 task :console do
