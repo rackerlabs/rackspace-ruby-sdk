@@ -6,7 +6,7 @@ FactoryGirl.define do
 		backup_vault_size ''
 		cleanup_allowed ''
 		datacenter ''
-		flavor_id { SecureRandom.hex(25) }
+		# flavor_id { SecureRandom.hex(25) }
 		ip_address ''
 		is_disabled ''
 		is_encrypted ''

@@ -8,7 +8,7 @@ FactoryGirl.define do
     created ''
     ip []
     volume ''
-    flavor_id { SecureRandom.hex(25) }
+    # flavor_id { SecureRandom.hex(25) }
     datastore { }
     replica_of { }
   end

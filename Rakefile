@@ -15,6 +15,11 @@ task :checklist do
   exec "ruby #{Dir.pwd}/lib/rackspace/tools/checklist.rb"
 end
 
+desc "Test all Factories"
+task :harness do
+  exec "ruby #{Dir.pwd}/lib/rackspace/tools/harness.rb"
+end
+
 namespace :mock do
   desc "Start Mock Server"
   task :server do
