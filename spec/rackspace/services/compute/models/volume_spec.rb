@@ -2,14 +2,16 @@ require 'spec_helper'
 
 describe Rackspace::Compute::Volume, :vcr do
 
-  let(:server){ Rackspace::Compute::Server.first }
-  let(:volumes){ Rackspace::Compute::Volume.all(server_id: server.id) }
-  let(:volume){ volumes.first }
+  # TODO:
+  # Do I want to create seed data? A script?
+  # All this takes a DB/schema/location/coordination
+  # Do I just setup association-based expects/returns here?
 
-  it 'has these attributes' do
-    expect(volume.id).not_to be_nil
-    expect(volume.device).not_to be_nil
-    expect(volume.server_id).not_to be_nil
+
+  before do
+    @server = Rackspace::Compute::Server.first
+    @server.attach_volume(@volume)
+    @volume = Rackspace::Compute::Volume.new
   end
 
   it 'understands has_many resources' do

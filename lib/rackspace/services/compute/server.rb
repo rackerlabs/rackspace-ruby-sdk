@@ -17,7 +17,7 @@ class Rackspace::Compute::Server < Peace::Model
   attr_with_alias :state, :status
   attr_with_alias :vm_state, 'OS-EXT-STS:vm_state'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
-  
+
   belongs_to :user
   belongs_to :tenant
   belongs_to :boot_volume
@@ -43,7 +43,6 @@ class Rackspace::Compute::Server < Peace::Model
 	def network_addresses_and_network; end
 	def retrieves_addresses; end
 	def volume_attachment_details; end
-	def volumes; end
 
   # http://api.rackspace.com/#changePassword
   def change_password(pass)
