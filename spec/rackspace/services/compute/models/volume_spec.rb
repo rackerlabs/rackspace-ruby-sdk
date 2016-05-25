@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Rackspace::Compute::Volume, :vcr do
 
   let(:server){ Rackspace::Compute::Server.first }
-  let(:volumes){ server.volumes }
+  let(:volumes){ Rackspace::Compute::Volume.all(server_id: server.id) }
   let(:volume){ volumes.first }
 
   it 'has these attributes' do

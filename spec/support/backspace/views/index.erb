@@ -1,27 +1,21 @@
 <table>
   <thead>
     <tr>
-      <th>Service</th>
-      <th>Resource</th>
+      <th>Class</th>
       <th>Method</th>
       <th>Path</th>
     </tr>
   </thead>
 
   <tbody>
-    <% @all_routes.each do |(service_name, resources)| %>
-      <% resources.each do |(resource_name, routes)| %>
-        <% routes.each do |r| %>
-          <tr>
-            <td><%= service_name %></td>
-            <td><%= resource_name %></td>
-            <td><%= r[:method] %></td>
-            <td>
-              <a href='#' class='code' data-method='<%= r[:method] %>' data-path='<%= r[:path] %>'><%= r[:path] %></a>
-            </td>
-          </tr>
-        <% end %>
-      <% end %>
+    <% @all_routes.each do |r| %>
+      <tr>
+        <td><%= r[:klass] %></td>
+        <td><%= r[:method] %></td>
+        <td>
+          <a href='#' class='code' data-method='<%= r[:method] %>' data-path='<%= r[:path] %>'><%= r[:path] %></a>
+        </td>
+      </tr>
     <% end %>
   </tbody>
 </table>

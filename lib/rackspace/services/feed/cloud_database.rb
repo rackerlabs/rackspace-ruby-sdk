@@ -1,4 +1,4 @@
-class Rackspace::Feed::CloudDatabases < Peace::Model
+class Rackspace::Feed::CloudDatabase < Peace::Model
 	attr_accessor :type, :category, :content, :id, :link, :published, :title, :updated
 
 	def events; end

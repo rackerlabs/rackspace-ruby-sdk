@@ -30,6 +30,9 @@ class Peace::Model
     is_nested = (keys.count == 1 && keys.first == resource_name)
     hash      = is_nested ? hash.first[1] : hash
 
+    # TODO: Why does this key exist? How does it get inserted? Why? BUG
+    hash.delete("resource_name")
+
     hash.each do |(k,v)|
       begin
         self.send("#{k}=", v)

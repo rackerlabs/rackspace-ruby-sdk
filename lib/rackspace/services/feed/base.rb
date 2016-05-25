@@ -5,7 +5,7 @@ class Rackspace::Feed < Peace::Service
   has_resource :cloud_backup
   has_resource :cloud_big_data
   has_resource :cloud_block_storage
-  has_resource :cloud_databases
+  has_resource :cloud_database
   has_resource :cloud_files
   has_resource :cloud_identity
   has_resource :cloud_load_balancers

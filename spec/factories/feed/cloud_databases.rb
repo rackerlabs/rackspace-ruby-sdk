@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :cloud_databases, class: Rackspace::Feed::CloudDatabases do
+  factory :cloud_database, class: Rackspace::Feed::CloudDatabase do
     type ''
 		category ''
 		content ''

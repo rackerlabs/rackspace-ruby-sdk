@@ -47,12 +47,22 @@ class Peace::ServiceCatalog
   end
 
   def url_for(our_service_name)
-    services
-      .find{ |s| s.name == Rackspace::SERVICE_NAME_MAP[our_service_name] }
-        .endpoints
-          .find{ |e| e.region.downcase == region.downcase }
-            .public_url
-  rescue
+    service = services.find do |s|
+      s.name == Rackspace::SERVICE_NAME_MAP[our_service_name]
+    end
+
+    if service
+      endpoints = service.endpoints
+
+      if endpoints.size == 1 # regionless
+        endpoints.first.public_url
+      else
+        endpoints.find{ |e| e.region.downcase == region.downcase }.public_url
+      end
+    else
+      raise "No service '#{our_service_name}' found"
+    end
+  rescue Exception => e
     raise "No #{our_service_name} endpoint for #{region}"
   end
 
@@ -68,7 +78,7 @@ class Peace::ServiceCatalog
         @endpoints.each do |ep|
           begin
             friendly_name = Rackspace::SERVICE_NAME_MAP.find{ |(k,v)| v == name }[0]
-            ep.public_url = "http://localhost:7000/#{friendly_name}"
+            ep.public_url = "http://localhost:7000"
           rescue Exception => e
             Rackspace.logger.error "Could not mock '#{friendly_name}' (#{e})"
           end

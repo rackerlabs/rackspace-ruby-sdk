@@ -27,11 +27,11 @@ end
 namespace :mock do
   desc "Start Mock Server"
   task :server do
-    system "ruby ./spec/support/backspace/backspace.rb"
+    exec "RACKSPACE_MOCK=true ruby ./spec/support/backspace/backspace.rb"
   end
 
   desc "Run the specs"
   task :spec do
-    system "RACKSPACE_MOCK=true rspec spec"
+    exec "RACKSPACE_MOCK=true rspec spec"
   end
 end
