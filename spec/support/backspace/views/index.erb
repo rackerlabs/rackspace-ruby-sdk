@@ -12,48 +12,11 @@
       <tr>
         <td><%= r[:klass] %></td>
         <td><%= r[:method] %></td>
-        <td>
-          <a href='#' class='code' data-method='<%= r[:method] %>' data-path='<%= r[:path] %>'><%= r[:path] %></a>
-        </td>
+        <td><a href='<%= r[:path] %>'><%= r[:path] %></a></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<div id="json"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-<script type="text/javascript">
-  $(function(){
-
-    function showJSON(json) {
-      $('#json').html(JSON.stringify(json));
-    };
-
-    $('a.code').on('click', function(e){
-      e.preventDefault();
-
-      $('#json').html("");
-      var method = $(this).data('method');
-      var path   = $(this).data('path');
-
-      switch(method) {
-        case 'get':
-          $.get(path).success(function(r){ showJSON(r) });
-          break;
-        case 'post':
-          $.post(path, {}).success(function(r){ showJSON(r) });
-          break;
-        case 'put':
-          $.ajax({method: 'put', url: path}).success(function(r){ showJSON(r) });
-          break;
-        case 'delete':
-          $.ajax({method: 'delete', url: path}).success(function(r){ showJSON(r) });
-          break;
-      };
-    });
-  });
-</script>
 
 <style type="text/css">
   body { font: 16px/1.5 Helvetica; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -61,5 +24,4 @@ font-weight: 300; }
   td,th { padding: 0.5em; }
   table { border-collapse: collapse; }
   tr:nth-child(even){ background: whitesmoke; border: 1px solid #DDD; }
-  #json { position: fixed; top: 10px; right: 10px; padding: 2em; background: whitesmoke; width: 30%; }
 </style>
