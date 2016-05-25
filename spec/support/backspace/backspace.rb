@@ -5,14 +5,13 @@ require 'json'
 require 'active_support/all'
 require "#{Dir.pwd}/lib/rackspace"
 
-FactoryGirl.find_definitions
-
 class Router
   attr_accessor :klass, :klass_name, :friendly_name, :resources, :routes
 
   def self.all_routes
+    FactoryGirl.find_definitions
     routers = Rackspace::SERVICE_KLASSES.map{ |(k,v)| Router.new(k, v) }.compact
-    routers.map(&:routes).flatten
+    routers.map(&:routes).flatten.compact
   end
 
   def initialize(friendly_name, klass_name)
@@ -45,48 +44,47 @@ class Router
         obj = FactoryGirl.build(full_name)
       else
         Rackspace.logger.error "No Factory: #{full_name}"
+        next
       end
 
-      # json = obj.to_json
-      #
-      # get coll_path do
-      #   hash = {}
-      #   hash[obj.resource_name.pluralize] = [obj]
-      #   hash.to_json
-      # end
-      #
-      # post coll_path do json end
-      # get obj_path do json end
-      # put obj_path do json end
-      # delete obj_path do {}.to_json end
-
-      # binding.pry
+      hash = {}
+      hash[obj.resource_name.pluralize] = [obj]
+      collection = hash.to_json
+      json = obj.to_json
 
       # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
 
       [
-        { klass: full_klass, method: :get, path: coll_path },
-        { klass: full_klass, method: :post, path: coll_path },
-        { klass: full_klass, method: :get, path: obj_path },
-        { klass: full_klass, method: :put, path: obj_path },
-        { klass: full_klass, method: :delete, path: obj_path }
+        { klass: full_klass, method: :get, path: coll_path, json: collection },
+        { klass: full_klass, method: :post, path: coll_path, json: json },
+        { klass: full_klass, method: :get, path: obj_path, json: json },
+        { klass: full_klass, method: :put, path: obj_path, json: json },
+        { klass: full_klass, method: :delete, path: obj_path, json: {} }
       ]
     end
   end
 end
 
-
 class MyApp < Sinatra::Base
   set :server, :thin
   set :port, 7000
+  set :logging, Logger::DEBUG
+  set :mocked_routes, Router.all_routes
 
   before do
     content_type 'application/json'
   end
 
+  mocked_routes.each do |hash|
+    path = hash[:path][21..-1]
+    self.send hash[:method], path do
+      hash[:json]
+    end
+  end
+
   get '/' do
     content_type 'text/html'
-    @all_routes = Router.all_routes
+    @all_routes = MyApp.mocked_routes
     erb :index
   end
 

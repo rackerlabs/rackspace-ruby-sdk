@@ -78,7 +78,7 @@ class Peace::ServiceCatalog
         @endpoints.each do |ep|
           begin
             friendly_name = Rackspace::SERVICE_NAME_MAP.find{ |(k,v)| v == name }[0]
-            ep.public_url = "http://localhost:7000"
+            ep.public_url = "http://localhost:7000/#{friendly_name}"
           rescue Exception => e
             Rackspace.logger.error "Could not mock '#{friendly_name}' (#{e})"
           end
