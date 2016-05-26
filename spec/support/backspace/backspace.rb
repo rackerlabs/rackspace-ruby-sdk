@@ -3,6 +3,7 @@ require 'pry'
 require 'factory_girl'
 require 'json'
 require 'active_support/all'
+require 'mongo'
 require "#{Dir.pwd}/lib/rackspace"
 
 class Router
@@ -35,50 +36,53 @@ class Router
 
       full_klass.gsub!('ReverseDn', 'ReverseDNS')
 
-      coll_path  = full_klass.constantize.collection_url
+      # Trim off localhost part
+      coll_path  = full_klass.constantize.collection_url[21..-1]
       obj_path   = "#{coll_path}/:id"
 
-      if FactoryGirl.factories.registered?(ar)
-        obj = FactoryGirl.build(ar)
-      elsif FactoryGirl.factories.registered?(full_name)
-        obj = FactoryGirl.build(full_name)
-      else
-        Rackspace.logger.error "No Factory: #{full_name}"
-        next
-      end
-
-      hash = {}
-      hash[obj.resource_name.pluralize] = [obj]
-      collection = hash.to_json
-      json = obj.to_json
-
-      # send_file "#{settings.public_folder}/#{friendly_name}/#{ar}/#{c[:name]}.json"
-
-      [
-        { klass: full_klass, method: :get, path: coll_path, json: collection },
-        { klass: full_klass, method: :post, path: coll_path, json: json },
-        { klass: full_klass, method: :get, path: obj_path, json: json },
-        { klass: full_klass, method: :put, path: obj_path, json: json },
-        { klass: full_klass, method: :delete, path: obj_path, json: {} }
-      ]
+      { coll: full_name.to_sym,
+        klass: full_klass,
+        coll_path: coll_path,
+        obj_path: obj_path }
     end
   end
 end
 
+
+
 class MyApp < Sinatra::Base
-  set :server, :thin
-  set :port, 7000
-  set :logging, Logger::DEBUG
-  set :mocked_routes, Router.all_routes
+  DB = Mongo::Client.new(['127.0.0.1:27017'], database: 'backspace')
+
+  configure do
+    set :server, :thin
+    set :port, 7000
+    set :logging, Logger::DEBUG
+    set :mocked_routes, Router.all_routes
+  end
 
   before do
     content_type 'application/json'
   end
 
   mocked_routes.each do |hash|
-    path = hash[:path][21..-1]
-    self.send hash[:method], path do
-      hash[:json]
+    get hash[:coll_path] do
+      DB[hash[:coll]].find
+    end
+
+    post hash[:coll_path] do
+      DB[hash[:coll]].insert_one(params)
+    end
+
+    get hash[:obj_path] do
+      DB[hash[:coll]].find(id: params[:id])
+    end
+
+    put hash[:obj_path] do
+      DB[hash[:coll]].update_one({id: params[:id]}, {"$inc" => params})
+    end
+
+    delete hash[:obj_path] do
+      DB[hash[:coll]].delete_one(id: params[:id])
     end
   end
 

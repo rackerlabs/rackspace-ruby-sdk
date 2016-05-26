@@ -36,4 +36,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sinatra"
   s.add_development_dependency "sinatra-contrib"
   s.add_development_dependency "factory_girl"
+  s.add_development_dependency "mongo"
 end
