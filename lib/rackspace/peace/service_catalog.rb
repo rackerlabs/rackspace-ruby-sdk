@@ -1,10 +1,15 @@
 require 'rest-client'
 require 'openssl'
 require 'yaml'
+require 'pry'
 
 class Peace::ServiceCatalog
 
-  BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
+  if ENV['RACKSPACE_MOCK'] == 'true'
+    BASE_URL = "http://devstack.dev/v2.0/tokens"
+  else
+    BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
+  end
 
   attr_accessor :id, :services, :access_token, :region, :tenant_id
 

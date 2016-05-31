@@ -13,7 +13,7 @@ describe Rackspace::Compute::Server, :vcr do
   end
 
   it 'knows how to save its self' do
-    expect(server.try(:progress)).to eq('')
+    expect(server.try(:progress)).to eq(nil)
     server.save
     expect(server.try(:progress)).to eq(100)
   end
