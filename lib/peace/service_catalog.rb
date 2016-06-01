@@ -4,18 +4,20 @@ require 'yaml'
 require 'pry'
 
 class Peace::ServiceCatalog
-  
-  attr_accessor :id, :services, :access_token, :region, :tenant_id
 
-  if ENV['OPENSTACK'] == 'true'
+  if ENV['RACKSPACE_MOCK'] == 'true'
     BASE_URL = "http://openstack.dev/v2.0/tokens"
   else
     BASE_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
   end
 
+  attr_accessor :id, :services, :access_token, :region, :tenant_id
+
   def self.load!
     @catalog ||= begin
       Rackspace.logger.debug 'Loading ServiceCatalog'
+
+      # qAZomDJMvaMxf7ajFPhpV8tQy
 
       api_key   = ENV['RS_API_KEY']
       username  = ENV['RS_USERNAME']
