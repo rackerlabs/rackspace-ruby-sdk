@@ -4,7 +4,7 @@ require 'pry'
 require 'active_support/all'
 require 'thor'
 require 'table_print'
-require './lib/rackspace'
+require "#{Dir.pwd}/lib/rackspace"
 
 class RackspaceCLI < Thor
   Dir.glob("#{Dir.pwd}/lib/rackspace/services/**/*.rb").each do |file|
