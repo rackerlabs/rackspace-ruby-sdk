@@ -6,25 +6,46 @@ require 'thor'
 require 'table_print'
 require 'rackspace'
 
-class RackspaceCLI < Thor
-  tp.set :max_width, 50
-
-  Dir.glob("#{Dir.pwd}/lib/rackspace/services/**/*.rb").each do |file|
-    next if file =~ /base.rb$/
-
-    bits    = file.split('/')
-    service = bits[-2].to_sym
-    object  = bits[-1][0...-3]
-    klass   = "Rackspace::#{service.to_s.classify}::#{object.classify}"
-    cmd     = "#{service}_#{object.pluralize}"
-    desc    = "All #{object.pluralize}"
-
-    self.send(:desc, cmd, desc)
-
-    define_method cmd do
-      tp klass.constantize.all.as_json
-    end
+class SubCommandBase < Thor
+  def self.banner(command, namespace = nil, subcommand = false)
+    "#{basename} #{self.namespace} #{command.name}"
   end
 end
 
-RackspaceCLI.start(ARGV)
+class App < Thor
+  tp.set :max_width, 50
+
+  catalog  = Peace::ServiceCatalog.load!(:rackspace)
+  services = catalog.available_services
+
+  subclasses = services.map do |s|
+    klass   = s.constantize
+    service = klass.service_name
+
+    next unless resources = klass.available_resources
+
+    cli_class = Class.new(SubCommandBase) do
+      namespace service.to_sym
+
+      resources.each do |r|
+        k    = "#{s}::#{r.to_s.classify}"
+        cmd  = r.to_s.pluralize
+        desc = "All #{cmd}"
+
+        self.send(:desc, cmd, desc)
+        define_method cmd do
+          tp k.constantize.all.as_json
+        end
+      end
+    end
+
+    { name: service, klass: cli_class }
+  end.compact
+
+  subclasses.each do |hash|
+    desc hash[:name], "View all #{hash[:name]}"
+    subcommand hash[:name], hash[:klass]
+  end
+end
+
+App.start
