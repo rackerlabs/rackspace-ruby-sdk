@@ -4,7 +4,7 @@ require 'pry'
 require 'active_support/all'
 require 'thor'
 require 'table_print'
-require "#{Dir.pwd}/lib/rackspace"
+require 'rackspace'
 
 class RackspaceCLI < Thor
   tp.set :max_width, 50
