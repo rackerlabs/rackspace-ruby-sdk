@@ -1,7 +1,43 @@
 require 'spec_helper'
 
 describe Peace::ServiceCatalog, :vcr do
+  before do
+    ENV['SDK'] = "rackspace"
+  end
+  
   let(:service_catalog){ Peace.service_catalog }
+
+  it 'sets the tenant_id globally' do
+    expect(Peace.tenant_id).not_to be_nil
+  end
+
+  it 'sets the auth_token globally' do
+    expect(Peace.auth_token).not_to be_nil
+  end
+
+  it 'sets the catalog globally' do
+    expect(Peace.service_catalog).not_to be_nil
+  end
+
+  it 'knows which services are available' do
+    expect(Peace.service_catalog.available_services).not_to be_nil
+  end
+
+  it 'require ENV["SDK"] to be either :rackspace or :openstack' do
+    expect( Peace.service_catalog && Peace.sdk ).to eq('rackspace')
+  end
+
+  it 'knows the URL for a service based on name and region' do
+    expect(Peace.service_catalog.url_for('compute')).not_to be_nil
+  end
+
+  it 'expects these env vars' do
+    %w{RS_API_KEY RS_USERNAME RS_REGION_NAME}.each do |var|
+      ENV[var] = nil
+      expect{ Peace::ServiceCatalog.load!(:rackspace) }.to raise_error RuntimeError
+      ENV[var] = "something"
+    end
+  end
 
   it 'has many services' do
     expect(service_catalog.services).to be_kind_of(Array)
@@ -9,10 +45,6 @@ describe Peace::ServiceCatalog, :vcr do
 
   it 'has an access token' do
     expect(service_catalog.access_token).not_to be_empty
-  end
-
-  it 'has an tenant id' do
-    expect(Peace.tenant_id).not_to be_empty
   end
 
   it 'can get a url based on service name and region' do
