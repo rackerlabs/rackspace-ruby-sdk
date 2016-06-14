@@ -4,8 +4,8 @@ describe Peace::ServiceCatalog, :vcr do
   before do
     ENV['SDK'] = "rackspace"
   end
-  
-  let(:service_catalog){ Peace.service_catalog }
+
+  let!(:service_catalog){ Peace.service_catalog }
 
   it 'sets the tenant_id globally' do
     expect(Peace.tenant_id).not_to be_nil

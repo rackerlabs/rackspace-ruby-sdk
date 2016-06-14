@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Jun 2016 15:42:12 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1551'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1IOVQhZH09VGhUCAlAIVQICAAYHUgdfBgQEET8=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        1SvmhHSQ3o28v7//D+tGPGzfLQAA
+    http_version: 
+  recorded_at: Tue, 14 Jun 2016 15:42:12 GMT
+recorded_with: VCR 3.0.1
