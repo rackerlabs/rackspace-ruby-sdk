@@ -2,7 +2,7 @@ class Rackspace::Compute::Server < Peace::Model
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
-  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata
+  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata, :imageRef, :flavorRef
 
   attr_with_alias :bandwidth, 'rax-bandwidth:bandwidth'
   attr_with_alias :disk_config, 'OS-DCF:diskConfig'

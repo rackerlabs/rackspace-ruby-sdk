@@ -1,0 +1,1891 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://identity.api.rackspacecloud.com/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"apiKey":"<RS_API_KEY>","username":"<RS_USERNAME>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 20 Jun 2016 15:40:35 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1549'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      X-Newrelic-App-Data:
+      - PxQGUF9aDwETVlhSBQgFVUYdFGQHBDcQUQxLA1tMXV1dORYzVBJHNQFUZAQUFVFQVThOFlhaUggXER5jLTU3SxJOCEwIFAQcA1IJWQZYH09VGhUEBAJZAVVTB1ABAwBWUVVVET8=
+      Vary:
+      - Accept, Accept-Encoding, X-Auth-Token
+      Front-End-Https:
+      - 'on'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAL1a7VfaOhz+V3r6WZAW2k2+IW7IRDcFr7rrzk5IA+TaNl2T
+        qmzH//0mbYFCZ2nTqJ9Ukud5fq95IX90ACGiVO/+0Rl5QL74BTt6V+/1ejeT
+        L8fHZ6QzCFrHg4HDrDk8M3+PzKE9hOcXs1NAb78Eo8tPP+Fo+j28m8ytDns+
+        hfZgbn+7Iz0r6JgN/GFCsA/NCaXGdDD+fnt25l0FfXA969uXIxqYp1Or0e8b
+        M3LjXR6NvVv6bCxPLsaT3x9vOk///HLw7+POeU8/0NFzgEPElepmy7AbLbth
+        GhPD6pofu5bVbH+wv/NBDPnAZ2sjjtqtVtvi//eBhzZ/vxzoV73bRu96ctoF
+        EVsgn2EIGHKOl3r3X733bXj26U7/wYdRFD5iiPqAAZfM+Yd/VlDQJZHzGbuI
+        9k8uhDzfCbiljMaDQjTHhDtTH/ZO1rKGQtI5oZT048njn2t9QTR1Mby+GvER
+        C8YC2r0/vD+Ejm81YyInxI+oCYl3f/ho3B/+DeTlIEM7vqtH25GjPfl8U4vW
+        kKM9PRvUorXL0/7gPMtAJEAInrtk+h+CrMEhYkG51HijvKCMhGCOjJbRxMBp
+        l1Z/oHMhKPSBm0P0EWvIwqrLvIwCunTMNzCsEqy63M4ocGZP5dO8vGGVYNVV
+        T0bB4mH+FoZVgs3UZ1qbAgnlqvPYJfBhnJC8XqS5kO9xBo9BcyqQU/lNEOBm
+        CPjfAYAoJt7IL1U8+7y/dOoR5trQHkLeF+oR5pJtDyGPfnXCTRI8Ejfy8uEf
+        ehyqSncu4RYcY76uz6zviIoUMulbkUImYUtQbAIYD87GT0yBxPd5bauNXwb4
+        dW3tvyWZ2AlkZe1m22WEoqJsk0mFXzFmmWrY02mrgdUOvjLd1cBq14Uy3dXA
+        ajdrZbqrge1URzIxvwrj+Qk/Wamt4ymeOxy0QGWzlTH6EYWUkw39GUmhcDWs
+        DcYIU1ZZTkaCMNCon6q1HVANqsD+MhDF9r9JApglrC8HpDb2CpZvJbaXA1Ib
+        d3O3ZaTzcz3jawgXiLIQMOElpWsqyUK/y6pSj1GmOOoxyqz41RkzZ7itYO+m
+        whiFIoW+BsgfM46pdh2hCXr9NrIfaE8b2Qegvo0osb0c0J42Us92mXxVYns5
+        oALbywAU2y7TAZXYXg6owPYyAEXLBx8QRGzr1AgiRigEruLLnjVsuc1W7fjU
+        4ZPpgXX4ZGqvKt/2lmET5N2VQpwypoAWHcJlwu+sYN8pHHX4ZNKtDp9M+Kvy
+        bYd/NTt/zORAUaD4lBljvlMcpMmk7pNlyaTOK1XIdg4ISVR3g32B2BMJHxRf
+        7vopasGCxk/CW+74elWNhoRSNDIhlqCRCa4EjUx1lKTZZE86IZc654iFGCrM
+        nLlLpsBtegluob7XsjwelgLkBI8I4M3NBT7kWyG1Ce9y6OkK+p3aXF1OmRyt
+        yylTfjKc21khEBoriPzTA4QcxV83zATkq1L33iADRrxmEBIn+TY3ok2YQRIV
+        rM67yqTGTwVKS5UpMmVS4+capaXK1IkyqfE7hdJSZRZRZVI52B6p21UZE+dv
+        qTBTee6gAk6qacQz84se8TEjIfbnOY3lRXlrECll6fT8se1iXEOU40ueI/wt
+        L8UvTLRexBbaOHkNqC6Y2BFPD9my9NZlNSEvsJ6vghA9YsRPtEU+M//msR1v
+        iYmFDyKruijdQ0Gn6O546wut1wq7KtLuTkw88uP/iihfclcPTA3b+giNDxay
+        Z+2ObR4dGZbTbrcs6HSQ1TEglxMS8RBQ+CCZ0eI/bbvNP3EQhSEOWOKYnuNh
+        XxOjtRkJtfWttvaAlpoHfDBHHg++RtdJmLr8AaGgC8TsOBBZFjPHkiTL6pCk
+        NXhOwyjkGaUNQhIFVBv1NshbB6ruamQjGdngIwXf3odjsSArb692JWxlC8A0
+        4LrkiWpAE87VkifJGiPCdMqIj1aVp/Gd8ILEm5tUYvaVV9dBMxC5bFfWthL7
+        jZSkt45bImLCfKivBXYSb8Hc3ICs6rsr6BtpUH+sP/YAYw4Ip0veycXzl/Ur
+        5pT0KrsbeXl5+R/kh2mg3y0AAA==
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:40:35 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:40:36 GMT
+      - Mon, 20 Jun 2016 15:40:37 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 712e71b0-aaee-4998-92db-4482dfa4ddbe
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-5ddd67a0-262b-4080-bce8-edbe586a0a77
+      Content-Length:
+      - '30311'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"images": [{"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        14.04 LTS (Trusty Tahr) (PVHVM) (Orchestration)"}, {"id": "398c5f65-23e2-44da-97d8-d28ff5ec583b",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/398c5f65-23e2-44da-97d8-d28ff5ec583b",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/398c5f65-23e2-44da-97d8-d28ff5ec583b",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/398c5f65-23e2-44da-97d8-d28ff5ec583b",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        7 (PVHVM) (Orchestration)"}, {"id": "edb7b11c-3b9d-407b-8430-45360760277f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/edb7b11c-3b9d-407b-8430-45360760277f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/edb7b11c-3b9d-407b-8430-45360760277f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/edb7b11c-3b9d-407b-8430-45360760277f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        14.04 LTS (Trusty Tahr) (PV)"}, {"id": "8e7bdecd-380a-43d7-af9a-ec4f4df51dbd",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/8e7bdecd-380a-43d7-af9a-ec4f4df51dbd",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/8e7bdecd-380a-43d7-af9a-ec4f4df51dbd",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/8e7bdecd-380a-43d7-af9a-ec4f4df51dbd",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        14.04 LTS (Trusty Tahr) (PVHVM)"}, {"id": "61d460ae-3e29-4257-a300-007075456634",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/61d460ae-3e29-4257-a300-007075456634",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/61d460ae-3e29-4257-a300-007075456634",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/61d460ae-3e29-4257-a300-007075456634",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 7 (PVHVM)"}, {"id": "7a412a16-c9da-4c30-be5e-225633bde788",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/7a412a16-c9da-4c30-be5e-225633bde788",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/7a412a16-c9da-4c30-be5e-225633bde788",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/7a412a16-c9da-4c30-be5e-225633bde788",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        15.10 (Wily Werewolf) (PVHVM)"}, {"id": "5cf469a9-c4f3-4455-ab1b-7f07ed2b9dec",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5cf469a9-c4f3-4455-ab1b-7f07ed2b9dec",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5cf469a9-c4f3-4455-ab1b-7f07ed2b9dec",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5cf469a9-c4f3-4455-ab1b-7f07ed2b9dec",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        16.04 LTS (Xenial Xerus) (PVHVM)"}, {"id": "41616b04-1738-4990-9034-d8fa7fdd906b",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/41616b04-1738-4990-9034-d8fa7fdd906b",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/41616b04-1738-4990-9034-d8fa7fdd906b",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/41616b04-1738-4990-9034-d8fa7fdd906b",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 6 (PVHVM)"}, {"id": "797e75be-c1af-429c-bd7c-978e8605e5f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/797e75be-c1af-429c-bd7c-978e8605e5f7",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/797e75be-c1af-429c-bd7c-978e8605e5f7",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/797e75be-c1af-429c-bd7c-978e8605e5f7",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 6 (PV)"}, {"id": "93c04a39-f919-40ec-8f60-8a034e610f2c",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/93c04a39-f919-40ec-8f60-8a034e610f2c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/93c04a39-f919-40ec-8f60-8a034e610f2c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/93c04a39-f919-40ec-8f60-8a034e610f2c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Scientific
+        Linux 7 (PVHVM)"}, {"id": "f9696ee0-cee2-40bc-a3c7-24709db972ed", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/f9696ee0-cee2-40bc-a3c7-24709db972ed",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/f9696ee0-cee2-40bc-a3c7-24709db972ed",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/f9696ee0-cee2-40bc-a3c7-24709db972ed",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        Unstable (Sid) (PVHVM)"}, {"id": "f8ea0bd3-64de-4613-9df5-9606d211ab6d", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/f8ea0bd3-64de-4613-9df5-9606d211ab6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/f8ea0bd3-64de-4613-9df5-9606d211ab6d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/f8ea0bd3-64de-4613-9df5-9606d211ab6d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        Testing (Stretch) (PVHVM)"}, {"id": "222eae90-9ed7-472f-b3fb-c43f8a021cbb",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/222eae90-9ed7-472f-b3fb-c43f8a021cbb",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/222eae90-9ed7-472f-b3fb-c43f8a021cbb",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/222eae90-9ed7-472f-b3fb-c43f8a021cbb",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Scientific
+        Linux 6 (PVHVM)"}, {"id": "ca46a780-072a-44bb-b2e9-6dd9af313848", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ca46a780-072a-44bb-b2e9-6dd9af313848",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ca46a780-072a-44bb-b2e9-6dd9af313848",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ca46a780-072a-44bb-b2e9-6dd9af313848",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OpenSUSE
+        13.2 (PVHVM)"}, {"id": "779851de-9b1e-4500-839a-dc1d6e25cb25", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/779851de-9b1e-4500-839a-dc1d6e25cb25",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/779851de-9b1e-4500-839a-dc1d6e25cb25",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/779851de-9b1e-4500-839a-dc1d6e25cb25",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Fedora
+        22 (PVHVM)"}, {"id": "8cd602eb-2a80-4fb3-8def-7b81d4bbc51d", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/8cd602eb-2a80-4fb3-8def-7b81d4bbc51d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/8cd602eb-2a80-4fb3-8def-7b81d4bbc51d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/8cd602eb-2a80-4fb3-8def-7b81d4bbc51d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Red
+        Hat Enterprise Linux 5 (PV)"}, {"id": "f15ce200-dcec-4a34-b91d-8ea2f8674482",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/f15ce200-dcec-4a34-b91d-8ea2f8674482",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/f15ce200-dcec-4a34-b91d-8ea2f8674482",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/f15ce200-dcec-4a34-b91d-8ea2f8674482",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        12.04 LTS (Precise Pangolin) (PV)"}, {"id": "cd276808-5fac-4903-9940-68857095c844",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/cd276808-5fac-4903-9940-68857095c844",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/cd276808-5fac-4903-9940-68857095c844",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/cd276808-5fac-4903-9940-68857095c844",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Ubuntu
+        12.04 LTS (Precise Pangolin) (PVHVM)"}, {"id": "60c8b11a-a445-496c-84d9-5ec96eac233f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/60c8b11a-a445-496c-84d9-5ec96eac233f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/60c8b11a-a445-496c-84d9-5ec96eac233f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/60c8b11a-a445-496c-84d9-5ec96eac233f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        7 (Wheezy) (PVHVM)"}, {"id": "c22f593a-4064-4a12-8229-e70a4b0ccc09", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c22f593a-4064-4a12-8229-e70a4b0ccc09",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c22f593a-4064-4a12-8229-e70a4b0ccc09",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c22f593a-4064-4a12-8229-e70a4b0ccc09",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        7 (PVHVM)"}, {"id": "c28d8b17-19b1-4d2f-8a8f-b548ebe7ba95", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c28d8b17-19b1-4d2f-8a8f-b548ebe7ba95",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c28d8b17-19b1-4d2f-8a8f-b548ebe7ba95",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c28d8b17-19b1-4d2f-8a8f-b548ebe7ba95",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        6 (PVHVM)"}, {"id": "48fe94fc-2e6f-4a7a-b962-f70d51278427", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/48fe94fc-2e6f-4a7a-b962-f70d51278427",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/48fe94fc-2e6f-4a7a-b962-f70d51278427",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/48fe94fc-2e6f-4a7a-b962-f70d51278427",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        6 (PV)"}, {"id": "f338b541-bf6a-4ceb-a795-730e05a601f6", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/f338b541-bf6a-4ceb-a795-730e05a601f6",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/f338b541-bf6a-4ceb-a795-730e05a601f6",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/f338b541-bf6a-4ceb-a795-730e05a601f6",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CentOS
+        5 (PV)"}, {"id": "a6af5086-23b3-4832-ba2e-6297922faf3c", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/a6af5086-23b3-4832-ba2e-6297922faf3c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/a6af5086-23b3-4832-ba2e-6297922faf3c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/a6af5086-23b3-4832-ba2e-6297922faf3c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2 + SQL Server 2014 Standard"}, {"id": "b5fa9ca8-8140-4338-a42e-d51554505b9f",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/b5fa9ca8-8140-4338-a42e-d51554505b9f",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/b5fa9ca8-8140-4338-a42e-d51554505b9f",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/b5fa9ca8-8140-4338-a42e-d51554505b9f",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2 + SQL Server 2014 Web"}, {"id": "8bfada8f-9917-46dd-aa82-be533d5279fa",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/8bfada8f-9917-46dd-aa82-be533d5279fa",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/8bfada8f-9917-46dd-aa82-be533d5279fa",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/8bfada8f-9917-46dd-aa82-be533d5279fa",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 R2"}, {"id": "9f05acc9-6436-4e95-aad9-eaeff74be602", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9f05acc9-6436-4e95-aad9-eaeff74be602",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9f05acc9-6436-4e95-aad9-eaeff74be602",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9f05acc9-6436-4e95-aad9-eaeff74be602",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Fedora
+        23 (PVHVM)"}, {"id": "43b287ad-8c5f-4632-a7a3-05e17ce537a1", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/43b287ad-8c5f-4632-a7a3-05e17ce537a1",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/43b287ad-8c5f-4632-a7a3-05e17ce537a1",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/43b287ad-8c5f-4632-a7a3-05e17ce537a1",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian Unstable (Sid)"}, {"id": "dc1a3708-b4d9-44db-98ae-f768f6218f27",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/dc1a3708-b4d9-44db-98ae-f768f6218f27",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/dc1a3708-b4d9-44db-98ae-f768f6218f27",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/dc1a3708-b4d9-44db-98ae-f768f6218f27",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CentOS 7"}, {"id": "2234c203-4d5b-4048-8f05-53b0d94f0379", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/2234c203-4d5b-4048-8f05-53b0d94f0379",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/2234c203-4d5b-4048-8f05-53b0d94f0379",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/2234c203-4d5b-4048-8f05-53b0d94f0379",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - CentOS 6"}, {"id": "6a2ce934-2c64-497d-9e8e-8d73070f47ee", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6a2ce934-2c64-497d-9e8e-8d73070f47ee",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6a2ce934-2c64-497d-9e8e-8d73070f47ee",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6a2ce934-2c64-497d-9e8e-8d73070f47ee",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian Testing (Stretch)"}, {"id": "597376a4-fd00-406a-8148-4f007218a770",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/597376a4-fd00-406a-8148-4f007218a770",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/597376a4-fd00-406a-8148-4f007218a770",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/597376a4-fd00-406a-8148-4f007218a770",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Debian 8 (Jessie)"}, {"id": "65b7c683-19ef-4a24-a934-335c9eeef2d0", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/65b7c683-19ef-4a24-a934-335c9eeef2d0",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/65b7c683-19ef-4a24-a934-335c9eeef2d0",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/65b7c683-19ef-4a24-a934-335c9eeef2d0",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Vyatta
+        Network OS 6.7R11"}, {"id": "55e3352f-4abd-4aaa-a5df-d2b4590a9c65", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/55e3352f-4abd-4aaa-a5df-d2b4590a9c65",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/55e3352f-4abd-4aaa-a5df-d2b4590a9c65",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/55e3352f-4abd-4aaa-a5df-d2b4590a9c65",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Ubuntu 15.10 (Wily)"}, {"id": "9dc2bf0a-7771-45cd-a7f9-ce86ce94c548", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9dc2bf0a-7771-45cd-a7f9-ce86ce94c548",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9dc2bf0a-7771-45cd-a7f9-ce86ce94c548",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9dc2bf0a-7771-45cd-a7f9-ce86ce94c548",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Ubuntu 14.04 LTS (Trusty Tahr)"}, {"id": "ce7c6fab-42d5-4b4f-91ae-42b52476914e",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ce7c6fab-42d5-4b4f-91ae-42b52476914e",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ce7c6fab-42d5-4b4f-91ae-42b52476914e",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ce7c6fab-42d5-4b4f-91ae-42b52476914e",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Fedora 23"}, {"id": "6704341b-8a23-456f-b3fb-5083550cae5a", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6704341b-8a23-456f-b3fb-5083550cae5a",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6704341b-8a23-456f-b3fb-5083550cae5a",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6704341b-8a23-456f-b3fb-5083550cae5a",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        - Fedora 22"}, {"id": "f6610dd1-a536-42c7-b423-03ec61d8597d", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/f6610dd1-a536-42c7-b423-03ec61d8597d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/f6610dd1-a536-42c7-b423-03ec61d8597d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/f6610dd1-a536-42c7-b423-03ec61d8597d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        v1 - Debian 7 (Wheezy)"}, {"id": "4c2b02c9-caa5-462b-a32e-f2175dba8f57", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/4c2b02c9-caa5-462b-a32e-f2175dba8f57",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/4c2b02c9-caa5-462b-a32e-f2175dba8f57",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/4c2b02c9-caa5-462b-a32e-f2175dba8f57",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        v1 - Ubuntu 12.04 LTS (Precise Pangolin)"}, {"id": "bfd91c48-c9f1-4723-9371-5246c70ee01e",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/bfd91c48-c9f1-4723-9371-5246c70ee01e",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/bfd91c48-c9f1-4723-9371-5246c70ee01e",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/bfd91c48-c9f1-4723-9371-5246c70ee01e",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1 + SQL Server 2008 R2 SP2 Standard"}, {"id": "bfb60134-a124-4d16-9a0f-c324c8d60923",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/bfb60134-a124-4d16-9a0f-c324c8d60923",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/bfb60134-a124-4d16-9a0f-c324c8d60923",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/bfb60134-a124-4d16-9a0f-c324c8d60923",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1 + SQL Server 2008 R2 SP2 Web"}, {"id": "91602a7d-4267-4efc-93f2-75281444de31",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/91602a7d-4267-4efc-93f2-75281444de31",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/91602a7d-4267-4efc-93f2-75281444de31",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/91602a7d-4267-4efc-93f2-75281444de31",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2008 R2 SP1"}, {"id": "5116da1c-70b0-4660-8153-5cdc5ced65ec", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5116da1c-70b0-4660-8153-5cdc5ced65ec",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5116da1c-70b0-4660-8153-5cdc5ced65ec",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5116da1c-70b0-4660-8153-5cdc5ced65ec",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "personal"},
+        {"id": "0b2bd620-142a-4cc8-8433-b8d3fb637632", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/0b2bd620-142a-4cc8-8433-b8d3fb637632",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/0b2bd620-142a-4cc8-8433-b8d3fb637632",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/0b2bd620-142a-4cc8-8433-b8d3fb637632",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012"}, {"id": "6045cb80-52ed-4114-bf9a-7f15a36c65dc", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/6045cb80-52ed-4114-bf9a-7f15a36c65dc",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Beta)"}, {"id": "c61f3a04-a00e-44c1-9d96-0667cfc7e155", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c61f3a04-a00e-44c1-9d96-0667cfc7e155",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Alpha)"}, {"id": "40ea63a7-63c7-4a43-a069-cc7a8420a08c", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/40ea63a7-63c7-4a43-a069-cc7a8420a08c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        v1 - CoreOS (Alpha)"}, {"id": "03193798-e71d-4470-95e2-3ce6b9ad32cb", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/03193798-e71d-4470-95e2-3ce6b9ad32cb",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        v1 - CoreOS (Stable)"}, {"id": "40155f16-21d4-4ac1-ad65-c409d94b8c7c", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/40155f16-21d4-4ac1-ad65-c409d94b8c7c",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CoreOS
+        (Stable)"}, {"id": "292f2f2f-f609-43de-bcd7-ec8cb4a970bc", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/292f2f2f-f609-43de-bcd7-ec8cb4a970bc",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "OnMetal
+        v1 - CoreOS (Beta)"}, {"id": "39375b69-899a-43c6-9641-f8c787eea5ee", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/39375b69-899a-43c6-9641-f8c787eea5ee",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 + SQL Server 2012 SP1 Standard"}, {"id": "b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/b9fee212-03b4-4578-bd58-5a0e12ba1e04",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CarinaOAuth2Provider"},
+        {"id": "358a29cc-2f79-4b07-b159-402dfb84359d", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/358a29cc-2f79-4b07-b159-402dfb84359d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "CarinaCommunityDB"},
+        {"id": "c6693b8d-1e99-4112-b2a0-ceefd18a55ca", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/c6693b8d-1e99-4112-b2a0-ceefd18a55ca",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Gentoo
+        15.3 (PVHVM)"}, {"id": "cf16c435-7bed-4dc3-b76e-57b09987866d", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/cf16c435-7bed-4dc3-b76e-57b09987866d",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Debian
+        8 (Jessie) (PVHVM)"}, {"id": "5add00f7-1349-4e69-a398-aa98489c95e0", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/5add00f7-1349-4e69-a398-aa98489c95e0",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Windows
+        Server 2012 + SQL Server 2012 SP1 Web"}, {"id": "7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/7a1cf8de-7721-4d56-900b-1e65def2ada5",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "FreeBSD
+        10 (PVHVM)"}, {"id": "ade87903-9d82-4584-9cc1-204870011de0", "links": [{"href":
+        "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/ade87903-9d82-4584-9cc1-204870011de0",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Arch
+        2015.7 (PVHVM)"}, {"id": "9aa0d346-c06f-4652-bbb1-4342a7d2d017", "links":
+        [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "rel": "bookmark"}, {"href": "https://iad.servers.api.rackspacecloud.com/images/9aa0d346-c06f-4652-bbb1-4342a7d2d017",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "iPXE
+        Boot (boot.rackspace.com)"}]}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:40:37 GMT
+- request:
+    method: post
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers
+    body:
+      encoding: UTF-8
+      string: '{"server":{"name":"Testing","flavorRef":2,"imageRef":"9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '93'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:40:39 GMT
+      - Mon, 20 Jun 2016 15:40:40 GMT
+      Location:
+      - https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - e676d4ef-3fa0-4d97-8a33-085f43c64b65
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-c3316a73-6631-453a-9b1d-fa0615e1bcc2
+      Content-Length:
+      - '382'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"OS-DCF:diskConfig": "MANUAL", "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "adminPass": "ss7DrjQsrsCa"}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:40:39 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:40:50 GMT
+      - Mon, 20 Jun 2016 15:40:50 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 3ea57f6b-f06b-4e3c-9848-3048802757a0
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-7a825ce7-b46c-45a2-8bed-783c7d9ccd3b
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:40:50 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:00 GMT
+      - Mon, 20 Jun 2016 15:41:01 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - d7e21d66-69bf-47c7-8773-adb89257373b
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-e6ef7ed7-eeac-491e-b527-af2d50a403f0
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:01 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:12 GMT
+      - Mon, 20 Jun 2016 15:41:12 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 66b47797-4a7d-45ef-a18e-9a15048ed67f
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-b56ecb01-03c8-47d9-870b-9e90c322c210
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:12 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:22 GMT
+      - Mon, 20 Jun 2016 15:41:23 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 0d3901d3-30d1-45e9-a5bf-748300a4a813
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-1ca98609-8bcb-46a5-8755-0ee077660708
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:23 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:33 GMT
+      - Mon, 20 Jun 2016 15:41:33 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 894e2ba3-17eb-4d0b-b0b5-404744fb77ba
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-94eb4c82-5c2a-4190-a11f-865b74c37603
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:34 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:44 GMT
+      - Mon, 20 Jun 2016 15:41:44 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 351dbc49-5c65-475f-b8a6-a7ebcdf75a2b
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-b36e8d04-0a08-49ed-bd67-d85236715d4f
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:44 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:41:55 GMT
+      - Mon, 20 Jun 2016 15:41:55 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 9552c398-9236-406c-94ae-c9ad398651a5
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-f14cd733-87b8-40ec-b2f7-a572a8e74e61
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:41:55 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:05 GMT
+      - Mon, 20 Jun 2016 15:42:05 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - c39c677c-b148-41bd-abbc-bc74259e6cd4
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-90d45112-7a49-4a50-9af9-08d5a96a4be7
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:05 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:16 GMT
+      - Mon, 20 Jun 2016 15:42:16 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 3cbfa5e5-c0eb-42af-9860-1a8e9700c62d
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-03d76ca7-e049-40a3-a87d-df5364edee07
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:15 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:26 GMT
+      - Mon, 20 Jun 2016 15:42:26 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 7f85549a-a65a-4b2c-850c-e4fb11e98fd8
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-2ee71f1f-dcad-4a53-9510-cf57213ccad9
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:26 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:37 GMT
+      - Mon, 20 Jun 2016 15:42:37 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - ff8e8217-f5d9-4fcf-b4d4-076cd69d6d08
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-21639e58-4962-4a3a-882d-13dada183b43
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:37 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:47 GMT
+      - Mon, 20 Jun 2016 15:42:47 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 3fcce8e6-4971-41a9-ac83-1241c3ed6a0a
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-3ee10a6b-0987-4e0d-bf80-41b066a2a4fd
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:47 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:42:57 GMT
+      - Mon, 20 Jun 2016 15:42:57 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - a248d3a3-a211-46d1-ac1b-90a64b1aaa22
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-0555109e-4cfa-4e1d-af7e-5a8278cf5ae5
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:42:57 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:43:08 GMT
+      - Mon, 20 Jun 2016 15:43:08 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 7c71c3db-244f-410e-b549-4117dd99acea
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-9800520e-c57a-47c8-ab60-f32ed6da59c4
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:43:08 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:43:18 GMT
+      - Mon, 20 Jun 2016 15:43:18 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - f63598d8-b25c-4c81-9ca7-dd82174aef61
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-057ed99b-3198-4e3a-9992-5c521d919b82
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:43:18 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:43:28 GMT
+      - Mon, 20 Jun 2016 15:43:28 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 87f1f812-48d8-4c25-b004-f8bc0797a234
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-e26aa61c-0237-43bb-bbe6-537a7c2b39f7
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:43:28 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:43:39 GMT
+      - Mon, 20 Jun 2016 15:43:39 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 8c1fa3cb-ca8b-4e7e-b4cd-a256c10ee139
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-e88af6da-25b0-4821-8500-982b1086938a
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:40:41Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 10, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:43:39 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:43:50 GMT
+      - Mon, 20 Jun 2016 15:43:50 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 83dd19cb-3a25-4e2a-bb6f-ace8f7c71e76
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-f6872321-50d4-4071-b378-2de75b023a09
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:43:49Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 30, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:43:49 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:00 GMT
+      - Mon, 20 Jun 2016 15:44:00 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 6fa82b6e-9d90-44cb-93ec-d08409fa056d
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-eafacd81-d92a-42e1-9f98-9ed9d2f1912e
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:43:50Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 40, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:00 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:10 GMT
+      - Mon, 20 Jun 2016 15:44:10 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 6d5032c9-6eb0-4c55-b6b7-7a87cc1b68ec
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-83667e09-62cf-48f1-a695-5b895bdd7e2a
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:43:50Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 40, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:10 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:20 GMT
+      - Mon, 20 Jun 2016 15:44:20 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - a53fe1ca-3774-42c4-99e1-3eb8017410b9
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-3e5f877f-b6ef-46f7-aebc-902743560abb
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:44:17Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 70, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:21 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:31 GMT
+      - Mon, 20 Jun 2016 15:44:31 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - f0ed1b3f-b980-4e1d-8477-198a4b62e6cf
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-fe7acb7f-a73d-48c2-a617-9aa1ddb092f4
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:44:17Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 70, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:31 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:41 GMT
+      - Mon, 20 Jun 2016 15:44:41 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - 50421337-54b8-4660-abf2-19f88830cacd
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-ae53f26e-97d1-4d1d-a093-131e353e2ca0
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:44:33Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 90, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:41 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:44:52 GMT
+      - Mon, 20 Jun 2016 15:44:52 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - c1dbba69-2fcf-469c-a3c2-54e3bf140111
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-d516bac3-bbb5-41f3-bd64-ae7f63545174
+      Content-Length:
+      - '1414'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-20T15:44:33Z", "hostId":
+        "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses": {"public":
+        [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"}, {"version":
+        4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr": "10.176.2.70"}]},
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state": "building", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "", "accessIPv6": "", "progress": 90, "OS-EXT-STS:power_state": 0, "config_drive":
+        "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:44:52 GMT
+- request:
+    method: get
+    uri: https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - AAAWTJBBKo4Gp0BGGdt5gcK2zL2I6IcMNfHasXJpLQE_cLbZrYTg54txHc6Gg6PYoA5p42-i7Toinc2Tss1bGSZXKKmRpCaUfC6QLsp2Hb5-CC1foWmQ9SmXsx1yDNSTz8W4wVqdizB4MA
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 20 Jun 2016 15:45:02 GMT
+      - Mon, 20 Jun 2016 15:45:02 GMT
+      Via:
+      - 1.1 Repose (Repose/7.1.3.0)
+      X-Trans-Id:
+      - f782a19c-ed60-4509-8a8b-3a2083392a65
+      Content-Type:
+      - application/json
+      X-Compute-Request-Id:
+      - req-fe85367a-7b71-4125-afc4-6ff4b9104900
+      Content-Length:
+      - '1459'
+      Server:
+      - Jetty(9.2.z-SNAPSHOT)
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "ACTIVE", "updated": "2016-06-20T15:45:00Z",
+        "hostId": "2c22ede384a4a32de2b18351e721ff86bbe02d6f38cc44830e3ebc18", "addresses":
+        {"public": [{"version": 6, "addr": "2001:4802:7800:1:be76:4eff:fe20:4ba0"},
+        {"version": 4, "addr": "162.242.209.108"}], "private": [{"version": 4, "addr":
+        "10.176.2.70"}]}, "links": [{"href": "https://iad.servers.api.rackspacecloud.com/v2/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "self"}, {"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/servers/6f0e0d54-91b8-476e-974d-89a51c5f7b6d",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/images/9ab07706-4b9f-41ad-a8f5-8b4fda2e40f7",
+        "rel": "bookmark"}]}, "RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId": "f052463dadf322fc23deab70e714a0ca8ecbc6fa314c82bc68110e10",
+        "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state": "active", "flavor":
+        {"id": "2", "links": [{"href": "https://iad.servers.api.rackspacecloud.com/<RS_TENANT_ID>/flavors/2",
+        "rel": "bookmark"}]}, "id": "6f0e0d54-91b8-476e-974d-89a51c5f7b6d", "user_id":
+        "1658c175e6f34629915d3305cd4e541c", "name": "Testing", "created": "2016-06-20T15:40:39Z",
+        "tenant_id": "<RS_TENANT_ID>", "OS-DCF:diskConfig": "MANUAL", "accessIPv4":
+        "162.242.209.108", "accessIPv6": "2001:4802:7800:1:be76:4eff:fe20:4ba0", "progress":
+        100, "OS-EXT-STS:power_state": 1, "config_drive": "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Mon, 20 Jun 2016 15:45:02 GMT
+recorded_with: VCR 3.0.1
