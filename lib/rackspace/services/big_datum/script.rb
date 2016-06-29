@@ -1,4 +1,5 @@
-class Rackspace::BigDatum::Script < Peace::Model
+class Rackspace::BigDatum::Script 
+  include Peace::Model
 	attr_accessor :created, :id, :is_public, :links, :name, :type, :updated, :url
 
 	class << self

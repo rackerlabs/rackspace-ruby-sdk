@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::Changelog < Peace::Model
+class Rackspace::Monitoring::Changelog 
+  include Peace::Model
 	attr_accessor :values, :metadata
 
 	class << self

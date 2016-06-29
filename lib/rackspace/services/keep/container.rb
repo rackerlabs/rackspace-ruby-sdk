@@ -1,3 +1,4 @@
-class Rackspace::Keep::Container < Peace::Model
+class Rackspace::Keep::Container 
+  include Peace::Model
   attr_accessor :consumers, :container_ref, :created, :name, :secret_refs, :status, :type, :updated
 end

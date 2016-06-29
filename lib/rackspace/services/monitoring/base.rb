@@ -1,4 +1,5 @@
-class Rackspace::Monitoring < Peace::Service
+class Rackspace::Monitoring 
+  include Peace::Service
 
   has_resource :account
   has_resource :agent

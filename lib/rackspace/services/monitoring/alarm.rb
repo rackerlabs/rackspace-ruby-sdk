@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::Alarm < Peace::Model
+class Rackspace::Monitoring::Alarm 
+  include Peace::Model
   attr_accessor :id, :entity, :check, :disabled, :label, :criteria, :check_type,
     :notification_plan_id
   attr_with_alias :entity, :entity_id

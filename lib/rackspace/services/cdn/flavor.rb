@@ -1,4 +1,5 @@
-class Rackspace::CDN::Flavor < Peace::Model
+class Rackspace::CDN::Flavor 
+  include Peace::Model
   attr_accessor :id, :providers, :links
   has_many :services
   has_many :ssl_certificates

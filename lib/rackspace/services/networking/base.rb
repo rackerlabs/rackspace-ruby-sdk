@@ -1,4 +1,5 @@
-class Rackspace::Networking < Peace::Service
+class Rackspace::Networking 
+  include Peace::Service
 
   has_resource :network
   has_resource :port

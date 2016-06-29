@@ -1,4 +1,5 @@
-class Rackspace::Queue::Queue < Peace::Model
+class Rackspace::Queue::Queue 
+  include Peace::Model
 	attr_accessor :href, :name
 	
 	def check_existence; end

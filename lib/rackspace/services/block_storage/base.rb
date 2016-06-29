@@ -1,4 +1,5 @@
-class Rackspace::BlockStorage < Peace::Service
+class Rackspace::BlockStorage 
+  include Peace::Service
 
   has_resource :snapshot
   has_resource :volume

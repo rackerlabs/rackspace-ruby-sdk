@@ -1,4 +1,5 @@
-class Rackspace::DNS < Peace::Service
+class Rackspace::DNS 
+  include Peace::Service
 
   has_resource :domain
   has_resource :limit

@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::Agent < Peace::Model
+class Rackspace::Monitoring::Agent 
+  include Peace::Model
 	attr_accessor :values, :metadata
 	has_many :entities
 

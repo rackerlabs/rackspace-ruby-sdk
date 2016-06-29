@@ -1,4 +1,5 @@
-class Rackspace::Orchestration < Peace::Service
+class Rackspace::Orchestration 
+  include Peace::Service
 
   has_resource :resource
   has_resource :stack

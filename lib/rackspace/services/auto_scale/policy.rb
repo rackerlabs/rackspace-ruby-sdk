@@ -1,4 +1,5 @@
-class Rackspace::AutoScale::Policy < Peace::Model
+class Rackspace::AutoScale::Policy 
+  include Peace::Model
   attr_accessor :id, :group, :links, :name, :change, :change_percent,
     :cooldown, :type, :args, :desired_capacity
 

@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer::UsageReport < Peace::Model
+class Rackspace::LoadBalancer::UsageReport 
+  include Peace::Model
 	attr_accessor :id, :average_num_connections, :incoming_transfer, :outgoing_transfer, :average_num_connections_ssl, :incoming_transfer_ssl, :outgoing_transfer_ssl, :num_vips, :num_polls, :start_time, :end_time, :vip_type, :ssl_mode, :event_type
 
 	class << self

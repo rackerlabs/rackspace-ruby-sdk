@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer::Algorithm < Peace::Model
+class Rackspace::LoadBalancer::Algorithm 
+  include Peace::Model
 	attr_accessor :name
 	
 	class << self

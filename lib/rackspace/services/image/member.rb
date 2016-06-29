@@ -1,4 +1,5 @@
-class Rackspace::Image::Member < Peace::Model
+class Rackspace::Image::Member 
+  include Peace::Model
 	attr_accessor :created_at, :image_id, :member_id, :schema, :status, :updated_at
 
 	belongs_to :image

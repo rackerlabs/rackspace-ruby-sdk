@@ -1,4 +1,5 @@
-class Rackspace::Compute::Volume < Peace::Model
+class Rackspace::Compute::Volume 
+  include Peace::Model
 
   attr_accessor :id, :device, :server_id, :volume_id
 

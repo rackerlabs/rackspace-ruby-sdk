@@ -1,4 +1,5 @@
-class Rackspace::Storage::Object < Peace::Model
+class Rackspace::Storage::Object 
+  include Peace::Model
 	attr_accessor :content
 
 	class << self

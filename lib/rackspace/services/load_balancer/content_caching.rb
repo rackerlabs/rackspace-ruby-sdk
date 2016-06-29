@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer::ContentCaching < Peace::Model
+class Rackspace::LoadBalancer::ContentCaching 
+  include Peace::Model
 	attr_accessor :enabled
 	
 	def configuration; end

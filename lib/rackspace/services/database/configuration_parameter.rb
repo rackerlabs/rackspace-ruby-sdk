@@ -1,4 +1,5 @@
-class Rackspace::Database::ConfigurationParameter < Peace::Model
+class Rackspace::Database::ConfigurationParameter 
+  include Peace::Model
 	attr_accessor :max, :min, :name, :restart_required, :type
 	
 	def details; end

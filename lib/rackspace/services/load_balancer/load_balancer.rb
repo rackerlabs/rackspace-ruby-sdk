@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer::LoadBalancer < Peace::Model
+class Rackspace::LoadBalancer::LoadBalancer 
+  include Peace::Model
   attr_accessor :id, :cluster, :connection_logging, :port, :protocol, :algorithm, :virtual_ips, :created, :updated, :name, :state, :timeout, :nodes, :https_redirect
 
   attr_with_alias :connection_logging, :connectionLogging

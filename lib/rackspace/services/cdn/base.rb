@@ -1,4 +1,5 @@
-class Rackspace::CDN < Peace::Service
+class Rackspace::CDN 
+  include Peace::Service
 
   has_resource :flavor
   has_resource :service

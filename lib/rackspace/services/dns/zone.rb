@@ -1,4 +1,5 @@
-class Rackspace::DNS::Zone < Peace::Model
+class Rackspace::DNS::Zone 
+  include Peace::Model
   attr_accessor :id, :email, :domain, :created, :updated, :account_id, :ttl, :nameservers, :comment
   
   belongs_to :account

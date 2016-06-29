@@ -1,4 +1,5 @@
-class Rackspace::Feed::CloudFile < Peace::Model
+class Rackspace::Feed::CloudFile 
+  include Peace::Model
 	attr_accessor :type, :category, :content, :id, :link, :published, :title, :updated
 	
 	def events; end

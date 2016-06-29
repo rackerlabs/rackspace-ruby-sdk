@@ -1,4 +1,5 @@
-class Rackspace::Feed::CdnFeed < Peace::Model
+class Rackspace::Feed::CdnFeed 
+  include Peace::Model
 	attr_accessor :type, :category, :content, :id, :link, :published, :title, :updated
 
 	def events; end

@@ -1,4 +1,5 @@
-class Rackspace::BigDatum::Flavor < Peace::Model
+class Rackspace::BigDatum::Flavor 
+  include Peace::Model
 	attr_accessor :class, :disk, :id, :name, :ram, :vcpus
 
 	has_many :nodes

@@ -1,4 +1,5 @@
-class Rackspace::Feed < Peace::Service
+class Rackspace::Feed 
+  include Peace::Service
 
   has_resource :cdn_feed
   has_resource :cloud_autoscale

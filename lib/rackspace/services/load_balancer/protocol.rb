@@ -1,3 +1,4 @@
-class Rackspace::LoadBalancer::Protocol < Peace::Model
+class Rackspace::LoadBalancer::Protocol 
+  include Peace::Model
   attr_accessor :name, :port
 end

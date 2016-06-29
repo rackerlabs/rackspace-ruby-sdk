@@ -1,4 +1,5 @@
-class Rackspace::Backup::Backup < Peace::Model
+class Rackspace::Backup::Backup 
+  include Peace::Model
 	attr_accessor :BackupId, :BackupConfigurationId, :CurrentState, :BackupConfigurationName, :MachineAgentId, :MachineName, :StateChangeTime, :IsEncrypted, :EncryptionKey
 	has_many :restores
 	has_many :restore_configurations

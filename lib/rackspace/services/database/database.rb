@@ -1,4 +1,5 @@
-class Rackspace::Database::Database < Peace::Model
+class Rackspace::Database::Database 
+  include Peace::Model
   attr_accessor :id, :character_set, :collate
 
   def restart; end

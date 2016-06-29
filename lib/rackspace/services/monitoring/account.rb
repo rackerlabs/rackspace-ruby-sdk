@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::Account < Peace::Model
+class Rackspace::Monitoring::Account 
+  include Peace::Model
 	attr_accessor :id, :metadata, :webhook_token
 	
 	def attributes; end

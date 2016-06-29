@@ -1,4 +1,5 @@
-class Rackspace::Queue::Message < Peace::Model
+class Rackspace::Queue::Message 
+  include Peace::Model
   attr_accessor :id, :age, :ttl, :body, :href, :claim_id
   belongs_to :claim
 

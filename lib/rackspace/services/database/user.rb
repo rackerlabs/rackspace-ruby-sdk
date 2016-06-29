@@ -1,4 +1,5 @@
-class Rackspace::Database::User < Peace::Model
+class Rackspace::Database::User 
+  include Peace::Model
   attr_accessor :id, :password, :databases, :host
 
   def grant_user_access; end

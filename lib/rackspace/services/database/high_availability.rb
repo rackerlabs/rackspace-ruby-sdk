@@ -1,4 +1,5 @@
-class Rackspace::Database::HighAvailability < Peace::Model
+class Rackspace::Database::HighAvailability 
+  include Peace::Model
 	attr_accessor :acls, :configuration, :datastore, :flavor, :id, :name, :networks, :replica_source, :replicas, :state, :tenant_id, :volume
 	
 	def acls; end

@@ -1,4 +1,5 @@
-class Rackspace::Metrics < Peace::Service
+class Rackspace::Metrics 
+  include Peace::Service
   
   def initialize
   end

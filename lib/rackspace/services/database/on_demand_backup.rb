@@ -1,4 +1,5 @@
-class Rackspace::Database::OnDemandBackup < Peace::Model
+class Rackspace::Database::OnDemandBackup 
+  include Peace::Model
 	attr_accessor :created, :datastore, :description, :id, :instance_id, :location_ref, :name, :parent_id, :size, :status, :updated, :is_automated, :flavor_ram, :source, :type, :volume_size
 
 	class << self

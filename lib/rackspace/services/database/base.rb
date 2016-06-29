@@ -1,4 +1,5 @@
-class Rackspace::Database < Peace::Service
+class Rackspace::Database 
+  include Peace::Service
 
   has_resource :configuration
   has_resource :configuration_parameter

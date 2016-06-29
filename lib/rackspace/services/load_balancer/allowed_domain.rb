@@ -1,3 +1,4 @@
-class Rackspace::LoadBalancer::AllowedDomain < Peace::Model
+class Rackspace::LoadBalancer::AllowedDomain 
+  include Peace::Model
   attr_accessor :name
 end

@@ -1,4 +1,5 @@
-class Rackspace::Database::Replication < Peace::Model
+class Rackspace::Database::Replication 
+  include Peace::Model
 	attr_accessor :created, :datastore, :flavor, :id, :ip, :links, :name, :replica_of, :status, :updated, :volume
 	
 	class << self

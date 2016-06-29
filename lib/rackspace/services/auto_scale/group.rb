@@ -1,4 +1,5 @@
-class Rackspace::AutoScale::Group < Peace::Model
+class Rackspace::AutoScale::Group 
+  include Peace::Model
   attr_accessor :id, :links, :state
 
   def details; end

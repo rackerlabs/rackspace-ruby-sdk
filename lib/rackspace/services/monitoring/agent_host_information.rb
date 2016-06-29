@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::AgentHostInformation < Peace::Model
+class Rackspace::Monitoring::AgentHostInformation 
+  include Peace::Model
 	class << self
 		def agent_info_types; end
 		def cpu; end

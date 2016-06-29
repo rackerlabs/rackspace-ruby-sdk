@@ -1,3 +1,4 @@
-class Rackspace::LoadBalancer::AccessRule < Peace::Model
+class Rackspace::LoadBalancer::AccessRule 
+  include Peace::Model
   attr_accessor :id, :address, :type
 end

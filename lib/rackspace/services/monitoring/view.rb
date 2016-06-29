@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::View < Peace::Model
+class Rackspace::Monitoring::View 
+  include Peace::Model
 	attr_accessor :entity, :checks, :alarms, :latest_alarm_states
 	
 	class << self

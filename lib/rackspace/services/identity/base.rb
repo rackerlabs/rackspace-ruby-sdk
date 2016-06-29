@@ -1,4 +1,5 @@
-class Rackspace::Identity < Peace::Service
+class Rackspace::Identity 
+  include Peace::Service
 
   has_resource :credential
   has_resource :role

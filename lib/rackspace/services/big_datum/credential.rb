@@ -1,4 +1,5 @@
-class Rackspace::BigDatum::Credential < Peace::Model
+class Rackspace::BigDatum::Credential 
+  include Peace::Model
 	attr_accessor :ssh_keys, :cloud_files
 	
 	class << self

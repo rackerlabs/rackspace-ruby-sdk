@@ -1,4 +1,5 @@
-class Rackspace::Storage < Peace::Service
+class Rackspace::Storage 
+  include Peace::Service
 
   has_resource :account
   has_resource :container

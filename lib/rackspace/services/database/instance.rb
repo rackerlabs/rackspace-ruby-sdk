@@ -1,4 +1,5 @@
-class Rackspace::Database::Instance < Peace::Model
+class Rackspace::Database::Instance 
+  include Peace::Model
   attr_accessor :id, :name, :created, :updated, :state, :hostname, :links, :flavor_id, :volume, :datastore
 
   attr_with_alias :state, :status

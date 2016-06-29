@@ -1,4 +1,5 @@
-class Rackspace::BlockStorage::VolumeTransfer < Peace::Model
+class Rackspace::BlockStorage::VolumeTransfer 
+  include Peace::Model
 	attr_accessor :created_at, :id, :links, :name, :volume_id
 	belongs_to :volume
 

@@ -1,3 +1,4 @@
-class Rackspace::Monitoring::SuppressionLog < Peace::Model
+class Rackspace::Monitoring::SuppressionLog 
+  include Peace::Model
   attr_accessor :values, :metadata
 end

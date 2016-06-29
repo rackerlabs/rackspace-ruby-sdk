@@ -1,4 +1,5 @@
-class Rackspace::Identity::User < Peace::Model
+class Rackspace::Identity::User 
+  include Peace::Model
   attr_accessor :id, :username, :password, :email, :enabled, :created, :updated
   attr_with_alias :password, 'OS-KSADM:password'
 

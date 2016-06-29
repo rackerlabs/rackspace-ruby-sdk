@@ -1,4 +1,5 @@
-class Rackspace::BigDatum < Peace::Service
+class Rackspace::BigDatum 
+  include Peace::Service
 
   has_resource :cluster
   has_resource :credential

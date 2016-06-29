@@ -1,4 +1,5 @@
-class Rackspace::Compute::Server < Peace::Model
+class Rackspace::Compute::Server
+  include Peace::Model
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 

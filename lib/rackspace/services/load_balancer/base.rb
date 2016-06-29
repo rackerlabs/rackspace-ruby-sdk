@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer < Peace::Service
+class Rackspace::LoadBalancer 
+  include Peace::Service
 
   has_resource :access_list
   has_resource :access_rule

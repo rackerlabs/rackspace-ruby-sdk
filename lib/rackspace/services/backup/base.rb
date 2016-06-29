@@ -1,4 +1,5 @@
-class Rackspace::Backup < Peace::Service
+class Rackspace::Backup 
+  include Peace::Service
 
   has_resource :activity
   has_resource :agent

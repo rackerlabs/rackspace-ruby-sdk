@@ -1,4 +1,5 @@
-class Rackspace::Queue::Claim < Peace::Model
+class Rackspace::Queue::Claim 
+  include Peace::Model
   attr_accessor :id, :grace, :ttl, :limit, :messages
   has_many :messages
 

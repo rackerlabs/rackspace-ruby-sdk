@@ -1,4 +1,5 @@
-class Rackspace::Image < Peace::Service
+class Rackspace::Image 
+  include Peace::Service
 
   has_resource :image
   has_resource :member

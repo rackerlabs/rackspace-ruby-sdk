@@ -1,4 +1,5 @@
-class Rackspace::LoadBalancer::Node < Peace::Model
+class Rackspace::LoadBalancer::Node 
+  include Peace::Model
   attr_accessor :id, :address, :status, :weight, :port, :type, :condition
 
   class << self

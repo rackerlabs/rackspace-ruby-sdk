@@ -1,4 +1,5 @@
-class Rackspace::DNS::Limit < Peace::Model
+class Rackspace::DNS::Limit 
+  include Peace::Model
 	attr_accessor :absolute, :rates
 	
 	class << self

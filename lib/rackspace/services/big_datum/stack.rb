@@ -1,4 +1,5 @@
-class Rackspace::BigDatum::Stack < Peace::Model
+class Rackspace::BigDatum::Stack 
+  include Peace::Model
 	attr_accessor :created, :description, :distro, :id, :links, :name, :node_groups, :services
 
 	has_many :clusters

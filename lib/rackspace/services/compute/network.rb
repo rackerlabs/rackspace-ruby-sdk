@@ -1,4 +1,5 @@
-class Rackspace::Compute::Network < Peace::Model
+class Rackspace::Compute::Network 
+  include Peace::Model
   attr_accessor :id, :label, :cidr
 
   class << self

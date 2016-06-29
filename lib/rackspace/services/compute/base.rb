@@ -1,4 +1,5 @@
-class Rackspace::Compute < Peace::Service
+class Rackspace::Compute 
+  include Peace::Service
 
   has_resource :attachment
   has_resource :flavor

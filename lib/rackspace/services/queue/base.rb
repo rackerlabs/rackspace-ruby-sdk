@@ -1,4 +1,5 @@
-class Rackspace::Queue < Peace::Service
+class Rackspace::Queue 
+  include Peace::Service
 
   has_resource :claim
   has_resource :message

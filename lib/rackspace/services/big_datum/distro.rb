@@ -1,4 +1,5 @@
-class Rackspace::BigDatum::Distro < Peace::Model
+class Rackspace::BigDatum::Distro 
+  include Peace::Model
 	attr_accessor :id, :links, :name, :services, :version
 	
 	class << self

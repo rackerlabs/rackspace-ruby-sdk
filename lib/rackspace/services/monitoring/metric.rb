@@ -1,4 +1,5 @@
-class Rackspace::Monitoring::Metric < Peace::Model
+class Rackspace::Monitoring::Metric 
+  include Peace::Model
   attr_accessor :id, :check
   
   def cumulative_and_instantaneous_metrics; end

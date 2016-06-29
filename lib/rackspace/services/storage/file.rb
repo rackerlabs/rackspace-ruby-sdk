@@ -1,4 +1,5 @@
-class Rackspace::Storage::File < Peace::Model
+class Rackspace::Storage::File 
+  include Peace::Model
   attr_accessor :id, :content_length, :content_type, :content_disposition, :etag,
     :last_modified, :access_control_allow_origin, :origin, :content_encoding,
     :delete_at, :delete_after
