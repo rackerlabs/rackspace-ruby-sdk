@@ -1,0 +1,12 @@
+class Rackspace::Image 
+  include Peace::Service
+
+  has_resource :image
+  has_resource :member
+  has_resource :tag
+  has_resource :task
+
+  def initialize
+  end
+
+end
